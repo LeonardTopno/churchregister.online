@@ -1,0 +1,111 @@
+[18-Sep-2020 17:59:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 17:59:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:00:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:00:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:06:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 /home/developer/public_html/index.php(50): include()
+#1 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:06:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 /home/developer/public_html/index.php(50): include()
+#1 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:07:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 /home/developer/public_html/index.php(50): include()
+#1 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:07:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 /home/developer/public_html/index.php(50): include()
+#1 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:09:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/user_login.php:4
+Stack trace:
+#0 /home/developer/public_html/index.php(50): include()
+#1 {main}
+  thrown in /home/developer/public_html/user_login.php on line 4
+[18-Sep-2020 18:10:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:12:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:16:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:27:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:27:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:30:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 18:30:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/developer/public_html/index.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/developer/public_html/index.php on line 51
+[18-Sep-2020 19:10:22 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/index.php on line 15
+[18-Sep-2020 19:10:27 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/index.php on line 15
+[18-Sep-2020 19:10:30 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/index.php on line 15
+[18-Sep-2020 19:10:34 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/index.php on line 15
+[18-Sep-2020 19:11:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:12:32 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:14:51 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:15:19 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:15:24 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:15:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:15:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:16:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:17:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:17:34 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:19:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:19:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:19:44 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:21:08 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:29:44 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:29:48 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:29:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:55:37 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[18-Sep-2020 19:55:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[19-Sep-2020 06:19:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[19-Sep-2020 07:48:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[19-Sep-2020 07:48:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/developer/public_html/index.php on line 5
+[14-Oct-2020 08:32:45 UTC] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/developer/public_html/index.php on line 54
+[14-Oct-2020 08:32:50 UTC] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/developer/public_html/index.php on line 54
+[14-Oct-2020 14:19:10 UTC] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/developer/public_html/index.php on line 54
+[14-Oct-2020 14:19:30 UTC] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/developer/public_html/index.php on line 54
+[14-Oct-2020 14:30:45 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/developer/public_html/index.php on line 95
+[14-Oct-2020 15:54:23 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:23 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:23 UTC] PHP Warning:  include(): Failed opening 'server.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:30 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:30 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:30 UTC] PHP Warning:  include(): Failed opening 'server.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:38 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:38 UTC] PHP Warning:  include(server.php): failed to open stream: No such file or directory in /home/developer/public_html/index.php on line 1
+[14-Oct-2020 15:54:38 UTC] PHP Warning:  include(): Failed opening 'server.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/index.php on line 1
+[16-Oct-2020 07:54:21 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/server.php on line 3
+[16-Oct-2020 07:54:26 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/server.php on line 3

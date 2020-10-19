@@ -1,0 +1,1 @@
+[12-Sep-2020 07:04:17 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/developer/public_html/api/class/Rest.php on line 11

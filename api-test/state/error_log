@@ -1,0 +1,15 @@
+[12-Sep-2020 06:38:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/developer/public_html/api-test/objects/state.php:33
+Stack trace:
+#0 /home/developer/public_html/api-test/state/read.php(23): State->read()
+#1 {main}
+  thrown in /home/developer/public_html/api-test/objects/state.php on line 33
+[12-Sep-2020 06:40:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/developer/public_html/api-test/objects/state.php:33
+Stack trace:
+#0 /home/developer/public_html/api-test/state/read.php(23): State->read()
+#1 {main}
+  thrown in /home/developer/public_html/api-test/objects/state.php on line 33
+[12-Sep-2020 06:41:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/developer/public_html/api-test/objects/state.php:33
+Stack trace:
+#0 /home/developer/public_html/api-test/state/read.php(23): State->read()
+#1 {main}
+  thrown in /home/developer/public_html/api-test/objects/state.php on line 33
