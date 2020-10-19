@@ -1,2 +1,2 @@
 # churchregister.online
-Church Network
+Church Network by MIGIDS
