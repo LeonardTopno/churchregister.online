@@ -6,13 +6,12 @@ ob_start();
 session_start();
 if (isset($_SESSION["username"]))
 {
-	$id=$_SESSION["username"];
+	$logid=$_SESSION["username"];
 }
 else
 {
 	header("location:../../index.php");
 }
-$id=$_SESSION["username"];
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -212,7 +211,7 @@ $id=$_SESSION["username"];
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $id; ?></a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
@@ -333,13 +332,13 @@ $id=$_SESSION["username"];
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Edit Baptism Record</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item">Baptism</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Search Baptism Record</li>
+                                    <li class="breadcrumb-item"><a href="../../index.php">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Baptism</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Edit Baptism Record</li>
                                 </ol>
                             </nav>
                         </div>
@@ -414,8 +413,7 @@ $id=$_SESSION["username"];
                 
                 
                 
-<?php           
-
+   <?php           
 // Establish Connection with Database
 include "connection.php";
 if (mysqli_connect_errno()) {
@@ -446,11 +444,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$Moccupation=$row['mother_occupation'];
 	$Mobile=$row['mobile'];
 	$Email=$row['email'];
-	
-	
+
 
 // fetching from eventbaptism table
-$sql_eventbaptism = "select * from eventbaptism where user_id = $id";
+$sql_eventbaptism = "select * from eventbaptism where user_id =$id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 	$Country=$row['country'];
@@ -477,8 +474,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
                                         <div class="col-sm-9">
                                            <!--<input type="text" class="form-control" value=" <?php echo 'B' . htmlspecialchars($reg_id) . '';?>" disabled>-->
-                                           <input type="text" class="form-control" value=" <?php echo $baptism_id;?>" disabled> 
-                                           <input type="text" class="form-control" value=" <?php echo $Id;?>" disabled> 
+                                           <input type="text" class="form-control" value=" <?php echo 'B' . htmlspecialchars($id) . '';?>" disabled> 
                                            
                                         </div>
                                         </div>
@@ -500,7 +496,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $DOB;?>">                                            
+                                            <input type="text" class="form-control" value="<?php echo date("d-m-Y",strtotime($DOB));?>" disabled>                                            
                                         </div>
                                         </div>
                                     </div>
@@ -508,7 +504,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $DOBaptism;?>">
+                                           <input type="text" class="form-control" value="<?php echo date("d-m-Y",strtotime($DOBaptism));?>" disabled>
                                         </div>
                                         </div>
                                         
@@ -516,75 +512,75 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
                                         <div class="col-sm-9">
                                            
-                                              <input type="text" class="form-control" value="<?php echo $Padd;?>">
+                                              <input type="text" class="form-control" value="<?php echo $Padd;?>" disabled>
                                         </div>
                                         </div>
                                         <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
-                                             <input type="text" class="form-control" value="<?php echo $Cadd;?>">
+                                             <input type="text" class="form-control" value="<?php echo $Cadd;?>" disabled>
                                         </div>
                                         </div>
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Fathername;?>">
+                                            <input type="text" class="form-control" value="<?php echo $Fathername;?>" disabled>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Foccupation;?>">
+                                            <input type="text" class="form-control" value="<?php echo $Foccupation;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Mothername;?>">
+                                            <input type="text" class="form-control" value="<?php echo $Mothername;?>" disabled>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Moccupation;?>">
+                                           <input type="text" class="form-control" value="<?php echo $Moccupation;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="mobile" value="<?php echo $Mobile;?>">
+                                            <input type="text" class="form-control" name="Mobile" value="<?php echo $Mobile;?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
                                         <div class="col-sm-9">
-                                          <input type="text" class="form-control" name="email" value="<?php echo $Email;?>">
+                                          <input type="text" class="form-control" name="Email" value="<?php echo $Email;?>">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GFname;?>">
+                                            <input type="text" class="form-control" value="<?php echo $GFname;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GFdom;?>">
+                                            <input type="text" class="form-control" value="<?php echo $GFdom;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GMname;?>">
+                                            <input type="text" class="form-control" value="<?php echo $GMname;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $GMdom;?>">
+                                           <input type="text" class="form-control" value="<?php echo $GMdom;?>" disabled>
                                         </div>
                                     </div>
                                     <h5 class="card-title"><b>Diocese Info</b></h5>
@@ -593,45 +589,46 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Country</label>
                                     <div class="col-sm-9">
-                                       <input type="text" class="form-control" value="<?php echo $Country;?>"> 
+                                       <input type="text" class="form-control" value="<?php echo $Country;?>" disabled> 
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">State</label>
                                     <div class="col-sm-9">
-                                       <input type="text" class="form-control" value="<?php echo $State;?>">
+                                       <input type="text" class="form-control" value="<?php echo $State;?>" disabled>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">District</label>
                                     <div class="col-md-9">
-                                       <input type="text" class="form-control" value="<?php echo $District;?>"> 
+                                       <input type="text" class="form-control" value="<?php echo $District;?>" disabled> 
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Diocese</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $Diocese;?>">
+                                        <input type="text" class="form-control" value="<?php echo $Diocese;?>" disabled>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Church</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $Church;?>">
+                                        <input type="text" class="form-control" value="<?php echo $Church;?>" disabled>
                                     </div>
                                 </div>
                                  <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Bby;?>">
+                                           <input type="text" class="form-control" value="<?php echo $Bby;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="border-top">
                                 <div class="card-body">
-                                    <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
+                                <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
+                                    
                                    
-                                    <button type="submit" class="btn btn-danger">Cancel</button>
-                                    <button type="submit" class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
+                                    <button class="btn btn-danger">Cancel</button>
+                                    <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
                                 </div>
                             </div>
                                 </div>

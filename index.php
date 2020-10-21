@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Live-Church - Login</title>
+    <title>:: Login - Live-Church ::</title>
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <link href="dist/css/style1.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Password" name="password" tabindex="2" aria-label="Password" aria-describedby="basic-addon1" autocomplete="off">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" tabindex="2" aria-label="Password" aria-describedby="basic-addon1" autocomplete="off">
                                 </div>
                             </div>
                         </div>

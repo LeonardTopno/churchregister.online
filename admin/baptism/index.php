@@ -6,13 +6,12 @@ ob_start();
 session_start();
 if (isset($_SESSION["username"]))
 {
-	$id=$_SESSION["username"];
+	$logid=$_SESSION["username"];
 }
 else
 {
-	header("location:../index.php");
+	header("location:../../index.php");
 }
-$id=$_SESSION["username"];
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -214,7 +213,7 @@ $id=$_SESSION["username"];
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $id; ?></a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
@@ -335,7 +334,7 @@ $id=$_SESSION["username"];
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Baptism Dashboard</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">

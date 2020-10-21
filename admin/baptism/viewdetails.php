@@ -6,13 +6,12 @@ ob_start();
 session_start();
 if (isset($_SESSION["username"]))
 {
-	$id=$_SESSION["username"];
+	$logid=$_SESSION["username"];
 }
 else
 {
 	header("location:../../index.php");
 }
-$id=$_SESSION["username"];
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -212,7 +211,7 @@ $id=$_SESSION["username"];
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $id; ?></a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
                                 <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
@@ -333,7 +332,7 @@ $id=$_SESSION["username"];
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Detailed View</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -473,7 +472,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="col-sm-9">
                                            
                                             <?php
-                                                echo 'B' . htmlspecialchars($reg_id) . '';
+                                                echo 'B ' .   htmlspecialchars($id) . '';
                                             ?>
                                         </div>
                                         </div>
@@ -492,7 +491,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
                                         <div class="col-sm-9">
-                                            <?php echo $DOB;?>                                            
+                                            <?php echo date("d-m-Y",strtotime($DOB));?>                                            
                                         </div>
                                         </div>
                                         <div class="form-group row">
@@ -617,10 +616,8 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                     </div>
                                     <div class="border-top">
                                 <div class="card-body">
-                                    <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php
-                                                //echo 'B' . htmlspecialchars($_GET["Id"]) . '';
-                                                echo ($_GET["Id"]);
-                                            ?>" class="text-white">Print</a></button>
+                                    <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
+                                    class="text-white">Download</a></button>
                                     <button type="submit" class="btn btn-danger">Cancel</button>
                                     <button class="btn btn-danger"><a href="search_baptism.php" class="text-white">Back</a></button>
                                 </div>
