@@ -109,3 +109,28 @@ Stack trace:
 [14-Oct-2020 15:54:38 UTC] PHP Warning:  include(): Failed opening 'server.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/index.php on line 1
 [16-Oct-2020 07:54:21 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/server.php on line 3
 [16-Oct-2020 07:54:26 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/developer/public_html/server.php on line 3
+[20-Oct-2020 15:09:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SHA256() in /home/developer/public_html/server.php:67
+Stack trace:
+#0 /home/developer/public_html/index.php(1): include()
+#1 {main}
+  thrown in /home/developer/public_html/server.php on line 67
+[20-Oct-2020 15:09:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SHA256() in /home/developer/public_html/server.php:67
+Stack trace:
+#0 /home/developer/public_html/index.php(1): include()
+#1 {main}
+  thrown in /home/developer/public_html/server.php on line 67
+[20-Oct-2020 15:10:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SHA256() in /home/developer/public_html/server.php:67
+Stack trace:
+#0 /home/developer/public_html/index.php(1): include()
+#1 {main}
+  thrown in /home/developer/public_html/server.php on line 67
+[20-Oct-2020 15:10:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SHA256() in /home/developer/public_html/server.php:67
+Stack trace:
+#0 /home/developer/public_html/index.php(1): include()
+#1 {main}
+  thrown in /home/developer/public_html/server.php on line 67
+[20-Oct-2020 15:11:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function SHA256() in /home/developer/public_html/server.php:67
+Stack trace:
+#0 /home/developer/public_html/index.php(1): include()
+#1 {main}
+  thrown in /home/developer/public_html/server.php on line 67

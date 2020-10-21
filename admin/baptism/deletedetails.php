@@ -20,7 +20,7 @@ if($del)
 else
 {
     // display error message if not delete
-    echo "Error deleting record"; 
+    echo '<script type="text/javascript">alert("Baptism Record Not Deleted");window.location=\'edit_baptism.php\';</script>';
 }
 ?>
 
