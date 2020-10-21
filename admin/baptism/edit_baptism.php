@@ -530,7 +530,8 @@ $conn = null;
         /****************************************
          *       Basic Table                   *
          ****************************************/
-        $('#zero_config').DataTable();
+        //$('#zero_config').DataTable();
+        $('#zero_config').DataTable({"order": [0,'desc']});
     </script>
 
 </body>
