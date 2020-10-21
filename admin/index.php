@@ -362,7 +362,7 @@ else
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Online Registers, Welcome &nbsp<?php echo $logid; ?></h4>
+                                <h4 class="card-title">Online Register, Welcome &nbsp<?php echo $logid; ?></h4>
                                 <!-- Create the editor container -->
                                 <div class="row">
                                     <!-- Column -->
