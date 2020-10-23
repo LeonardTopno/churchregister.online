@@ -74,7 +74,7 @@
                                 <div class="form-group">
                                     <div class="p-t-20">
                                         <button class="btn btn-success float-left" type="submit" name="login_user">Login</button>
-                                        <button class="btn btn-info float-right" id="to-recover" type="button"><i class="fa fa-lock m-r-5"></i> Lost password?</button>
+                                        <button class="btn btn-info float-right" id="to-recover" type="button"><i class="fa fa-lock m-r-5"></i> Lost password??</button>
                                         
                                     </div>
                                 </div>
