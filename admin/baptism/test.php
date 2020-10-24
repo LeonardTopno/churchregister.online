@@ -89,6 +89,40 @@ if(!empty($state_id))
    }
    
          ?>
+
+   <!--===== dependent dropdown form============-->
+<div class="dependent-dropdown">
+<form autocomplete="off" action="">
+  <div class="input-field">
+   <select id="country">
+     <option value="">Select Country</option>
+       <?php
+        $contryData="SELECT id, name from countries";
+        $result=mysqli_query($conn,$contryData);
+        if(mysqli_num_rows($result)>0)
+        {
+          while($arr=mysqli_fetch_assoc($result))
+          {
+         ?>
+         <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+       <?php }} ?>
+   </select>
+   
+  </div>
+  <div class="input-field">
+    <select id="state">
+     <option value="">State</option>
+   </select>
+  </div>
+  <div class="input-field">
+    <select id="city">
+     <option value="">City </option>
+   </select>
+  </div>
+  
+</form>
+</div>
+<!--===== dependent dropdown form============-->
          
          
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
