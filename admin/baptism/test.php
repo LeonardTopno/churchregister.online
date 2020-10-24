@@ -6,6 +6,11 @@ include('connection.php');
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
+</head>     
+<body>
+
 <script>
 // ajax script for getting state data
 $(document).on('change','#country', function(){
@@ -47,9 +52,6 @@ $(document).on('change','#country', function(){
   </script>
 
 
-</head>     
-<body>
-
 
 <?php
 include('connection.php');
@@ -89,7 +91,7 @@ if(!empty($state_id))
          ?>
          
          
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="ajax-script.js" type="text/javascript"></script>
 </body>
 </html>
