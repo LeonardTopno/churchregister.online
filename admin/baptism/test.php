@@ -30,14 +30,14 @@ include('connection.php');
 
   <div class="input-field">
     <select id="state">
-     <option value="">State</option>
+     <option value="">State-Leo</option>
    </select>
   </div>
 
 
   <div class="input-field">
     <select id="city">
-     <option value="">City </option>
+     <option value="">City-Leo </option>
    </select>
   </div>
   
