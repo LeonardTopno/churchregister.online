@@ -12,8 +12,8 @@ include('connection.php');
 <form autocomplete="off" action="">
   <div class="input-field">
    <select id="country">
-     <option value="">Select Country</option>
-       <?php
+     <option selected="" disabled= "" value="">Select Country</option>
+       <?php  
         $contryData="SELECT id, name from countries";
         $result=mysqli_query($con,$contryData);
         if(mysqli_num_rows($result)>0)
@@ -26,11 +26,15 @@ include('connection.php');
    </select>
    
   </div>
+
+
   <div class="input-field">
     <select id="state">
      <option value="">State</option>
    </select>
   </div>
+
+
   <div class="input-field">
     <select id="city">
      <option value="">City </option>
