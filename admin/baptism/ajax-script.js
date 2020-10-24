@@ -12,8 +12,8 @@ $(document).on('change','#country', function(){
             }
         }); 
     }else{
-        $('#state').html('<option value="">Country1</option>');
-        $('#city').html('<option value=""> State1 </option>'); 
+        $('#state').html('<option value="">Country</option>');
+        $('#city').html('<option value=""> State </option>'); 
     }
 });
   // ajax script for getting  city data
@@ -30,7 +30,7 @@ $(document).on('change','#country', function(){
             }
         }); 
     }else{
-        $('#city').html('<option value="">City2</option>');
+        $('#city').html('<option value="">City</option>');
         
     }
 });
