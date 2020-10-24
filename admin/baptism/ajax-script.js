@@ -30,7 +30,7 @@ $(document).on('change','#country', function(){
             }
         }); 
     }else{
-        $('#city').html('<option value="">City</option>');
+        $('#city').html('<option value="">City </option>');
         
     }
 });
