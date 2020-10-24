@@ -1,6 +1,7 @@
 // ajax script for getting state data
 $(document).on('change','#country', function(){
     var countryID = $(this).val();
+    var countryID = "";
     if(countryID){
         $.ajax({
             type:'POST',
@@ -12,8 +13,8 @@ $(document).on('change','#country', function(){
             }
         }); 
     }else{
-        $('#state').html('<option value="">Country</option>');
-        $('#city').html('<option value=""> State </option>'); 
+        $('#state').html('<option value="">Country - Oswin</option>');
+        $('#city').html('<option value=""> State - Oswin </option>'); 
     }
 });
   // ajax script for getting  city data
