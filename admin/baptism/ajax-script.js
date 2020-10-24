@@ -1,5 +1,5 @@
 // ajax script for getting state data
-$(document).on('change','#country1', function(){
+$(document).on('change','#country', function(){
     var countryID = $(this).val();
     if(countryID){
         $.ajax({
@@ -17,7 +17,7 @@ $(document).on('change','#country1', function(){
     }
 });
   // ajax script for getting  city data
- $(document).on('change','#state1', function(){
+ $(document).on('change','#state', function(){
     var stateID = $(this).val();
     if(stateID){
         $.ajax({
