@@ -52,7 +52,7 @@ $(document).on('change','#country', function(){
 
 
 <?php
-include('database.php');
+include('connection.php');
 // Fetching state data
 $country_id=!empty($_POST['country_id'])?$_POST['country_id']:'';
 if(!empty($country_id))
