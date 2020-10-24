@@ -800,6 +800,9 @@ $id=$_SESSION["username"];
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
 
+    <!---->
+    <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
+
 </body>
 
 </html>
