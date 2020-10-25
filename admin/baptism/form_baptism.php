@@ -362,7 +362,7 @@ $id=$_SESSION["username"];
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
     <script src="../../includes/scripts/dependent-dropdown.js"></script>
-    <!--<script src="ajax-script.js" type="text/javascript"></script>-->
+    <script src="ajax-script.js" type="text/javascript"></script>
 
 </body>
 
