@@ -426,7 +426,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $sql_eventbaptism = "select * from eventbaptism where user_id = $id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
-	$Country=$row['country_id'];
+	$Country_id=$row['country_id'];
 	$State=$row['states'];
 	$District=$row['district'];
 	$Diocese=$row['diocese'];
@@ -436,7 +436,13 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 	$GFdom=$row['godfather_domicile'];
 	$GMname=$row['godmother_name'];
 	$GMdom=$row['godmother_domicile'];
-	$DOBaptism=$row['bapt_date'];
+    $DOBaptism=$row['bapt_date'];
+    
+// Fetching from countries table
+$sql_countries = "SELECT * FROM countries WHERE id = $Country_id";
+$result2 = mysqli_query($con, $sql_countries);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $Country = $row['name'];
 
 ?> 
 					<div class="row">
