@@ -12,7 +12,7 @@ if(!empty($country_id))
           while($arr=mysqli_fetch_assoc($result))
           {
             echo "<option value='".$arr['id']."'>".$arr['name']."</option><br>";
-        
+         
           }
         }  
    }
