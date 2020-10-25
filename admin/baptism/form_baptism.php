@@ -40,18 +40,13 @@ $id=$_SESSION["username"];
 </head>
 
 <body oncontextmenu="return false;">
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
     <div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
         </div>
-    </div>
-    <!-- ============================================================== -->
+    </div>    
     <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
     <div id="main-wrapper">
         <?php include('../includes/frontend/inc-header.php')?>
         
@@ -83,24 +78,13 @@ $id=$_SESSION["username"];
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
+            
             <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Sales Cards  -->
-                <!-- ============================================================== -->
-                
-                
+                 
                 <?php include('bapt-includes/modal.php'); ?>
-                
-
-
-
-                <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <div class="row">
                     <div class="col-md-8">
@@ -316,33 +300,14 @@ $id=$_SESSION["username"];
 					</div>
 				</div>
 			</div>
-                   
-                            
-                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
             <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+        <?php include('../includes/frontend/inc-footer.php')?>
         </div>
-        <!-- ============================================================== -->
         <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
     <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
+   
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
@@ -365,7 +330,6 @@ $id=$_SESSION["username"];
     <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
-
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
 
