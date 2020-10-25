@@ -18,7 +18,8 @@ $(document).on('change','#country', function(){
         $('#city').html('<option value=""> State - Oswin  </option>'); 
     }
 });
-  // ajax script for getting  city data
+
+// ajax script for getting  city data
  $(document).on('change','#state', function(){
     var stateID = $(this).val();
     if(stateID){
