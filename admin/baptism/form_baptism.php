@@ -361,8 +361,8 @@ $id=$_SESSION["username"];
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
-    <script src="../../includes/scripts/dependent-dropdown.js"></script>
-    <script src="ajax-script.js" type="text/javascript"></script>
+    <script src="../includes/scripts/dependent-dropdown.js"></script>
+    <!--<script src="ajax-script.js" type="text/javascript"></script>-->
 
 </body>
 
