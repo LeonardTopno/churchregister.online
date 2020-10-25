@@ -235,6 +235,14 @@ $id=$_SESSION["username"];
                                             <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman </label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Fr./Priest Name">
+                                        </div>
+                                    </div>
+
                                     <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
                                     
                                         <!--<div class="form-group row">-->
@@ -271,19 +279,8 @@ $id=$_SESSION["username"];
                                                 <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
                                                 <?php }} ?>
                                         </select>
-                                           <!-- <input type="text" class="form-control" name="country" id="country" value="" placeholder="Write Here" autocomplete="off" required>-->
                                         </div>
                                     </div>
-
-<!--
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="country" id="country" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
--->
-
 
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
@@ -293,15 +290,7 @@ $id=$_SESSION["username"];
                                             </select>
                                         </div>
                                     </div>
-
-                                    
- <!--                                   <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="states" id="states" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
- -->                                 
+                                
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">District</label>
                                         <div class="col-sm-9">
@@ -323,14 +312,9 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Minister: </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Father/Priest Name">
-                                        </div>
-                                    </div>
+                                    <!--Control Buttons Section-->
                                     <div class="border-top">
-                                <div class="card-body">
+                                    <div class="card-body">
                                     <button type="submit" class="btn btn-success">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
                                     <button type="submit" class="btn btn-danger">Cancel</button>

@@ -29,8 +29,7 @@ $(document).on('change','#country', function(){
             url:'../includes/backend-script.php',
             data:{'state_id':stateID},
             success:function(result){
-                $('#city').html(result);
-               
+                $('#city').html(result);  
             }
         }); 
     }else{

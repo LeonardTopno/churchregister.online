@@ -8,7 +8,7 @@ if(!empty($country_id)){
     $result=mysqli_query($conn, $contryData);
     
     if(mysqli_num_rows($result)>0){
-        echo "<option value=''>Select State 1</option>";
+        echo "<option value='' selected='' disabled=''>Select State 1</option>";
         while($arr=mysqli_fetch_assoc($result)){
             echo "<option value='".$arr['id']."'>".$arr['name']."</option><br>";
         }
