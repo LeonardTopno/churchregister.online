@@ -1,5 +1,6 @@
 <?php
-include('./includes/dbConnect.php');
+#include('./includes/dbConnect.php');
+require('./includes/dbConnect.php');
 ?>
 <!DOCTYPE html>
 <html>
