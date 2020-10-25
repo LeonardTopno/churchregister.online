@@ -6,8 +6,7 @@ include('../includes/dbConnect.php');
 session_start();
 if (isset($_SESSION["username"])){
 	$id=$_SESSION["username"];
-}
-else{
+}else{
 	header("location:../../index.php");
 }
 $id=$_SESSION["username"];
@@ -24,7 +23,7 @@ $id=$_SESSION["username"];
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Baptism Form</title>
+    <title>Baptism Form - Add Record</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -142,37 +141,46 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     </div>
+                                    <!--Parents'  Details Section-->
+                                    <h5 class="card-title"><b>Parents' Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
 
-                                        <div class="form-group row">
-                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
+                                    <div class="form-group row">
+                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="fathername" id="fathername" value="" placeholder="Father's Name Here" required>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Surname</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="fathersname" id="fathersname"  value="" placeholder="Father's Surname Here" required>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="foccupation" id="foccupation" value="" placeholder="Occupation">
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="mothername" id="mothername"  value="" placeholder="Mother's Name Here" required>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Surname</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="mothersname" id="mothersname"  value="" placeholder="Mother's Surname Here" required>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
                                         <div class="col-sm-9">
@@ -318,11 +326,10 @@ $id=$_SESSION["username"];
                                     <button type="submit" class="btn btn-danger">Cancel</button>
                                 </div>
                             </div>
-                                </div>
-                                </div>
-								</div>
-							</form>
-							<!-- Insert Query Starts -->
+                        </div>
+                    </div>
+				</div>
+			</form>
 					</div>
 				</div>
 			</div>
