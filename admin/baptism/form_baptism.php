@@ -88,7 +88,7 @@ $id=$_SESSION["username"];
                         <div class="card">
                             <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Baptism Info</h4>
+                                    <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">First Name</label>
                                         <div class="col-sm-9">
@@ -134,7 +134,6 @@ $id=$_SESSION["username"];
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
                                         <div class="col-sm-9">
                                             <input type="date" class="form-control mydatepicker" id="dobaptism" name="dobaptism">
-                                            
                                         </div>
                                         </div>
                                         
@@ -148,7 +147,6 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     </div>
-
 
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
