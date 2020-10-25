@@ -123,13 +123,20 @@ $id=$_SESSION["username"];
                                         </div>
                                         </div>
                                     </div>
+
                                     <div>
                                         <div class="form-group row">
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
                                         <div class="col-sm-9">
                                             <input type="date" class="form-control mydatepicker" id="dobaptism" name="dobaptism">
                                         </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
+                                        <div class="col-sm-9">
                                         </div>
+                                    </div>
                                         
                                         <div class="form-group row">
                                     <label class="col-md-3">Upload Photo</label>
@@ -142,7 +149,7 @@ $id=$_SESSION["username"];
                                     </div>
                                     </div>
                                     <!--Parents'  Details Section-->
-                                    <h5 class="card-title"><b>Parents' Details</b></h5>
+                                    <h5 class="card-title"><b>Parents' and Sponsors' Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
 
@@ -210,13 +217,6 @@ $id=$_SESSION["username"];
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Domicile</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman </label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Fr./Priest Name">
                                         </div>
                                     </div>
 
