@@ -1,7 +1,6 @@
 // ajax script for getting state data
 $(document).on('change','#country', function(){
     var countryID = $(this).val();
-    var countryID = "";
     if(countryID){
         $.ajax({
             type:'POST',
