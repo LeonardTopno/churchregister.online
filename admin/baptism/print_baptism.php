@@ -98,10 +98,10 @@ $pdf->SetFont('Arial','',10);
 //$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,190, htmlspecialchars($fname) .' '. htmlspecialchars($MName).' '. htmlspecialchars($LName).'',0,0,L,false);
 
-// Sex
+// GENDER
 $pdf->SetXY(30,280);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'SEX',0,0,L,false); 
+$pdf->Cell(30,10,'GENDER',0,0,L,false); 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
 //$pdf->Cell(40,10,$id,0,0,L,false);
@@ -141,7 +141,7 @@ $pdf->Cell(60,430, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothe
 // Male Sponsor and Domicile
 $pdf->SetXY(30,400);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'MALE SPONSOR / DOMICILE',0,0,L,false); 
+$pdf->Cell(30,10,'SPONSOR(M) / DOMICILE',0,0,L,false); 
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
@@ -151,12 +151,12 @@ $pdf->Cell(60,490, htmlspecialchars($GFname) . ' / '. htmlspecialchars($GFdom),0
 // Female Sponsor
 $pdf->SetXY(30,430);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'FEMALE SPONSOR',0,0,L,false); 
+$pdf->Cell(30,10,'SPONSOR(F) / DOMICILE',0,0,L,false); 
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
 //$pdf->Cell(40,10,$id,0,0,L,false);
-$pdf->Cell(60,550, htmlspecialchars($GMname) . '',0,0,L,false);
+$pdf->Cell(60,550, htmlspecialchars($GMname) . ' / '. htmlspecialchars($GMdom),0,0,L,false);
 
 
 // Minister
