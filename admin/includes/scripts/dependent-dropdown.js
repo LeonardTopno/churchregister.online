@@ -4,13 +4,11 @@ $(document).on('change','#country', function(){
     if(countryID){
         $.ajax({
             type:'POST',
-            //url:'backend-script.php',
-            url:'../includes/backend-script.php',
+            url:'../includes/dependent-dropdown.php',
             data:{'country_id':countryID},
             success:function(result){
                 //console.log(result);
-                $('#state').html(result);
-               
+                $('#state').html(result);  
             }
         }); 
     }else{
@@ -25,8 +23,7 @@ $(document).on('change','#country', function(){
     if(stateID){
         $.ajax({
             type:'POST',
-            //url:'backend-script.php',
-            url:'../includes/backend-script.php',
+            url:'../includes/dependent-dropdown.php',
             data:{'state_id':stateID},
             success:function(result){
                 $('#city').html(result);  
