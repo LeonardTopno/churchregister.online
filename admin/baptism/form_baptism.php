@@ -1,20 +1,18 @@
 <?php 
 ob_start(); 
 include('../includes/dbConnect.php');
-?>
-<!--  Session Starts   -->
-<?php 
+
+# Session Starts
 session_start();
-if (isset($_SESSION["username"]))
-{
+if (isset($_SESSION["username"])){
 	$id=$_SESSION["username"];
 }
-else
-{
+else{
 	header("location:../../index.php");
 }
 $id=$_SESSION["username"];
 ?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -56,10 +54,8 @@ $id=$_SESSION["username"];
         
         <!-- Page wrapper  -->
         
-        <div class="page-wrapper">
-            <!-- ============================================================== -->
+        <div class="page-wrapper">   
             <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
@@ -82,7 +78,6 @@ $id=$_SESSION["username"];
             <div class="container-fluid">
                  
                 <?php include('bapt-includes/modal.php'); ?>
-                <!-- Recent comment and chats -->
                 <div class="row">
                     <div class="col-md-8">
                         <div class="card">
@@ -182,18 +177,6 @@ $id=$_SESSION["username"];
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="moccupation" id="moccupation" value="" placeholder="Occupation">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="mobile" id="mobile" value="" placeholder="Mobile Number" autocomplete="off" Maxlength="10" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="email" id="email" value="" placeholder="E Mail" autocomplete="off" required>
                                         </div>
                                     </div>
                                     
@@ -377,8 +360,6 @@ $id=$_SESSION["username"];
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
     <script src="../includes/scripts/dependent-dropdown.js"></script>
-    <!--<script src="ajax-script.js" type="text/javascript"></script>-->
-
 </body>
 
 </html>
