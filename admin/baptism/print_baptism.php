@@ -173,7 +173,7 @@ $pdf->Cell(60,600, htmlspecialchars($Minister) . '',0,0,L,false);
 //
 //$pdf->SetXY(30,110);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(5,550,'Certified that the above is a true extract from the Register of Baptism kept at .................',0,0,L,false);
+$pdf->Cell(5,610,'Certified that the above is a true extract from the Register of Baptism kept at .................',0,0,L,false);
 
 
 //
