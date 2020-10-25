@@ -20,7 +20,7 @@ for( $j=1;$j<=12;$j++){
 $pdf->Line(180,480,180,150);
 
 // Certificate Header
-$pdf->SetFont('Arial','',16);
+$pdf->SetFont('Arial','B',16);
 $pdf->SetXY(170,50);
 $pdf->Cell(80,10,'RANCHI CATHOLIC ARCHDIOCESE');
 
