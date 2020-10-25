@@ -6,7 +6,7 @@ $(document).on('change','#country', function(){
         $.ajax({
             type:'POST',
             //url:'backend-script.php',
-            url:'./includes/backend-script.php',
+            url:'../includes/backend-script.php',
             data:{'country_id':countryID},
             success:function(result){
                 //console.log(result);
@@ -26,7 +26,7 @@ $(document).on('change','#country', function(){
         $.ajax({
             type:'POST',
             //url:'backend-script.php',
-            url:'./includes/backend-script.php',
+            url:'../includes/backend-script.php',
             data:{'state_id':stateID},
             success:function(result){
                 $('#city').html(result);
