@@ -1,5 +1,6 @@
 <?php 
 ob_start(); 
+include('../includes/dbConnect.php');
 ?>
 <!--  Session Starts   -->
 <?php 
@@ -239,14 +240,57 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     <h5 class="card-title"><b>Parish/Diocese Info</b></h5>
+                                    
+                                        <!--<div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">Country</label>-->
+    <!--                                <div class="col-sm-9">-->
+    <!--                                    <select class="select2 form-control custom-select" name="country" style="width: 100%; height:36px;">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="AK">Alaska</option>-->
+    <!--                                            <option value="HI">Hawaii</option>-->
+    <!--                                            <option value="IN">India</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+                                    
+                                    
+                                    
                                     <div class="border-top"></div><br>
                                     
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
+                                        <div class="col-sm-9">
+                                        <select class="select2 form-control custom-select" name="country" id="country" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Country </option>
+                                            <?php  
+                                                $contryData="SELECT id, name from countries";
+                                                $result=mysqli_query($conn,$contryData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                        </select>
+                                           <!-- <input type="text" class="form-control" name="country" id="country" value="" placeholder="Write Here" autocomplete="off" required>-->
+                                        </div>
+                                    </div>
+
+<!--
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="country" id="country" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
+-->
+
+
+
+
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
