@@ -119,7 +119,6 @@ $id=$_SESSION["username"];
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
                                         <div class="col-sm-9">
                                             <input type="date" class="form-control mydatepicker" id="dob" name="dob" max="2020-09-31">
-                                            
                                         </div>
                                         </div>
                                     </div>
@@ -131,23 +130,24 @@ $id=$_SESSION["username"];
                                             <input type="date" class="form-control mydatepicker" id="dobaptism" name="dobaptism">
                                         </div>
                                     </div>
+ 
+                                    <div class="form-group row">
+                                    <label class="col-md-3">Upload Photo(Optional)</label>
+                                        <div class="col-md-9">
+                                            <div class="custom-file">
+                                                <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" >
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
                                         </div>
                                     </div>
-                                        
-                                        <div class="form-group row">
-                                    <label class="col-md-3">Upload Photo</label>
-                                    <div class="col-md-9">
-                                        <div class="custom-file">
-                                            <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" >
-                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
-                                        </div>
-                                    </div>
-                                    </div>
+
                                     <!--Parents'  Details Section-->
                                     <h5 class="card-title"><b>Parents' and Sponsors' Details</b></h5>
                                                                     
