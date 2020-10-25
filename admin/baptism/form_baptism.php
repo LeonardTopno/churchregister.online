@@ -288,7 +288,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
                                         <div class="col-sm-9">
-                                            <select class="select2 form-control custom-select" name="state" style="width: 100%; height:36px;">
+                                            <select class="select2 form-control custom-select" name="state" id="state" style="width: 100%; height:36px;">
                                                 <option selected="" disabled=""> Select State Leo </option>                            
                                             </select>
                                         </div>
