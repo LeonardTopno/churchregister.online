@@ -17,7 +17,7 @@ for( $j=1;$j<=12;$j++){
 }
 
 // Vertical Line
-$pdf->Line(180,480,180,150);
+$pdf->Line(200,480,200,150);
 
 // Certificate Header
 $pdf->SetFont('Arial','B',16);
