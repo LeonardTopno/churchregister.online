@@ -303,6 +303,7 @@ $id=$_SESSION["username"];
             </div>
             <!-- End Container fluid  -->
         <?php include('../includes/frontend/inc-footer.php')?>
+        
         </div>
         <!-- End Page wrapper  -->
     </div>
