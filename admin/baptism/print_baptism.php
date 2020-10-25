@@ -110,7 +110,7 @@ $pdf->Cell(40,250, htmlspecialchars($gender) . '',0,0,L,false);
 // Father's name 
 $pdf->SetXY(30,310);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,"FATHER NAME",0,0,L,false);
+$pdf->Cell(30,10,"FATHER'S NAME",0,0,L,false);
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
@@ -131,7 +131,7 @@ $pdf->Cell(60,370, htmlspecialchars($Foccupation)  .'',0,0,L,false);
 // Mother's name
 $pdf->SetXY(30,370);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,"MOTHER NAME",0,0,L,false); 
+$pdf->Cell(30,10,"MOTHER'S NAME",0,0,L,false); 
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
@@ -141,7 +141,7 @@ $pdf->Cell(60,430, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothe
 // Male Sponsor and Domicile
 $pdf->SetXY(30,400);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'SPONSOR(M) / DOMICILE',0,0,L,false); 
+$pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
@@ -151,7 +151,7 @@ $pdf->Cell(60,490, htmlspecialchars($GFname) . ' / '. htmlspecialchars($GFdom),0
 // Female Sponsor
 $pdf->SetXY(30,430);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'SPONSOR(F) / DOMICILE',0,0,L,false); 
+$pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(190,160);
 $pdf->SetFont('Arial','',10);
