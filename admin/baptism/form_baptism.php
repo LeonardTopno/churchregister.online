@@ -148,18 +148,8 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     </div>
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control" name="padd" id="padd"  required></textarea>
-                                        </div>
-                                        </div>
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control" name="cadd" id="cadd"  required></textarea>
-                                        </div>
-                                        </div>
+
+
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
@@ -209,8 +199,6 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     
-                                    
-                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Name</label>
                                         <div class="col-sm-9">
@@ -243,6 +231,41 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
 
+                                    <!--Contact Details Section-->
+                                    <h5 class="card-title"><b>Contact Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
+
+                                    
+                                    <div class="form-group row">
+                                    <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="padd" id="padd"  required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="cadd" id="cadd"  required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mobile" id="mobile" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="email" id="email" value="" placeholder="E Mail" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <!--Home Parish Section Details Section-->
                                     <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
