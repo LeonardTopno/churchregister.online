@@ -25,7 +25,6 @@ $id=$_SESSION["username"];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title>Baptism Form</title>
     <!-- Custom CSS -->
@@ -55,8 +54,6 @@ $id=$_SESSION["username"];
     
         <?php include('../includes/frontend/inc-sidebar.php')?>
         
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        
         <!-- Page wrapper  -->
         
         <div class="page-wrapper">
@@ -82,7 +79,6 @@ $id=$_SESSION["username"];
             
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- Container fluid  -->
-            <!-- ============================================================== -->
             <div class="container-fluid">
                  
                 <?php include('bapt-includes/modal.php'); ?>
@@ -239,7 +235,7 @@ $id=$_SESSION["username"];
                                             <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
-                                    <h5 class="card-title"><b>Parish/Diocese Info</b></h5>
+                                    <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
                                     
                                         <!--<div class="form-group row">-->
     <!--                                <label class="col-md-3 m-t-15">Country</label>-->
@@ -289,16 +285,23 @@ $id=$_SESSION["username"];
 -->
 
 
-
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="state" style="width: 100%; height:36px;">
+                                                <option selected="" disabled=""> Select State Leo </option>                            
+                                            </select>
+                                        </div>
+                                    </div>
 
                                     
-                                    <div class="form-group row">
+ <!--                                   <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="states" id="states" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
-                                    
+ -->                                 
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">District</label>
                                         <div class="col-sm-9">
@@ -377,6 +380,7 @@ $id=$_SESSION["username"];
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
+    <script src="ajax-script.js" type="text/javascript"></script>
 
 </body>
 
