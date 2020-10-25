@@ -1,5 +1,5 @@
 <?php
-include('./includes/dbConnect.php');
+include('dbConnect.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +15,7 @@ include('./includes/dbConnect.php');
      <option selected="" disabled= "" value="">Select Country</option>
        <?php  
         $contryData="SELECT id, name from countries";
-        $result=mysqli_query($con,$contryData);
+        $result=mysqli_query($conn,$contryData);
         if(mysqli_num_rows($result)>0)
         {
           while($arr=mysqli_fetch_assoc($result))
