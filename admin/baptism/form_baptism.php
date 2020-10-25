@@ -244,22 +244,7 @@ $id=$_SESSION["username"];
                                     </div>
 
                                     <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
-                                    
-                                        <!--<div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">Country</label>-->
-    <!--                                <div class="col-sm-9">-->
-    <!--                                    <select class="select2 form-control custom-select" name="country" style="width: 100%; height:36px;">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="AK">Alaska</option>-->
-    <!--                                            <option value="HI">Hawaii</option>-->
-    <!--                                            <option value="IN">India</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-                                    
-                                    
-                                    
+                                                                    
                                     <div class="border-top"></div><br>
                                     
                                     <div class="form-group row">
@@ -286,16 +271,16 @@ $id=$_SESSION["username"];
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
                                         <div class="col-sm-9">
                                             <select class="select2 form-control custom-select" name="state" id="state" style="width: 100%; height:36px;">
-                                                <option selected="" disabled=""> Select State Leo </option>                            
+                                                <option selected="" disabled=""> Select State</option>                            
                                             </select>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">City</label>
                                         <div class="col-sm-9">
                                             <select class="select2 form-control custom-select" name="city" id="city" style="width: 100%; height:36px;">
-                                                <option selected="" disabled=""> Select City Leo </option>                            
+                                                <option selected="" disabled=""> Select City</option>                            
                                             </select>
                                         </div>
                                     </div>
