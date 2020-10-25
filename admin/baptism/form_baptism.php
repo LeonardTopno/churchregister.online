@@ -145,6 +145,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Priest Name">
                                         </div>
                                     </div>
 
