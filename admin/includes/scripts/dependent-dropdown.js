@@ -19,7 +19,8 @@ $(document).on('change','#country', function(){
 
 // ajax script for getting  city data
  $(document).on('change','#state', function(){
-    var stateID = $(this).val();
+    //var stateID = $(this).val();
+    var stateID = 1;
     if(stateID){
         $.ajax({
             type:'POST',
