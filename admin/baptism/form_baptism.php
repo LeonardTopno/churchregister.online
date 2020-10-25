@@ -53,195 +53,16 @@ $id=$_SESSION["username"];
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar" data-navbarbg="skin5">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header" data-logobg="skin5">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon -->
-                        <b class="logo-icon p-l-10">
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="../../assets/images/logo-icon.png" alt="homepage" class="light-logo" />
-                           
-                        </b>
-                        <!--End Logo icon -->
-                         <!-- Logo text -->
-                        <span class="logo-text">
-                             <!-- dark Logo text -->
-                             <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
-                            
-                        </span>
-                        <!-- Logo icon -->
-                        <!-- <b class="logo-icon"> -->
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-                            
-                        <!-- </b> -->
-                        <!--End Logo icon -->
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Toggle which is visible on mobile only -->
-                    <!-- ============================================================== -->
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
-                        <!-- ============================================================== -->
-                        <!-- create new -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>
-                             <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>   
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>
-                            </form>
-                        </li>
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- Right side toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Comment -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell font-24"></i>
-                            </a>
-                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- End Comment -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Messages -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-comment-processing"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-                                <ul class="list-style-none">
-                                    <li>
-                                        <div class="">
-                                             <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Event today</h5> 
-                                                        <span class="mail-desc">Just a reminder that event</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Settings</h5> 
-                                                        <span class="mail-desc">You can customize this template</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Pavan kumar</h5> 
-                                                        <span class="mail-desc">Just see the my admin!</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Luanch Admin</h5> 
-                                                        <span class="mail-desc">Just see the my new admin!</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $id; ?></a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
-                                <div class="dropdown-divider"></div>
-                                <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
+        <?php include('../includes/frontend/inc-header.php')?>
+        
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
+    
         <?php include('../includes/frontend/inc-sidebar.php')?>
-        <!-- ============================================================== -->
+        
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
+        
         <!-- Page wrapper  -->
-        <!-- ============================================================== -->
+        
         <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
@@ -410,30 +231,30 @@ $id=$_SESSION["username"];
                                     
                                     
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GFname" id="GFname" value="" placeholder="God Father Name" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Domicile</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GMname" id="GMname" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Domicile</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
-                                    <h5 class="card-title"><b>Diocese Info</b></h5>
+                                    <h5 class="card-title"><b>Parish/Diocese Info</b></h5>
                                     <div class="border-top"></div><br>
                                     
                                     <div class="form-group row">
@@ -471,100 +292,8 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     
-                                    
-                                    
-    <!--                            <div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">Country</label>-->
-    <!--                                <div class="col-sm-9">-->
-    <!--                                    <select class="select2 form-control custom-select" name="country" style="width: 100%; height:36px;">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="AK">Alaska</option>-->
-    <!--                                            <option value="HI">Hawaii</option>-->
-    <!--                                            <option value="IN">India</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                            <div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">State</label>-->
-    <!--                                <div class="col-sm-9">-->
-    <!--                                    <select class="select2 form-control custom-select" name="state" style="width: 100%; height:36px;">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>-->
-    <!--<option value="Andhra Pradesh">Andhra Pradesh</option>-->
-    <!--<option value="Arunachal Pradesh">Arunachal Pradesh</option>-->
-    <!--<option value="Assam">Assam</option>-->
-    <!--<option value="Bihar">Bihar</option>-->
-    <!--<option value="Chandigarh">Chandigarh</option>-->
-    <!--<option value="Chhattisgarh">Chhattisgarh</option>-->
-    <!--<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>-->
-    <!--<option value="Daman and Diu">Daman and Diu</option>-->
-    <!--<option value="Delhi">Delhi</option>-->
-    <!--<option value="Goa">Goa</option>-->
-    <!--<option value="Gujarat">Gujarat</option>-->
-    <!--<option value="Haryana">Haryana</option>-->
-    <!--<option value="Himachal Pradesh">Himachal Pradesh</option>-->
-    <!--<option value="Jammu and Kashmir">Jammu and Kashmir</option>-->
-    <!--<option value="Jharkhand">Jharkhand</option>-->
-    <!--<option value="Karnataka">Karnataka</option>-->
-    <!--<option value="Kerala">Kerala</option>-->
-    <!--<option value="Lakshadweep">Lakshadweep</option>-->
-    <!--<option value="Madhya Pradesh">Madhya Pradesh</option>-->
-    <!--<option value="Maharashtra">Maharashtra</option>-->
-    <!--<option value="Manipur">Manipur</option>-->
-    <!--<option value="Meghalaya">Meghalaya</option>-->
-    <!--<option value="Mizoram">Mizoram</option>-->
-    <!--<option value="Nagaland">Nagaland</option>-->
-    <!--<option value="Orissa">Orissa</option>-->
-    <!--<option value="Pondicherry">Pondicherry</option>-->
-    <!--<option value="Punjab">Punjab</option>-->
-    <!--<option value="Rajasthan">Rajasthan</option>-->
-    <!--<option value="Sikkim">Sikkim</option>-->
-    <!--<option value="Tamil Nadu">Tamil Nadu</option>-->
-    <!--<option value="Tripura">Tripura</option>-->
-    <!--<option value="Uttaranchal">Uttaranchal</option>-->
-    <!--<option value="Uttar Pradesh">Uttar Pradesh</option>-->
-    <!--<option value="West Bengal">West Bengal</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                            <div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">District</label>-->
-    <!--                                <div class="col-md-9">-->
-    <!--                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="district">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="RNC">Ranchi</option>-->
-    <!--                                            <option value="SBJ">Sahibganj</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                            <div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">Diocese</label>-->
-    <!--                                <div class="col-md-9">-->
-    <!--                                    <select class="select2 form-control custom-select" name="diocese" style="width: 100%; height:36px;">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="RANCHI">Ranchi Archdiocese</option>-->
-    <!--                                            <option value="KHUNTI">Khunti Diocese</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
-    <!--                            <div class="form-group row">-->
-    <!--                                <label class="col-md-3 m-t-15">Church</label>-->
-    <!--                                <div class="col-md-9">-->
-    <!--                                    <select class="select2 form-control custom-select" name="church" style="width: 100%; height:36px;">-->
-    <!--                                        <option>-Select-</option>-->
-    <!--                                            <option value="SM">St Maria Cathedral</option>-->
-    <!--                                            <option value="LC">St Luke Church</option>-->
-    <!--                                            <option value="DK">Don Bosco Church Kokar</option>-->
-    <!--                                        </optgroup>-->
-    <!--                                    </select>-->
-    <!--                                </div>-->
-    <!--                            </div>-->
                                     <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Minister: </label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Father/Priest Name">
                                         </div>
