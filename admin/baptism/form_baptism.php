@@ -235,7 +235,7 @@ $id=$_SESSION["username"];
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <?php require('../includes/frontend/inc-sidebar.php')?>
+        <?php include('../includes/frontend/inc-sidebar.php')?>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
