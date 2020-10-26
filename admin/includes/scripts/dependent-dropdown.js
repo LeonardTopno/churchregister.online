@@ -19,13 +19,12 @@ $(document).on('change','#country', function(){
 
 // ajax script for getting  city data
  $(document).on('change','#state', function(){
-    //var stateID = $(this).val();
-    var stateID = 1;
+    var stateID = $(this).val();
     if(stateID){
         $.ajax({
             type:'POST',
             url:'../includes/dependent-dropdown.php',
-            data:{'state_id':stateID},
+            data:{'id':stateID},
             success:function(result){
                 $('#city').html(result);  
             }
