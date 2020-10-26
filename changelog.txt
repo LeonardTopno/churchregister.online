@@ -1,0 +1,35 @@
+Keep a change log to describe all the changes made to program source files. The purpose of this is so that people investigating
+bugs in the future will know about the changes that might have introduced the bug. Often a new bug can be found by looking at
+what was recently changed. More importantly, change logs can help you eliminate conceptual inconsistencies between different
+parts of a program, by giving you a history of how the conflicting concepts arose and who they came from.
+
+=========================================================================
+				Church Register Change Log
+=========================================================================
+
+	Copyright 2020 Migids Software LLC
+
+=========================================================================
+						Changelog Legend:
+=========================================================================
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Changes
+[x] = Deleted
+[!] = Bugs
+
+======================  Versioning Legend 6.6.9 ===========================
+
+[1] MAJOR version when you make major changes
+[2] MINOR version when you add a features or functions
+[3] PATCH version when you make bug fixes or minor feature adjustments
+===========================================================================
+[August 16, 2020] Version 6.6.9.3 WP Dating | 16th August 2020
+1) [+] Email is sent to Admin when a Membership Plan is purchased
+    - Files Changed : members > loggedin > settings > upgrade_accounts > dsp_thank_you > dsp_thank_you.php 
+        i) Replicated User Mail Function for admin : 
+            $result2 = $wpdating_email->send_mail( $admin_email, $subject2, $message2);
+
+===========================================================================
