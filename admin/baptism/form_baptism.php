@@ -291,18 +291,22 @@ $id=$_SESSION["username"];
 
 
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
+                                        <label for="diocese-name" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="diocese" id="diocese" value="" placeholder="Write Here" autocomplete="off" required>
+                                            <select class="select2 form-control custom-select" name="diocese" id="diocese" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Diocese</option>                            
+                                            </select>
                                         </div>
                                     </div>
 
 
                                     
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Church</label>
+                                        <label for="parish" class="col-sm-3 text-left control-label col-form-label">Parish</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="church" id="church" value="" placeholder="Write Here" autocomplete="off" required>
+                                            <select class="select2 form-control custom-select" name="parish" id="parish" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Parish</option>                            
+                                            </select>
                                         </div>
                                     </div>
 
