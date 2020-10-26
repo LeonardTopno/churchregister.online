@@ -281,13 +281,40 @@ $id=$_SESSION["username"];
                                     </div>
 
                                     <div class="form-group row">
+                                        <label for="province-name" class="col-sm-3 text-left control-label col-form-label">Province</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="province" id="province" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Province</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="diocese" id="diocese" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+
+
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Church</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="church" id="church" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
                                         <div class="col-sm-9">
                                             <select class="select2 form-control custom-select" name="state" id="state" style="width: 100%; height:36px;">
                                                 <option selected="" disabled=""> Select State</option>                            
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> 
 
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">City</label>
@@ -297,6 +324,9 @@ $id=$_SESSION["username"];
                                             </select>
                                         </div>
                                     </div>
+
+
+
                                 
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">District</label>
@@ -305,19 +335,8 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="diocese" id="diocese" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
                                     
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Church</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="church" id="church" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
+                                    
                                     
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
