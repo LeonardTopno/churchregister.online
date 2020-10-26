@@ -19,7 +19,7 @@ if(!empty($country_id)){
 
 $state_id=!empty($_POST['state_id'])?$_POST['state_id']:'';
 if(!empty($state_id)){
-    $cityData="SELECT id, name from cities WHERE state_id=$state_id";
+    $cityData="SELECT city_id, name from cities WHERE state_id=$state_id";
     $result=mysqli_query($conn, $cityData);
     if(mysqli_num_rows($result)>0){
         echo "<option value=''selected='' disabled=''>select city</option>";

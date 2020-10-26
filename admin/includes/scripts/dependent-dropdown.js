@@ -24,7 +24,7 @@ $(document).on('change','#country', function(){
         $.ajax({
             type:'POST',
             url:'../includes/dependent-dropdown.php',
-            data:{'id':stateID},
+            data:{'state_id':stateID},
             success:function(result){
                 $('#city').html(result);  
             }
