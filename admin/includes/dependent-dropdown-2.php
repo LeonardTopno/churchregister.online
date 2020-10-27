@@ -8,7 +8,7 @@ if(!empty($country_id)){
     $result=mysqli_query($conn, $provinceData);
     
     if(mysqli_num_rows($result)>0){
-        echo "<option value='' selected='' disabled=''>select state</option>";
+        echo "<option value='' selected='' disabled=''>select province</option>";
         while($arr=mysqli_fetch_assoc($result)){
             echo "<option value='".$arr['province_id']."'>".$arr['name']."</option><br>";
         }
@@ -22,7 +22,7 @@ if(!empty($province_id)){
     $dioceseData="SELECT diocese_id, diocese_name from diocese WHERE province_id=$province_id";
     $result=mysqli_query($conn, $dioceseData);
     if(mysqli_num_rows($result)>0){
-        echo "<option value=''selected='' disabled=''>select province</option>";
+        echo "<option value=''selected='' disabled=''>select diocese</option>";
         while($arr=mysqli_fetch_assoc($result)){
             echo "<option value='".$arr['diocese_id']."'>".$arr['diocese_name']."</option><br>";
         }
