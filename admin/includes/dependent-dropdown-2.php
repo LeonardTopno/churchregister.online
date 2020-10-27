@@ -35,7 +35,7 @@ if(!empty($province_id)){
 
 $diocese_id=!empty($_POST['diocese_id'])?$_POST['diocese_id']:'';
 if(!empty($diocese_id)){
-    $parishData="SELECT church_id, parish church WHERE diocese_id=$diocese_id";
+    $parishData="SELECT church_id, parish from church WHERE diocese_id=$diocese_id";
     $result=mysqli_query($conn, $parishData);
     if(mysqli_num_rows($result)>0){
         echo "<option value=''selected='' disabled=''>select parish</option>";
