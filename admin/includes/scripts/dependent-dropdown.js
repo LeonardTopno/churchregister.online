@@ -34,23 +34,3 @@ $(document).on('change','#country', function(){
         
     }
 });
-
-//----------------------------------------------------
-// ajax script for getting state data
-$(document).on('change','#country', function(){
-    var countryID = $(this).val();
-    if(countryID){
-        $.ajax({
-            type:'POST',
-            url:'../includes/dependent-dropdown.php',
-            data:{'country_id':countryID},
-            success:function(result){
-                //console.log(result);
-                $('#province').html(result);  
-            }
-        }); 
-    }else{
-        $('#diocese').html('<option value="">Country - Oswin</option>');
-        $('#parish').html('<option value=""> State - Oswin  </option>'); 
-    }
-});
