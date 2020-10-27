@@ -12,25 +12,25 @@ $(document).on('change','#country', function(){
             }
         }); 
     }else{
-        $('#state').html('<option value="">Province - Oswin</option>');
-        $('#city').html('<option value=""> Diocese - Oswin</option>'); 
+        $('#province').html('<option value="">Province - Oswin</option>');
+        $('#diocese').html('<option value=""> Diocese - Oswin</option>'); 
+        $('#parish').html('<option value=""> Parish - Oswin</option>');
     }
 });
 
 // ajax script for getting diocese data
  $(document).on('change','#province', function(){
-    var dioceseID = $(this).val();
-    if(dioceseID){
+    var provinceID = $(this).val();
+    if(provinceID){
         $.ajax({
             type:'POST',
             url:'../includes/dependent-dropdown-2.php',
-            data:{'diocese_id':dioceseID},
+            data:{'province_id':provinceID},
             success:function(result){
                 $('#diocese').html(result);  
             }
         }); 
     }else{
-        $('#diocese').html('<option value="">Diocese </option>');
-        
+        $('#diocese').html('<option value="">Diocese </option>'); 
     }
 });
