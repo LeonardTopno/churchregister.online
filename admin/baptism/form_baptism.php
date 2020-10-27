@@ -391,7 +391,7 @@ $id=$_SESSION["username"];
     <!---->
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
-    <script src="../includes/scripts/dependent-dropdown-2.js"></script>
+    <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
 </body>
 
 </html>

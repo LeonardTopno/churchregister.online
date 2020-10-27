@@ -31,7 +31,7 @@ if(!empty($province_id)){
 
 //=====================
 
-// Fetching Diocese list
+// Fetching Parish list
 
 $diocese_id=!empty($_POST['diocese_id'])?$_POST['diocese_id']:'';
 if(!empty($diocese_id)){

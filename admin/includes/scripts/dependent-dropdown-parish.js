@@ -4,7 +4,7 @@ $(document).on('change','#country', function(){
     if(countryID){
         $.ajax({
             type:'POST',
-            url:'../includes/dependent-dropdown-2.php',
+            url:'../includes/dependent-dropdown-parish.php',
             data:{'country_id':countryID},
             success:function(result){
                 //console.log(result);
@@ -24,7 +24,7 @@ $(document).on('change','#country', function(){
     if(provinceID){
         $.ajax({
             type:'POST',
-            url:'../includes/dependent-dropdown-2.php',
+            url:'../includes/dependent-dropdown-parish.php',
             data:{'province_id':provinceID},
             success:function(result){
                 $('#diocese').html(result);  
@@ -41,7 +41,7 @@ $(document).on('change','#diocese', function(){
     if(dioceseID){
         $.ajax({
             type:'POST',
-            url:'../includes/dependent-dropdown-2.php',
+            url:'../includes/dependent-dropdown-parish.php',
             data:{'diocese_id':dioceseID},
             success:function(result){
                 $('#parish').html(result);  
