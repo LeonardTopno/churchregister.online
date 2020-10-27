@@ -34,3 +34,20 @@ $(document).on('change','#country', function(){
         $('#diocese').html('<option value="">Diocese </option>'); 
     }
 });
+
+// ajax script for getting parish data
+$(document).on('change','#diocese', function(){
+    var dioceseID = $(this).val();
+    if(dioceseID){
+        $.ajax({
+            type:'POST',
+            url:'../includes/dependent-dropdown-2.php',
+            data:{'diocese_id':dioceseID},
+            success:function(result){
+                $('#parish').html(result);  
+            }
+        }); 
+    }else{
+        $('#parish').html('<option value="">Parish </option>'); 
+    }
+});
