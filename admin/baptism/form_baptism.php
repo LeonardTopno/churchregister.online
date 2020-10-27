@@ -310,38 +310,6 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
 
-
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
-                                        <div class="col-sm-9">
-                                            <select class="select2 form-control custom-select" name="state" id="state" style="width: 100%; height:36px;">
-                                                <option selected="" disabled=""> Select State</option>                            
-                                            </select>
-                                        </div>
-                                    </div> 
-
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">City</label>
-                                        <div class="col-sm-9">
-                                            <select class="select2 form-control custom-select" name="city" id="city" style="width: 100%; height:36px;">
-                                                <option selected="" disabled=""> Select City</option>                            
-                                            </select>
-                                        </div>
-                                    </div>
-
-
-
-                                
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">District</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="district" id="district" value="" placeholder="Write Here" autocomplete="off" required>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                    
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
                                     <div class="card-body">
