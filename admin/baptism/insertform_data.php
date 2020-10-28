@@ -18,6 +18,7 @@
 	$Moccupation=$_POST['moccupation'];
 	$Mobile=$_POST['mobile'];
 	$Email=$_POST['email'];
+	$HomeParishId=$POST['parish'];
 	
 	// this info inserts into eventbaptism
 	$DOBaptism=$_POST['dobaptism'];
@@ -25,12 +26,16 @@
 	$GFdom=$_POST['GFdomicile'];
 	$GMname=$_POST['GMname'];
 	$GMdom=$_POST['GMdomicile'];
-	$Country=$_POST['country'];	
-	$State=$_POST['states'];
-	$District=$_POST['district'];
-	$Diocese=$_POST['diocese'];
+	
+	//$Country=$_POST['country'];	
+	
+	//$State=$_POST['states'];
+	//$District=$_POST['district'];
+	//$Diocese=$_POST['diocese'];
 	$Church=$_POST['church'];
+	
 	$Clergyman=$_POST['bby'];
+	
 	
 	
 	$uploaddir='uploads/'; // web root dir name for photo upload
@@ -55,8 +60,11 @@
     
     
 
-   $sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email)
-	VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."')";
+   //$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email)
+	//VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."')";
+
+	$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email, home_parish_id)
+	VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."','".$HomeParishId."')";
 	
     $insert_userinfo = mysqli_query($con, $sql) or die (mysqli_error($con)); 
     
@@ -67,8 +75,11 @@
         $baptism_id=$last_id.'B';
         $baptism_id_bc=$last_id.'BC';
         
-        $sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, country_id, states, district, diocese, church, clergyman) 
-        VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Country', '$State', '$District', '$Diocese', '$Church', '$Clergyman')";
+        //$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, country_id, states, district, diocese, church, clergyman) 
+		//VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Country', '$State', '$District', '$Diocese', '$Church', '$Clergyman')";
+		
+		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, clergyman) 
+        VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Clergyman')";
         
         $insert_eventbaptism = mysqli_query($con, $sql_eventbaptism); 
     }
