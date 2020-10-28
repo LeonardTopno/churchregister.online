@@ -17,10 +17,10 @@ for( $j=1;$j<=12;$j++){
 }
 
 // Vertical Line
-$pdf->Line(180,480,180,150);
+$pdf->Line(210,480,210,150);
 
 // Certificate Header
-$pdf->SetFont('Arial','',16);
+$pdf->SetFont('Arial','B',16);
 $pdf->SetXY(170,50);
 $pdf->Cell(80,10,'RANCHI CATHOLIC ARCHDIOCESE');
 
@@ -66,97 +66,91 @@ $pdf->SetXY(30,160);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'REGISTRATION NO.',0,0,L,false); 
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(40,10,'B' . htmlspecialchars($id) . '',0,0,L,false);
 
 // Date of Baptism
 $pdf->SetXY(30,190);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'DATE OF BAPTISM',0,0,L,false); 
-$pdf->SetXY(190,160);
+
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,70,($DOBaptism),0,0,L,false);
 
 // Date of Birth
 $pdf->SetXY(30,220);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'DATE OF BIRTH',0,0,L,false); 
-$pdf->SetXY(190,160);
+
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,130, htmlspecialchars($DOB) . '',0,0,L,false);
 
 // Child' Name
 $pdf->SetXY(30,250);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"CHILD'S NAME",0,0,L,false); 
-$pdf->SetXY(190,160);
+
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,190, htmlspecialchars($fname) .' '. htmlspecialchars($MName).' '. htmlspecialchars($LName).'',0,0,L,false);
 
-// Sex
+// GENDER
 $pdf->SetXY(30,280);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'SEX',0,0,L,false); 
-$pdf->SetXY(190,160);
+$pdf->Cell(30,10,'GENDER',0,0,L,false); 
+
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(40,250, htmlspecialchars($gender) . '',0,0,L,false);
 
 // Father's name 
 $pdf->SetXY(30,310);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,"FATHER NAME",0,0,L,false);
+$pdf->Cell(30,10,"FATHER'S NAME",0,0,L,false);
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,310, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
 
 // Father's Occupation
 $pdf->SetXY(30,340);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,"OCCUPATION",0,0,L,false);
+$pdf->Cell(30,10,"FATHER'S OCCUPATION",0,0,L,false);
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,370, htmlspecialchars($Foccupation)  .'',0,0,L,false);
 
 
 // Mother's name
 $pdf->SetXY(30,370);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,"MOTHER NAME",0,0,L,false); 
+$pdf->Cell(30,10,"MOTHER'S NAME",0,0,L,false); 
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
 $pdf->Cell(60,430, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
 
 // Male Sponsor and Domicile
 $pdf->SetXY(30,400);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'MALE SPONSOR / DOMICILE',0,0,L,false); 
+$pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false); 
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);0l
 $pdf->Cell(60,490, htmlspecialchars($GFname) . ' / '. htmlspecialchars($GFdom),0,0,L,false);
 
 // Female Sponsor
 $pdf->SetXY(30,430);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'FEMALE SPONSOR',0,0,L,false); 
+$pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false); 
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
-$pdf->Cell(60,550, htmlspecialchars($GMname) . '',0,0,L,false);
+$pdf->Cell(60,550, htmlspecialchars($GMname) . ' / '. htmlspecialchars($GMdom),0,0,L,false);
 
 
 // Minister
@@ -164,12 +158,18 @@ $pdf->SetXY(30,460);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'MINISTER',0,0,L,false); 
 
-$pdf->SetXY(190,160);
+$pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-//$pdf->Cell(40,10,$id,0,0,L,false);
-$pdf->Cell(60,600, htmlspecialchars($Minister) . '',0,0,L,false);
+$pdf->Cell(30,610, htmlspecialchars($Minister) . '',0,0,L,false);
 
-//$pdf->SetXY(430,220);
+
+//
+$pdf->SetXY(30,500);
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(30,10,'Certified that the above is a true extract from the Register of Baptism kept at ......................................................................',0,0,L,false);
+
+
+//
 $pdf->SetXY(430,700);
 $pdf->Cell(50,10,'Signature & Seal',0,1,L,false);
 
