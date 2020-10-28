@@ -1,8 +1,13 @@
+<?php session_start(); ?>
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html dir="ltr">
 
 <head>
+    <!-- Disable Back Button -->
+    <script language="javascript" type="text/javascript">
+    window.history.forward();
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -21,7 +26,9 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
 </head>
+
 
 <body oncontextmenu="return false;">
     <div class="main-wrapper">
@@ -59,13 +66,13 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-success text-white" id="basic-addon1"><i class="ti-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username" tabindex="1" autocomplete="off">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username" tabindex="1" autocomplete="off" required>
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
                                     </div>
-                                    <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" tabindex="2" aria-label="Password" aria-describedby="basic-addon1" autocomplete="off">
+                                    <input type="password" class="form-control form-control-lg" placeholder="Password" name="password" tabindex="2" aria-label="Password" aria-describedby="basic-addon1" autocomplete="off" required>
                                 </div>
                             </div>
                         </div>
