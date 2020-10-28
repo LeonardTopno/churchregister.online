@@ -13,6 +13,7 @@
 	$Fathername=$_POST['fathername'];
 	$Fathersname=$_POST['fathersname'];
 	$Foccupation=$_POST['foccupation'];
+	$Domicile=$_POST['domicile'];
 	$Mothername=$_POST['mothername'];
 	$Mothersname=$_POST['mothersname'];
 	$Moccupation=$_POST['moccupation'];
@@ -28,10 +29,7 @@
 	$GMdom=$_POST['GMdomicile'];
 	
 	//$Country=$_POST['country'];	
-	
-	//$State=$_POST['states'];
-	//$District=$_POST['district'];
-	//$Diocese=$_POST['diocese'];
+
 	$Church=$_POST['church'];
 	
 	$Clergyman=$_POST['bby'];

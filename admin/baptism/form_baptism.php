@@ -181,6 +181,28 @@ $id=$_SESSION["username"];
                                     </div>
 
                                     <div class="form-group row">
+                                        <label for="fdomicile" class="col-sm-3 text-left control-label col-form-label">Father's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <!--<input type="text" class="form-control" name="domicile" id="domicile" value="" placeholder="Domicile">-->
+                                            <select class="select2 form-control custom-select" name="country" id="country" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Country </option>
+                                            <?php  
+                                                $contryData="SELECT id, name from countries";
+                                                $result=mysqli_query($conn,$contryData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                        </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="mothername" id="mothername"  value="" placeholder="Mother's Name Here" required>
