@@ -53,14 +53,6 @@
 
 	
 	//Insert into userinfo table
-
-  
-    
-    
-
-   //$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email)
-	//VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."')";
-
 	$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, domicile_id, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email, home_parish_id)
 	VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Domicile_ID."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."','".$HomeParishId."')";
 	
@@ -73,26 +65,17 @@
         $baptism_id=$last_id.'B';
         $baptism_parish_id=$last_id.'BC';
         
-        //$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, country_id, states, district, diocese, church, clergyman) 
-		//VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Country', '$State', '$District', '$Diocese', '$Church', '$Clergyman')";
-		
 		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_parish_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, clergyman) 
         VALUES ('$baptism_id', '$last_id', '$baptism_parish_id', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Clergyman')";
         
         $insert_eventbaptism = mysqli_query($con, $sql_eventbaptism); 
     }
    
-   
 	
-	
-   
    // if($con->query($sql)===TRUE)
-    if($insert_eventbaptism==1)
-    {
+    if($insert_eventbaptism==1){
    	echo '<script type="text/javascript">alert("Baptism Details Registered Succesfully");window.location=\'form_baptism.php\';</script>'; 
-    }
-    else
-    {
+    }else{
      echo '<script type="text/javascript">alert("Baptism Detail Not Registered");window.location=\'index.php\';</script>';   
     }
 
