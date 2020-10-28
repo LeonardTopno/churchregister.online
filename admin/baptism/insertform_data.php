@@ -73,13 +73,13 @@
     if ($insert_userinfo){
         $last_id = mysqli_insert_id($con);
         $baptism_id=$last_id.'B';
-        $baptism_id_bc=$last_id.'BC';
+        $baptism_parish_id=$last_id.'BC';
         
         //$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, country_id, states, district, diocese, church, clergyman) 
 		//VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Country', '$State', '$District', '$Diocese', '$Church', '$Clergyman')";
 		
-		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_church_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, clergyman) 
-        VALUES ('$baptism_id', '$last_id', '$baptism_id_bc', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Clergyman')";
+		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_parish_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, clergyman) 
+        VALUES ('$baptism_id', '$last_id', '$baptism_parish_id', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Clergyman')";
         
         $insert_eventbaptism = mysqli_query($con, $sql_eventbaptism); 
     }
