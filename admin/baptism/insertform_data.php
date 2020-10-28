@@ -13,7 +13,7 @@
 	$Fathername=$_POST['fathername'];
 	$Fathersname=$_POST['fathersname'];
 	$Foccupation=$_POST['foccupation'];
-	$Domicile=$_POST['domicile'];
+	$Domicile_ID=$_POST['domicile'];
 	$Mothername=$_POST['mothername'];
 	$Mothersname=$_POST['mothersname'];
 	$Moccupation=$_POST['moccupation'];
@@ -61,8 +61,8 @@
    //$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email)
 	//VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."')";
 
-	$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email, home_parish_id)
-	VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."','".$HomeParishId."')";
+	$sql = "INSERT INTO userinfo (first_name, middle_name,last_name, gender_id, dob, permanent_address, current_address, father_name, father_surname, domicile_id, father_occupation, mother_name, mother_surname, mother_occupation, mobile, email, home_parish_id)
+	VALUES ('".$FName."','".$MName."','".$LName."','".$Gender."','".$DOB."','".$Padd."','".$Cadd."','".$Fathername."','".$Fathersname."','".$Domicile_ID."','".$Foccupation."','".$Mothername."','".$Mothersname."','".$Moccupation."','".$Mobile."','".$Email."','".$HomeParishId."')";
 	
     $insert_userinfo = mysqli_query($con, $sql) or die (mysqli_error($con)); 
     
