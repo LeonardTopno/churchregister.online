@@ -27,6 +27,10 @@ $id=$_SESSION["username"];
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/libs/jquery-minicolors/jquery.minicolors.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/libs/quill/dist/quill.snow.css">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,6 +38,7 @@ $id=$_SESSION["username"];
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <?php include "upscript.php"; ?>
 </head>
 
 <body oncontextmenu="return false;">
@@ -244,7 +249,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="mobile" id="mobile" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
+                                            <input type="text" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
                                         </div>
                                     </div>
 
@@ -298,7 +303,6 @@ $id=$_SESSION["username"];
                                             </select>
                                         </div>
                                     </div>
-
 
                                     
                                     <div class="form-group row">
@@ -360,6 +364,10 @@ $id=$_SESSION["username"];
     <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
+    <!------ Top Button ------>
+    <?php include "buttonupscript.php"; ?>
+    <!-- End -->
+
 </body>
 
 </html>

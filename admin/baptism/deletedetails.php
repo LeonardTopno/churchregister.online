@@ -9,6 +9,7 @@
     
     // delete query
     $del = mysqli_query($con,"delete from userinfo where user_id = '$id'"); 
+    $dele = mysqli_query($con,"delete from eventbaptism where user_id = '$id'"); 
 
 if($del)
 {
