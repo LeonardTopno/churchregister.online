@@ -18,7 +18,7 @@
 	$Moccupation=$_POST['moccupation'];
 	$Mobile=$_POST['mobile'];
 	$Email=$_POST['email'];
-	$HomeParishId=$POST['parish'];
+	$HomeParishId=$_POST['parish'];
 	
 	// this info inserts into eventbaptism
 	$DOBaptism=$_POST['dobaptism'];
