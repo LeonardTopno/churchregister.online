@@ -187,7 +187,7 @@ $id=$_SESSION["username"];
                                             <select class="select2 form-control custom-select" name="domicile" id="domicile" style="width: 100%; height:36px;">
                                             <option selected="" disabled=""> Select Domilcile State </option>
                                             <?php  
-                                                $stateDomicileData="SELECT id, name from states";
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
                                                 $result=mysqli_query($conn,$stateDomicileData);
                                                 if(mysqli_num_rows($result)>0)
                                                     {
