@@ -36,6 +36,7 @@ else
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <?php include "upscript.php"; ?>
 </head>
 
 <body oncontextmenu="return false;">
@@ -208,17 +209,7 @@ else
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
-                                <div class="dropdown-divider"></div>
-                                <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                            </div>
-                        </li>
+                        <?php include "profile.php"; ?>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
@@ -470,6 +461,18 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                             <form class="form-horizontal" method="post" action="baptism_update.php?Id=<?php echo $id;?>"  enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Info</h4>
+                                    
+                                    
+                                    <div class="border-top">
+                                <div class="card-body">
+                                <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
+                                    
+                                   
+                                    <button class="btn btn-danger">Cancel</button>
+                                    <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
+                                </div>
+                                    </div>
+                                    
                                      <div class="form-group row">
                                         <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
                                         <div class="col-sm-9">
@@ -518,7 +521,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
-                                             <input type="text" class="form-control" value="<?php echo $Cadd;?>" disabled>
+                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cadd;?>">
                                         </div>
                                         </div>
                                         <div class="form-group row">
@@ -630,7 +633,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                     <button class="btn btn-danger">Cancel</button>
                                     <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
                                 </div>
-                            </div>
+                                    </div>
                                 </div>
                                 </div>
 								</div>
@@ -696,6 +699,9 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
          ****************************************/
         $('#zero_config').DataTable();
     </script>
+    <!------ Top Button ------>
+<?php include "buttonupscript.php"; ?>
+    <!-- End -->
 
 </body>
 

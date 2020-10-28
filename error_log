@@ -134,3 +134,7 @@ Stack trace:
 #0 /home/developer/public_html/index.php(1): include()
 #1 {main}
   thrown in /home/developer/public_html/server.php on line 67
+[28-Oct-2020 15:26:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/index.php:2) in /home/developer/public_html/server.php on line 74
+[28-Oct-2020 15:27:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/index.php:2) in /home/developer/public_html/server.php on line 74
+[28-Oct-2020 15:28:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/index.php:2) in /home/developer/public_html/server.php on line 74
+[28-Oct-2020 15:28:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/index.php:2) in /home/developer/public_html/server.php on line 74
