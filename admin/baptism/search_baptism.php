@@ -417,15 +417,16 @@ if (isset($_SESSION["username"])){
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- PHP code for Table Data -->
-                 <?php
+<!-- PHP code for Table Data -->
+<?php
 // Establish Connection with Database
-include "connection.php";
+//include "connection.php";
+include('../includes/dbConnect.php');
 // Specify the query to execute
 $sql = "select * from userinfo";
 
 // Execute query
-$result = mysqli_query($con,$sql);
+$result = mysqli_query($conn,$sql);
 
 // Loop through each records 
 while($row = mysqli_fetch_array($result)){
@@ -439,14 +440,14 @@ $fsurname =$row['father_surname'];
 $mname=$row['mother_name'];
 $msurname =$row['mother_surname'];
 
-$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
-$result_sql_eventbaptism = mysqli_query($con, $sql_eventbaptism);
-if(mysqli_num_rows($result_sql_eventbaptism)>0){
 
-    //output data of each row
+// Getting Baptism Date from eventbaptism Table
+$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+$result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+if(mysqli_num_rows($result_sql_eventbaptism)>0){
     $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
     $baptims_date=$row['bapt_date'];
-    //mysqli_free_result($result_sql_eventbaptism);
+    mysqli_free_result($result_sql_eventbaptism);
 }
 ?>
 
@@ -464,7 +465,7 @@ if(mysqli_num_rows($result_sql_eventbaptism)>0){
 <?php
 }
 // Close the connection
-$conn = null;
+mysqli_close($conn);
 ?>      
                                         </tbody>
                                         
