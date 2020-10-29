@@ -420,7 +420,7 @@ if (isset($_SESSION["username"])){
 <!-- PHP code for Table Data -->
 <?php
 // Establish Connection with Database
-//include "connection.php";
+
 include('../includes/dbConnect.php');
 // Specify the query to execute
 $sql = "select * from userinfo";
@@ -451,16 +451,16 @@ if(mysqli_num_rows($result_sql_eventbaptism)>0){
 }
 ?>
 
-                                            <tr>
-                                                <td><?php echo $Id;?></td>
-                                                <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
-                                                <td><?php echo $Gender;?></td>
-                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
-                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
-                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
-                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
-                                                <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View / Print</a></td>
-                                            </tr>
+    <tr>
+        <td><?php echo $Id;?></td>
+        <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
+        <td><?php echo $Gender;?></td>
+        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View / Print</a></td>
+    </tr>
 
 <?php
 }
@@ -488,6 +488,7 @@ mysqli_close($conn);
             <footer class="footer text-center">
                 All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
             </footer>
+            <?php include('../includes/frontend/inc-footer.php')?>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
