@@ -1,17 +1,12 @@
 <?php 
 ob_start(); 
-?>
-<?php 
+
 session_start();
-if (isset($_SESSION["username"]))
-{
+if (isset($_SESSION["username"])){
 	$logid=$_SESSION["username"];
-}
-else
-{
+}else{
 	header("location:../../index.php");
 }
-
 ?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -415,6 +410,7 @@ else
                                                 <th><b>Name</b></th>
                                                 <th><b>Gender</b></th>
                                                 <th><b>DOB</b></th>
+                                                <th><b>Baptism Date</b></th>
                                                 <th><b>Father's Name</b></th>
                                                 <th><b>Mother's Name</b></th>
                                                 <th><b>Select Option</b></th>
@@ -432,8 +428,7 @@ $sql = "select * from userinfo";
 $result = mysqli_query($con,$sql);
 
 // Loop through each records 
-while($row = mysqli_fetch_array($result))
-{
+while($row = mysqli_fetch_array($result)){
 $Id=$row['user_id'];
 $Name=$row['first_name'];
 $Lname =$row['last_name'];
@@ -443,6 +438,16 @@ $fname=$row['father_name'];
 $fsurname =$row['father_surname'];
 $mname=$row['mother_name'];
 $msurname =$row['mother_surname'];
+
+$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+$result_sql_eventbaptism = mysqli_query($con, $sql_eventbaptism);
+if(mysqli_num_rows($result_sql_eventbaptism)>0){
+
+    //output data of each row
+    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+    $baptims_date=$row['bapt_date'];
+    //mysqli_free_result($result_sql_eventbaptism);
+}
 ?>
 
                                             <tr>
@@ -450,11 +455,13 @@ $msurname =$row['mother_surname'];
                                                 <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
                                                 <td><?php echo $Gender;?></td>
                                                 <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
                                                 <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
                                                 <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
                                                 <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View / Print</a></td>
                                             </tr>
-                                            <?php
+
+<?php
 }
 // Close the connection
 $conn = null;
