@@ -592,9 +592,9 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                     <div class="border-top">
                                 <div class="card-body">
                                     <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
-                                    class="text-white">Download</a></button>
-                                    <button type="submit" class="btn btn-danger">Cancel</button>
-                                    <button class="btn btn-danger"><a href="search_baptism.php" class="text-white">Back</a></button>
+                                    class="text-white">Generate Certificate</a></button>
+                                    <!--<button type="submit" class="btn btn-danger">Cancel</button>-->
+                                    <button class="btn btn-danger"><a href="search_baptism.php" class="text-white">Back to Search</a></button>
                                 </div>
                             </div>
                             
