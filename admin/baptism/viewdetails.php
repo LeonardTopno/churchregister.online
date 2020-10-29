@@ -472,7 +472,7 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
                                         <div class="col-sm-9">
-                                           <?php echo $gender;?>
+                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
                                         </div>
                                         </div>
                                         
