@@ -2,7 +2,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Baptism Registers</h4>
+                                <h4 class="card-title">Baptism Register</h4>
                                 <!-- Create the editor container -->
                                 <div class="row">
                                     <!-- Column -->
