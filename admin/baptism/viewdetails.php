@@ -424,9 +424,9 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 	$Church=$row['church'];
 	$Bby=$row['clergyman'];
 	$GFname=$row['godfather_name'];
-	$GFdom=$row['godfather_domicile'];
+	$GFdom=$row['godfather_domicile_id'];
 	$GMname=$row['godmother_name'];
-	$GMdom=$row['godmother_domicile'];
+	$GMdom=$row['godmother_domicile_id'];
     $DOBaptism=$row['bapt_date'];
     
 // Fetching from countries table

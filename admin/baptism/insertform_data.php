@@ -65,7 +65,7 @@
         $baptism_id=$last_id.'B';
         $baptism_parish_id=$last_id.'BC';
         
-		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_parish_id, bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, clergyman) 
+		$sql_eventbaptism = "INSERT INTO eventbaptism (baptism_id, user_id, baptism_parish_id, bapt_date, godfather_name, godfather_domicile_id, godmother_name, godmother_domicile_id, clergyman) 
         VALUES ('$baptism_id', '$last_id', '$baptism_parish_id', '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Clergyman')";
         
         $insert_eventbaptism = mysqli_query($con, $sql_eventbaptism); 

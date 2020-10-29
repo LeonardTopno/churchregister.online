@@ -53,7 +53,7 @@
     
     //Insert into eventbaptism table
     // if ($insert_userinfo){
-    //     $sql_eventbaptism = "UPDATE eventbaptism SET ( bapt_date, godfather_name, godfather_domicile, godmother_name, godmother_domicile, country, states, district, diocese, church, clergyman) 
+    //     $sql_eventbaptism = "UPDATE eventbaptism SET ( bapt_date, godfather_name, godfather_domicile_id, godmother_name, godmother_domicile_id, country, states, district, diocese, church, clergyman) 
     //     VALUES (  '$DOBaptism', '$GFname', '$GFdom', '$GMname', '$GMdom', '$Country', '$State', '$District', '$Diocese', '$Church', '$Clergyman') WHERE id='$id'";       
     //     $insert_eventbaptism = mysqli_query($con, $sql_eventbaptism); 
     // }
