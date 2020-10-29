@@ -183,7 +183,6 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="fdomicile" class="col-sm-3 text-left control-label col-form-label">Father's Domicile</label>
                                         <div class="col-sm-9">
-                                            <!--<input type="text" class="form-control" name="domicile" id="domicile" value="" placeholder="Domicile">-->
                                             <select class="select2 form-control custom-select" name="domicile" id="domicile" style="width: 100%; height:36px;">
                                             <option selected="" disabled=""> Select Domilcile State </option>
                                             <?php  
@@ -197,7 +196,7 @@ $id=$_SESSION["username"];
 
                                                 <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
                                                 <?php }} ?>
-                                        </select>
+                                            </select>
 
                                         </div>
                                     </div>
@@ -232,7 +231,21 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>
+                                            <!--<input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>-->
+                                            <select class="select2 form-control custom-select" name="GFdomicile" id="GFdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">
