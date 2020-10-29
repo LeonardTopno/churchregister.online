@@ -8,9 +8,10 @@ $username = "";
 $email    = "";
 $errors = array(); 
 
-// connect to the database
-$db = mysqli_connect("localhost","develope_root","Migids@123","develope_universe");
+include('admin/includes/dbConnect.php');
 
+//$db = mysqli_connect("localhost","develope_root","Migids@123","develope_universe");
+$db = $conn;
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
