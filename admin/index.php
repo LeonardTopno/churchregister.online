@@ -417,7 +417,7 @@ else
                                         <div class="card card-hover">
                                             <div class="box bg-info text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                                                <h6 class="text-white">Death</h6>
+                                                <h6 class="text-white">Burial</h6>
                                             </div>
                                         </div>
 										</a>
