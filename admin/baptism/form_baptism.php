@@ -257,7 +257,21 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
+                                            <!--<input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>-->
+                                            <select class="select2 form-control custom-select" name="GMdomicile" id="GMdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
                                         </div>
                                     </div>
 
