@@ -30,6 +30,7 @@ else
     <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
     <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -426,7 +427,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$DOB=$row['dob'];
 	$DOBaptism=$row['bapt_date'];
 	$Padd=$row['permanent_address'];
-	$Cadd=$row['current_address'];
+	$Cuadd=$row['current_address'];
 	$Fathername=$row['father_name'];
 	$Fathersname=$row['father_surname'];
 	$Foccupation=$row['father_occupation'];
@@ -456,7 +457,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 ?> 
 
 					<div class="row">
-                    <div class="col-md-8">
+                    <div class="col-12">
                         <div class="card">
                             <form class="form-horizontal" method="post" action="baptism_update.php?Id=<?php echo $id;?>"  enctype="multipart/form-data">
                                 <div class="card-body">
@@ -466,10 +467,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                     <div class="border-top">
                                 <div class="card-body">
                                 <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
-                                    
-                                   
-                                    <button class="btn btn-danger">Cancel</button>
-                                    <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
+                                <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back to Search</a></button>
                                 </div>
                                     </div>
                                     
@@ -477,7 +475,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
                                         <div class="col-sm-9">
                                            <!--<input type="text" class="form-control" value=" <?php echo 'B' . htmlspecialchars($reg_id) . '';?>" disabled>-->
-                                           <input type="text" class="form-control" value=" <?php echo 'B' . htmlspecialchars($id) . '';?>" disabled> 
+                                           <input type="text" class="col-sm-3" value=" <?php echo 'B' . htmlspecialchars($id) . '';?>" disabled> 
                                            
                                         </div>
                                         </div>
@@ -521,9 +519,21 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                         <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
-                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cadd;?>">
+                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cuadd;?>" style="background-color:#FFFF00;">
                                         </div>
                                         </div>
+                                        <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control" name="Mobile" pattern="[1-9]{1}[0-9]{9}" value="<?php echo $Mobile;?>" style="background-color:#FFFF00;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
+                                        <div class="col-sm-9">
+                                          <input type="text" class="form-control" name="Email" value="<?php echo $Email;?>" style="background-color:#FFFF00;">
+                                        </div>
+                                    </div>
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
@@ -550,18 +560,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                            <input type="text" class="form-control" value="<?php echo $Moccupation;?>" disabled>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="Mobile" value="<?php echo $Mobile;?>">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
-                                        <div class="col-sm-9">
-                                          <input type="text" class="form-control" name="Email" value="<?php echo $Email;?>">
-                                        </div>
-                                    </div>
+                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
                                         <div class="col-sm-9">
@@ -628,10 +627,7 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                     <div class="border-top">
                                 <div class="card-body">
                                 <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
-                                    
-                                   
-                                    <button class="btn btn-danger">Cancel</button>
-                                    <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back</a></button>
+                                <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back to Details</a></button>
                                 </div>
                                     </div>
                                 </div>

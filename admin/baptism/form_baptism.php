@@ -83,7 +83,7 @@ $id=$_SESSION["username"];
                  
                 <?php include('bapt-includes/modal.php'); ?>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-12">
                         <div class="card">
                             <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
                                 <div class="card-body">
@@ -298,7 +298,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
+                                            <input type="number" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
                                         </div>
                                     </div>
 

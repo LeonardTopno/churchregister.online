@@ -459,7 +459,7 @@ if(mysqli_num_rows($result_sql_eventbaptism)>0){
         <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
         <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
         <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
-        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View / Print</a></td>
+        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View</a>&nbsp / <a href="print_baptism.php?Id=<?php echo $Id;?>">Download</a></td>
     </tr>
 
 <?php

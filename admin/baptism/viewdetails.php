@@ -437,7 +437,8 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
 
 ?> 
 					<div class="row">
-                    <div class="col-md-8">
+					<div class="col-12">
+                    
                         <div class="card">
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
