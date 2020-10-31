@@ -324,19 +324,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
 
                                         
                                         
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
-                                        <div class="col-sm-9">
-                                           <?php echo $Padd;?>
-                                        </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
-                                        <div class="col-sm-9">
-                                             <?php echo $Cadd;?>
-                                        </div>
-                                        </div>
+          
 
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
@@ -380,16 +368,35 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                            <?php echo $Moccupation;?>
                                         </div>
                                     </div>
+                                    
+                                    <h5 class="card-title"><b>Contact Details</b></h5>
+                                    <div class="border-top"></div><br>
+                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
                                             <?php echo $Mobile;?>
                                         </div>
                                     </div>
+                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
                                         <div class="col-sm-9">
                                           <?php echo $Email;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                           <?php echo $Padd;?>
+                                        </div>
+                                        </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                             <?php echo $Cadd;?>
                                         </div>
                                     </div>
                                     
