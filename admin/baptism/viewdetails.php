@@ -56,6 +56,9 @@ else
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
+        <!--Leo-->
+        <?php include "../includes/frontend/inc-header.php";?>
+        
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
@@ -217,6 +220,10 @@ else
                 </div>
             </nav>
         </header>
+
+
+
+
         <!-- ============================================================== -->
         <!-- End Topbar header -->
         <!-- ============================================================== -->

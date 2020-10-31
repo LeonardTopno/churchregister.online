@@ -1,18 +1,14 @@
 <?php 
 ob_start(); 
-?>
-<!--  Session Starts   -->
-<?php 
+
 session_start();
-if (isset($_SESSION["username"]))
-{
+if (isset($_SESSION["username"])){
 	$logid=$_SESSION["username"];
-}
-else
-{
+}else{
 	header("location:../../index.php");
 }
 ?>
+<!--  Session Starts   -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -56,6 +52,11 @@ else
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
+
+        <!--Leo-->
+        <?php include "../includes/frontend/inc-header.php"; ?>
+        
+        
         <header class="topbar" data-navbarbg="skin5">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header" data-logobg="skin5">
@@ -217,6 +218,9 @@ else
                 </div>
             </nav>
         </header>
+
+
+
         <!-- ============================================================== -->
         <!-- End Topbar header -->
         <!-- ============================================================== -->
