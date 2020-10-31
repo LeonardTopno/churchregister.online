@@ -21,7 +21,7 @@ if (isset($_SESSION["username"])){
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>View_Baptism_Details_Live Church</title>
+    <title>View Baptism Record | ParishRegister.Online</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
     <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
@@ -152,9 +152,6 @@ if (isset($_SESSION["username"])){
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Sales Cards  -->
-                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -225,6 +222,8 @@ $id= ($_GET["Id"]);
 $sql="SELECT * from userinfo where user_id=$id";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    
+    $baptism_id = $row['baptism_id'];
 	$fname = $row['first_name'];
 	$MName = $row['middle_name'];
 	$LName=$row['last_name'];
@@ -278,9 +277,10 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                         <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
                                         <div class="col-sm-9">
                                            
-                                            <?php
-                                                echo 'B ' .   htmlspecialchars($id) . '';
-                                            ?>
+                                            <!--<?php
+                                                #echo 'B ' .   htmlspecialchars($id) . '';
+                                            ?>-->
+                                            <?php echo $baptism_id;?>
                                         </div>
                                         </div>
                                     <div class="form-group row">
