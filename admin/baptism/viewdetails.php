@@ -274,22 +274,21 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Info</h4>
+                                     
                                      <div class="form-group row">
                                         <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
                                         <div class="col-sm-9">
-                                           
-                                            <!--<?php
-                                                #echo 'B ' .   htmlspecialchars($id) . '';
-                                            ?>-->
-                                            <?php echo $Baptism_id;?>
+                                            <?php echo "Leo";?>
                                         </div>
                                         </div>
+                                    
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
                                         <div class="col-sm-9">
                                             <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
                                         </div>
                                     </div>
+                                    
                                     <div class="form-group row">
                                     <label class="col-md-3">Gender</label>
                                     <div class="col-md-9">
