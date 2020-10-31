@@ -331,12 +331,20 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                              <?php echo $Cadd;?>
                                         </div>
                                         </div>
+
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
                                             <?php echo $Fathername;?> &nbsp; <?php echo $Fathersname;?>
                                         </div>
-                                    </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Domicile</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $domicile_state_user;?>
+                                        </div>
+                                        </div>
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
@@ -370,25 +378,25 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
                                             <?php echo $GFname;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
                                         <div class="col-sm-9">
                                             <?php echo $domicile_state_Gfather;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
                                         <div class="col-sm-9">
                                             <?php echo $GMname;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
                                         <div class="col-sm-9">
                                            <?php echo $domicile_state_Gmother;?>
                                         </div>
