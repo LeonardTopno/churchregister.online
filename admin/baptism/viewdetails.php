@@ -229,10 +229,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$LName=$row['last_name'];
 	$gender=$row['gender_id'];
 	$DOB=$row['dob'];
-	$DOBaptism=$row['bapt_date'];
 	$Padd=$row['permanent_address'];
 	$Cadd=$row['current_address'];
-	$Fathername=$row['father_name'];
+    $Fathername=$row['father_name'];
+    $Domicile_id=$row['domicile_id'];
 	$Fathersname=$row['father_surname'];
 	$Foccupation=$row['father_occupation'];
 	$Mothername=$row['mother_name'];
@@ -257,11 +257,25 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 	$GMdom=$row['godmother_domicile_id'];
     $DOBaptism=$row['bapt_date'];
     
-// Fetching from countries table
-$sql_countries = "SELECT * FROM countries WHERE id = $Country_id";
-$result2 = mysqli_query($con, $sql_countries);
+// Fetching from states table [For Domcile State]
+$Country_id = 101;  //Default is India 
+$sql_countries = "SELECT * FROM states WHERE country_id = $Country_id";
+
+$sql_domicile_state_user = "SELECT * FROM states WHERE country_id = $Country_id and id=$Domicile_id";
+$sql_domicile_state_Gfather = "SELECT * FROM states WHERE country_id = $Country_id and id=$GMdom";
+$sql_domicile_state_Gmother = "SELECT * FROM states WHERE country_id = $Country_id and id=$GFdom";
+
+$result2 = mysqli_query($con, $sql_domicile_state_User);
 $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
-    $Country = $row['name'];
+    $domicile_state_user = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gfather);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gfather = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gmother);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gmother = $row['name'];
 
 ?> 
 					<div class="row">
@@ -364,7 +378,7 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
                                         <div class="col-sm-9">
-                                            <?php echo $GFdom;?>
+                                            <?php echo $domicile_state_Gfather;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -376,7 +390,7 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
                                         <div class="col-sm-9">
-                                           <?php echo $GMdom;?>
+                                           <?php echo $domicile_state_Gmother;?>
                                         </div>
                                     </div>
                                     <h5 class="card-title"><b>Diocese Info</b></h5>
