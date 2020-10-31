@@ -293,6 +293,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                         <div class="card">
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
+                                    <!-------------- User Details ------------------>
                                     <h5 class="card-title"><b>User Details</b></h5>
                                     <div class="border-top"></div><br>
                                      
@@ -323,10 +324,6 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                         </div>
                                         </div>
 
-                                        
-                                        
-          
-
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
@@ -340,16 +337,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                             <?php echo $domicile_state_user;?>
                                         </div>
                                         </div>
-
-                                        <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish / Church Name</label>
-                                        <div class="col-sm-9">
-                                            <?php echo "$parish_name /  $church_name";?>
-                                        </div>
-                                        </div>
-
-
-                                    
+               
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
                                         <div class="col-sm-9">
@@ -369,7 +357,24 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                            <?php echo $Moccupation;?>
                                         </div>
                                     </div>
-                                    
+                                    <!-------------- Home Parish Details ------------------>
+                                    <h5 class="card-title"><b>Home Parish Details</b></h5>
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish / Church Name</label>
+                                        <div class="col-sm-9">
+                                            <?php echo "$parish_name /  $church_name";?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                    <label class="col-md-3 m-t-15">Diocese</label>
+                                    <div class="col-md-9">
+                                       <?php echo $Diocese;?>
+                                    </div>
+                                    </div>
+                                    <!-------------- Contact Details ------------------>
                                     <h5 class="card-title"><b>Contact Details</b></h5>
                                     <div class="border-top"></div><br>
                                     
@@ -400,7 +405,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                              <?php echo $Cadd;?>
                                         </div>
                                     </div>
-                                    
+                                    <!-------------- Baptism Details ------------------>
                                     <h5 class="card-title"><b>Baptism Details</b></h5>
                                     <div class="border-top"></div><br>
 
@@ -449,17 +454,6 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                           <?php echo $Bby;?>
                                         </div>
                                     </div>
-
-
-                                    <h5 class="card-title"><b>Diocese Info</b></h5>
-                                    <div class="border-top"></div><br>
-                                    
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Diocese</label>
-                                    <div class="col-md-9">
-                                       <?php echo $Diocese;?>
-                                    </div>
-                                </div>
                                 
                                     <div class="border-top">
                                 <div class="card-body">
