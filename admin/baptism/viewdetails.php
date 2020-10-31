@@ -357,7 +357,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                         </div>
 
                                         <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish / Church Name</label>
                                         <div class="col-sm-9">
                                             <?php echo "$parish_name /  $church_name";?>
                                         </div>
