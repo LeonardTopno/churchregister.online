@@ -247,7 +247,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $sql_eventbaptism = "select * from eventbaptism where user_id = $id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
-    $Baptism_id = "Leo";
+    $Baptism_id = $row['baptism_id'];
 	$Country_id=$row['country_id'];
 	$State=$row['states'];
 	$District=$row['district'];
