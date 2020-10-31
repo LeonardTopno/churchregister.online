@@ -223,7 +223,7 @@ $sql="SELECT * from userinfo where user_id=$id";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     
-    $baptism_id = $row['baptism_id'];
+    
 	$fname = $row['first_name'];
 	$MName = $row['middle_name'];
 	$LName=$row['last_name'];
@@ -247,6 +247,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $sql_eventbaptism = "select * from eventbaptism where user_id = $id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
+    $baptism_id = $row['baptism_id'];
 	$Country_id=$row['country_id'];
 	$State=$row['states'];
 	$District=$row['district'];
