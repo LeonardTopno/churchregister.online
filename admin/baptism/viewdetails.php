@@ -207,7 +207,7 @@ if (isset($_SESSION["username"])){
                 <!-- Recent comment and chats -->
                 
                 <!-- PHP code for Table Data -->
-      <?php           
+<?php           
 // Establish Connection with Database
 include "connection.php";
 if (mysqli_connect_errno()) {
@@ -239,7 +239,8 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$Mothersname=$row['mother_surname'];
 	$Moccupation=$row['mother_occupation'];
 	$Mobile=$row['mobile'];
-	$Email=$row['email'];
+    $Email=$row['email'];
+    $HomeparishId = $row['home_parish_id'];
 	
 	
 
@@ -276,6 +277,14 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
 $result2 = mysqli_query($con, $sql_domicile_state_Gmother);
 $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
     $domicile_state_Gmother = $row['name'];
+
+
+// Fetching from churches table [For Domcile State]
+$sql_church = "select * from church where church_id = $HomeparishId";
+$result3 = mysqli_query($con, $sql_church);
+$row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
+    $parish_name = $row['parish'];
+    $church_name =$row['church_name'];
 
 ?> 
 					<div class="row">
@@ -325,6 +334,7 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                            <?php echo $Padd;?>
                                         </div>
                                         </div>
+
                                         <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
@@ -345,6 +355,15 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                             <?php echo $domicile_state_user;?>
                                         </div>
                                         </div>
+
+                                        <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish</label>
+                                        <div class="col-sm-9">
+                                            <?php echo "$parish_name /  $church_name";?>
+                                        </div>
+                                        </div>
+
+
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
