@@ -321,12 +321,8 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                             <?php echo date("d-m-Y",strtotime($DOB));?>                                            
                                         </div>
                                         </div>
-                                        <div class="form-group row">
-                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
-                                        <div class="col-sm-9">
-                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
-                                        </div>
-                                        </div>
+
+                                        
                                         
                                         <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
@@ -396,6 +392,17 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                           <?php echo $Email;?>
                                         </div>
                                     </div>
+                                    
+                                    <h5 class="card-title"><b>Baptism Details</b></h5>
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
+                                        <div class="col-sm-9">
+                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
@@ -420,6 +427,15 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                            <?php echo $domicile_state_Gmother;?>
                                         </div>
                                     </div>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
+                                        <div class="col-sm-9">
+                                          <?php echo $Bby;?>
+                                        </div>
+                                    </div>
+
+
                                     <h5 class="card-title"><b>Diocese Info</b></h5>
                                     <div class="border-top"></div><br>
                                     
@@ -429,18 +445,7 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                        <?php echo $Diocese;?>
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Church</label>
-                                    <div class="col-md-9">
-                                        <?php echo $Church;?>
-                                    </div>
-                                </div>
-                                 <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
-                                        <div class="col-sm-9">
-                                          <?php echo $Bby;?>
-                                        </div>
-                                    </div>
+                                
                                     <div class="border-top">
                                 <div class="card-body">
                                     <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
