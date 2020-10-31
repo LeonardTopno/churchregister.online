@@ -265,7 +265,7 @@ $sql_domicile_state_user = "SELECT * FROM states WHERE country_id = $Country_id 
 $sql_domicile_state_Gfather = "SELECT * FROM states WHERE country_id = $Country_id and id=$GMdom";
 $sql_domicile_state_Gmother = "SELECT * FROM states WHERE country_id = $Country_id and id=$GFdom";
 
-$result2 = mysqli_query($con, $sql_domicile_state_User);
+$result2 = mysqli_query($con, $sql_domicile_state_user);
 $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
     $domicile_state_user = $row['name'];
 
