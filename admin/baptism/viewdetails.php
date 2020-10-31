@@ -293,14 +293,15 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                         <div class="card">
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Baptism Info</h4>
+                                    <h5 class="card-title"><b>User Details</b></h5>
+                                    <div class="border-top"></div><br>
                                      
                                      <div class="form-group row">
-                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
+                                        <label class="col-sm-3 text-left control-label col-form-label">User ID</label>
                                         <div class="col-sm-9">
-                                            <?php echo $Baptism_id;?>
+                                            <?php echo $id;?>
                                         </div>
-                                        </div>
+                                    </div>
                                     
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
@@ -402,6 +403,13 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                     
                                     <h5 class="card-title"><b>Baptism Details</b></h5>
                                     <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $Baptism_id;?>
+                                        </div>
+                                    </div>
 
                                     <div class="form-group row">
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
