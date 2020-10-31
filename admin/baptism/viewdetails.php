@@ -248,9 +248,6 @@ $sql_eventbaptism = "select * from eventbaptism where user_id = $id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
     $Baptism_id = $row['baptism_id'];
-	$Country_id=$row['country_id'];
-	$State=$row['states'];
-	$District=$row['district'];
 	$Diocese=$row['diocese'];
 	$Church=$row['church'];
 	$Bby=$row['clergyman'];
@@ -385,24 +382,6 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                     <h5 class="card-title"><b>Diocese Info</b></h5>
                                     <div class="border-top"></div><br>
                                     
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Country</label>
-                                    <div class="col-sm-9">
-                                      <?php echo $Country;?>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">State</label>
-                                    <div class="col-sm-9">
-                                       <?php echo $State;?>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">District</label>
-                                    <div class="col-md-9">
-                                      <?php echo $District;?>
-                                    </div>
-                                </div>
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Diocese</label>
                                     <div class="col-md-9">
