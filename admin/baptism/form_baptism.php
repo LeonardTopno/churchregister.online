@@ -69,7 +69,7 @@ $id=$_SESSION["username"];
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item">Baptism</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Baptism Form</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Create Baptism Record</li>
                                 </ol>
                             </nav>
                         </div>
