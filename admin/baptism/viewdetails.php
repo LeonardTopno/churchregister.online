@@ -290,7 +290,7 @@ if (isset($_SESSION["username"])){
                                     <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Diocese</label>
                                     <div class="col-md-9">
-                                       <?php echo $Diocese;?>
+                                       <?php echo $diocese;?>
                                     </div>
                                     </div>
                                     <!-------------- Contact Details ------------------>
@@ -371,7 +371,7 @@ if (isset($_SESSION["username"])){
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
-                                          <?php echo $Bby;?>
+                                          <?php echo $Minister;?>
                                         </div>
                                     </div>
                                 
