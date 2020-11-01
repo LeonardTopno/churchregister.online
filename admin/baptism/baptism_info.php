@@ -1,3 +1,4 @@
+<!--This File to be renamed to get_baptism_info -->
 <?php
 
 // Establish Connection with Database
