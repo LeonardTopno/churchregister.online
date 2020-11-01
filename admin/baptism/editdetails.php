@@ -363,14 +363,14 @@ else
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Home Parish / Church Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $Diocese;?>" disabled>
+                                        <input type="text" class="form-control" value="<?php echo "$parish_name /  $church_name";?>" disabled>
                                     </div>
                                 </div>
                                 
                                 <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Bby;?>" disabled>
+                                           <input type="text" class="form-control" value="<?php echo $Minister;?>" disabled>
                                         </div>
                                 </div>
                                 
@@ -380,7 +380,7 @@ else
                                 <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address<span class="required">*</span></label>
                                         <div class="col-sm-9">
-                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cuadd;?>">
+                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cadd;?>">
                                         </div>
                                 </div>
                                 <div class="form-group row">
