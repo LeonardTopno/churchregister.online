@@ -82,6 +82,7 @@ $id=$_SESSION["username"];
             <div class="container-fluid">
                  
                 <?php include('bapt-includes/modal.php'); ?>
+                <!---------------------------- Dispaying Form   -----------------------------> 
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
