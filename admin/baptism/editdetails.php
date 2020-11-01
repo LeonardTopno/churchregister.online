@@ -237,7 +237,7 @@ else
                 </div>
                 <!-- ============================================================== -->
                 
-                <!-- Recent comment and chats -->
+               
                 
                 <!-- PHP code for Table Data -->
                 
@@ -333,25 +333,25 @@ else
                                     </div>
                                     
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsors's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" value="<?php echo $GFname;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsors's Domicile</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" value="<?php echo $GFdom;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsors's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" value="<?php echo $GMname;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsors's Domicile</label>
                                         <div class="col-sm-9">
                                            <input type="text" class="form-control" value="<?php echo $GMdom;?>" disabled>
                                         </div>
