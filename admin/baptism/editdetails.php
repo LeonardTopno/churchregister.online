@@ -2,12 +2,9 @@
 ob_start(); 
 #Session Starts
 session_start();
-if (isset($_SESSION["username"]))
-{
+if (isset($_SESSION["username"])){
 	$logid=$_SESSION["username"];
-}
-else
-{
+}else{
 	header("location:../../index.php");
 }
 ?>
