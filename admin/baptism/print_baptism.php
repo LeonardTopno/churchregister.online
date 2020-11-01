@@ -171,7 +171,7 @@ $pdf->Cell(30,10,'MINISTER',0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,625, htmlspecialchars($Minister) . '',0,0,L,false);
+$pdf->Cell(60,630, htmlspecialchars($Minister) . '',0,0,L,false);
 
 
 //
