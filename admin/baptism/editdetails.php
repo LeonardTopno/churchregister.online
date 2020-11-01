@@ -341,7 +341,7 @@ else
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsors's Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GFdom;?>" disabled>
+                                            <input type="text" class="form-control" value="<?php echo $domicile_state_Gfather;?>" disabled>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -353,7 +353,7 @@ else
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsors's Domicile</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $GMdom;?>" disabled>
+                                           <input type="text" class="form-control" value="<?php echo $domicile_state_Gmother;?>" disabled>
                                         </div>
                                     </div>
                                     <h5 class="card-title"><b>Home Parish Details</b></h5>
