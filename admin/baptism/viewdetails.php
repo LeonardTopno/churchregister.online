@@ -136,8 +136,8 @@ if (isset($_SESSION["username"])){
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item">Baptism</li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="index.php">Baptism</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Search Baptism Record</li>
                                 </ol>
                             </nav>
@@ -416,10 +416,21 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                         <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
                                         <div class="col-sm-9">
                                            <?php echo date("d-m-Y",strtotime($DOBaptism));?>
+<<<<<<< HEAD
+=======
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $GFname;?>
+>>>>>>> dev
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+<<<<<<< HEAD
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
                                             <?php echo $GFname;?>
@@ -443,6 +454,25 @@ $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
                                            <?php echo $domicile_state_Gmother;?>
                                         </div>
                                     </div>
+=======
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $domicile_state_Gfather;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $GMname;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                           <?php echo $domicile_state_Gmother;?>
+                                        </div>
+                                    </div>
+>>>>>>> dev
 
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
@@ -482,14 +512,7 @@ $conn = null;
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            <?php include('../includes/frontend/inc-footer.php')?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->

@@ -156,7 +156,7 @@ if (isset($_SESSION["username"])){
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
                                     <li class="breadcrumb-item">Baptism</li>
                                     <li class="breadcrumb-item active" aria-current="page">Edit Baptism Record</li>
                                 </ol>
@@ -309,15 +309,7 @@ $conn = null;
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            <?php include('../includes/frontend/inc-footer.php')?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->

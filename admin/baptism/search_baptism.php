@@ -156,8 +156,8 @@ if (isset($_SESSION["username"])){
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item">Baptism</li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="index.php">Baptism</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Search Baptism Record</li>
                                 </ol>
                             </nav>
