@@ -152,7 +152,7 @@ $pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,550, htmlspecialchars($GFname) . ' / '. htmlspecialchars($GFdom),0,0,L,false);
+$pdf->Cell(60,550, htmlspecialchars($GFname) . ' / '. htmlspecialchars($domicile_state_Gfather),0,0,L,false);
 
 // Female Sponsor
 $pdf->SetXY(30,460);
@@ -161,7 +161,7 @@ $pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,610, htmlspecialchars($GMname) . ' / '. htmlspecialchars($GMdom),0,0,L,false);
+$pdf->Cell(60,610, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
 
 
 // Minister
