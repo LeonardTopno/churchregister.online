@@ -356,22 +356,29 @@ else
                                            <input type="text" class="form-control" value="<?php echo $domicile_state_Gmother;?>" disabled>
                                         </div>
                                     </div>
-                                    <h5 class="card-title"><b>Home Parish Details</b></h5>
-                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Minister</label>
+                                        <div class="col-sm-9">
+                                           <input type="text" class="form-control" value="<?php echo $Minister;?>" disabled>
+                                        </div>
+                                </div>
+
+                                <h5 class="card-title"><b>Home Parish Details</b></h5>
+                                <div class="border-top"></div><br>
                                     
-                                
                                 <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Home Parish / Church Name</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" value="<?php echo "$parish_name /  $church_name";?>" disabled>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
-                                        <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Minister;?>" disabled>
-                                        </div>
+                                    <label class="col-md-3 m-t-15">Diocese</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" value="<?php echo $diocese;?>" disabled>
+                                    </div>
                                 </div>
                                 
                                 <h5 class="card-title"><b>Update Here</b></h5>
@@ -383,6 +390,7 @@ else
                                              <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cadd;?>">
                                         </div>
                                 </div>
+
                                 <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number<span class="required">*</span></label>
                                         <div class="col-sm-9">
