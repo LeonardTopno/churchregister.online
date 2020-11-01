@@ -1,7 +1,7 @@
 <?php 
 include('pdf/fpdf.php'); 
 include('connection.php');
-include('baptism_info.php');
+include('fetch_baptism_details.php');
 
 // Creates a new PDF
 $pdf = new FPDF('P', 'pt', 'A4');

@@ -8,7 +8,7 @@ include('../includes/dbConnect.php');
 $id=($_GET["Id"]);
 
 // fetching from userinfo table
-$sql="SELECT * from userinfo where user_id=$id";
+$sql="SELECT * FROM userinfo WHERE user_id=$id";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -32,7 +32,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 		
 
 // fetching from eventbaptism table
-$sql_eventbaptism = "select * from eventbaptism where user_id = $id";
+$sql_eventbaptism = "SELECT * FROM eventbaptism WHERE user_id = $id";
 $result1 = mysqli_query($conn, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
     $Baptism_id = $row['baptism_id'];

@@ -8,6 +8,8 @@ if (isset($_SESSION["username"])){
 	header("location:../../index.php");
 }
 ?>
+                
+<?php include "fetch_baptism_details.php"; ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -237,9 +239,7 @@ if (isset($_SESSION["username"])){
                
                 
                 <!-- PHP code for Table Data -->
-                
-
-<?php include "baptism_info.php"; ?>         
+         
 
 					<div class="row">
                     <div class="col-12">
