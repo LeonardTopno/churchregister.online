@@ -151,7 +151,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Priest Name">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Minister's Name here">
                                         </div>
                                     </div>
 
@@ -224,15 +224,14 @@ $id=$_SESSION["username"];
                                     </div>
                                     
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GFname" id="GFname" value="" placeholder="God Father Name" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                            <!--<input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>-->
                                             <select class="select2 form-control custom-select" name="GFdomicile" id="GFdomicile" style="width: 100%; height:36px;">
                                             <option selected="" disabled=""> Select Domilcile State </option>
                                             <?php  
@@ -250,15 +249,14 @@ $id=$_SESSION["username"];
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GMname" id="GMname" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                            <!--<input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>-->
                                             <select class="select2 form-control custom-select" name="GMdomicile" id="GMdomicile" style="width: 100%; height:36px;">
                                             <option selected="" disabled=""> Select Domilcile State </option>
                                             <?php  
@@ -285,14 +283,14 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                     <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control" name="padd" id="padd"  required></textarea>
+                                            <textarea class="form-control" name="padd" id="padd"  placeholder="Write Permanent Address here" required></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control" name="cadd" id="cadd"  required></textarea>
+                                            <textarea class="form-control" name="cadd" id="cadd"  placeholder="Write Current Address here" required></textarea>
                                         </div>
                                     </div>
 
