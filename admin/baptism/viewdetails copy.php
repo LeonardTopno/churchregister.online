@@ -1,6 +1,6 @@
 <?php 
 ob_start(); 
-#Session Starts
+# Session Starts
 session_start();
 if (isset($_SESSION["username"])){
 	$logid=$_SESSION["username"];
@@ -8,7 +8,7 @@ if (isset($_SESSION["username"])){
 	header("location:../../index.php");
 }
 ?>
-                
+
 <?php include "fetch_baptism_details.php"; ?>
 
 <!DOCTYPE html>
@@ -23,24 +23,18 @@ if (isset($_SESSION["username"])){
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Edit_Baptism_Details_Live Church</title>
+    <title>View Baptism Record | ParishRegister.Online</title>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
     <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
-    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <style>.required
-{
-    color: red;
-}</style>
-    <?php include "upscript.php"; ?>
-    
+<?php include('../includes/frontend/inc-upscript.php');?>
 </head>
 
 <body oncontextmenu="return false;">
@@ -57,7 +51,8 @@ if (isset($_SESSION["username"])){
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-        <?php include('../includes/frontend/inc-header.php')?>
+        <!-- Topbar header - style you can find in pages.scss -->
+        <?php include "../includes/frontend/inc-header.php";?>
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -119,29 +114,7 @@ if (isset($_SESSION["username"])){
                                 <li class="sidebar-item"><a href="/admin/death/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Burial Record </span></a></li>
                             </ul>
                         </li>
-                       <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-move-resize-variant"></i><span class="hide-menu">Addons </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="index2.html" class="sidebar-link"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu"> Dashboard-2 </span></a></li>
-                                <li class="sidebar-item"><a href="pages-gallery.html" class="sidebar-link"><i class="mdi mdi-multiplication-box"></i><span class="hide-menu"> Gallery </span></a></li>
-                                <li class="sidebar-item"><a href="pages-calendar.html" class="sidebar-link"><i class="mdi mdi-calendar-check"></i><span class="hide-menu"> Calendar </span></a></li>
-                                <li class="sidebar-item"><a href="pages-invoice.html" class="sidebar-link"><i class="mdi mdi-bulletin-board"></i><span class="hide-menu"> Invoice </span></a></li>
-                                <li class="sidebar-item"><a href="pages-chat.html" class="sidebar-link"><i class="mdi mdi-message-outline"></i><span class="hide-menu"> Chat Option </span></a></li>
-                            </ul>
-                        </li>-->
-                       <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-key"></i><span class="hide-menu">Authentication </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="authentication-login.html" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Login </span></a></li>
-                                <li class="sidebar-item"><a href="authentication-register.html" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Register </span></a></li>
-                            </ul>
-                        </li>-->
-                        <!--<li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-alert"></i><span class="hide-menu">Errors </span></a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="error-403.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 403 </span></a></li>
-                                <li class="sidebar-item"><a href="error-404.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 404 </span></a></li>
-                                <li class="sidebar-item"><a href="error-405.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 405 </span></a></li>
-                                <li class="sidebar-item"><a href="error-500.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 500 </span></a></li>
-                            </ul>
-                        </li>-->
+                       
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -161,13 +134,13 @@ if (isset($_SESSION["username"])){
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Edit Baptism Record</h4>
+                        <h4 class="page-title">Detailed View</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
                                     <li class="breadcrumb-item"><a href="index.php">Baptism</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Edit Baptism Record</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Search Baptism Record</li>
                                 </ol>
                             </nav>
                         </div>
@@ -181,9 +154,6 @@ if (isset($_SESSION["username"])){
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Sales Cards  -->
-                <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -234,188 +204,274 @@ if (isset($_SESSION["username"])){
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                
-               
-                
-                <!-- code for Table Data -->
-         
 
+<?php           
+// Establish Connection with Database
+include "connection.php";
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+
+// selecting particular user using id 
+$id= ($_GET["Id"]);
+
+// fetching from userinfo table
+$sql="SELECT * from userinfo where user_id=$id";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    
+    
+	$fname = $row['first_name'];
+	$MName = $row['middle_name'];
+	$LName=$row['last_name'];
+	$gender=$row['gender_id'];
+	$DOB=$row['dob'];
+	$Padd=$row['permanent_address'];
+	$Cadd=$row['current_address'];
+    $Fathername=$row['father_name'];
+    $Domicile_id=$row['domicile_id'];
+	$Fathersname=$row['father_surname'];
+	$Foccupation=$row['father_occupation'];
+	$Mothername=$row['mother_name'];
+	$Mothersname=$row['mother_surname'];
+	$Moccupation=$row['mother_occupation'];
+	$Mobile=$row['mobile'];
+    $Email=$row['email'];
+    $HomeparishId = $row['home_parish_id'];
+	
+	
+
+// fetching from eventbaptism table
+$sql_eventbaptism = "select * from eventbaptism where user_id = $id";
+$result1 = mysqli_query($con, $sql_eventbaptism);
+$row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
+    $Baptism_id = $row['baptism_id'];
+	$Diocese=$row['diocese'];
+	$Church=$row['church'];
+	$Bby=$row['clergyman'];
+	$GFname=$row['godfather_name'];
+	$GFdom=$row['godfather_domicile_id'];
+	$GMname=$row['godmother_name'];
+	$GMdom=$row['godmother_domicile_id'];
+    $DOBaptism=$row['bapt_date'];
+    
+// Fetching from states table [For Domcile State]
+$Country_id = 101;  //Default is India 
+$sql_countries = "SELECT * FROM states WHERE country_id = $Country_id";
+
+$sql_domicile_state_user = "SELECT * FROM states WHERE country_id = $Country_id and id=$Domicile_id";
+$sql_domicile_state_Gfather = "SELECT * FROM states WHERE country_id = $Country_id and id=$GMdom";
+$sql_domicile_state_Gmother = "SELECT * FROM states WHERE country_id = $Country_id and id=$GFdom";
+
+$result2 = mysqli_query($con, $sql_domicile_state_user);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_user = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gfather);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gfather = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gmother);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gmother = $row['name'];
+
+
+// Fetching from churches table [For Domcile State]
+$sql_church = "select * from church where church_id = $HomeparishId";
+$result3 = mysqli_query($con, $sql_church);
+$row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
+    $parish_name = $row['parish'];
+    $church_name =$row['church_name'];
+
+?> 
 					<div class="row">
-                    <div class="col-12">
+					<div class="col-12">
+                    
                         <div class="card">
-                            <form class="form-horizontal" method="post" action="baptism_update.php?Id=<?php echo $id;?>"  enctype="multipart/form-data">
+                            <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Baptism Info</h4>
-                                    
-                                    
-                                    <div class="border-top">
-                                <div class="card-body">
-                                <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
-                                <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back to Search</a></button>
-                                </div>
+                                    <!-------------- User Details ------------------>
+                                    <h5 class="card-title"><b>User Details</b></h5>
+                                    <div class="border-top"></div><br>
+                                     
+                                     <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">User ID</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $id;?>
+                                        </div>
                                     </div>
                                     
-                                     <div class="form-group row">
-                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
-                                        <div class="col-sm-9">
-                                           <!--<input type="text" class="form-control" value=" <?php echo 'B' . htmlspecialchars($reg_id) . '';?>" disabled>-->
-                                           <input type="text" class="col-sm-3" value=" <?php echo 'B' . htmlspecialchars($id) . '';?>" disabled> 
-                                           
-                                        </div>
-                                        </div>
-                                        
-                                        <?echo $first_name;?>
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>" disabled> 
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                    <label class="col-md-3">Gender</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $gender;?>" disabled> 
-                                    </div>
-                                    </div>
-                                    <div>
-                                        <div class="form-group row">
-                                        <label class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo date("d-m-Y",strtotime($DOB));?>" disabled>                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="form-group row">
-                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
-                                        <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo date("d-m-Y",strtotime($DOBaptism));?>" disabled>
-                                        </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
-                                        <div class="col-sm-9">
-                                           
-                                              <input type="text" class="form-control" value="<?php echo $Padd;?>" disabled>
-                                        </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Fathername;?>" disabled>
+                                            <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group row">
+                                    <label class="col-md-3">Gender</label>
+                                    <div class="col-md-9">
+                                        <?php echo $gender;?>
+                                    </div>
+                                    </div>
+                                        <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
+                                        <div class="col-sm-9">
+                                            <?php echo date("d-m-Y",strtotime($DOB));?>                                            
+                                        </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $Fathername;?> &nbsp; <?php echo $Fathersname;?>
+                                        </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Domicile</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $domicile_state_user;?>
+                                        </div>
+                                        </div>
+               
+                                    <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Foccupation;?>" disabled>
+                                            <?php echo $Foccupation;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $Mothername;?>" disabled>
+                                            <?php echo $Mothername;?> &nbsp; <?php echo $Mothersname;?>
                                         </div>
                                     </div>
                                     
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
                                         <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Moccupation;?>" disabled>
+                                           <?php echo $Moccupation;?>
                                         </div>
                                     </div>
-                                    
+                                    <!-------------- Home Parish Details ------------------>
+                                    <h5 class="card-title"><b>Home Parish Details</b></h5>
+                                    <div class="border-top"></div><br>
+
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsors's Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish / Church Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GFname;?>" disabled>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsors's Domicile</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $domicile_state_Gfather;?>" disabled>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsors's Name</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" value="<?php echo $GMname;?>" disabled>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsors's Domicile</label>
-                                        <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $domicile_state_Gmother;?>" disabled>
+                                            <?php echo "$parish_name /  $church_name";?>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Minister</label>
-                                        <div class="col-sm-9">
-                                           <input type="text" class="form-control" value="<?php echo $Minister;?>" disabled>
-                                        </div>
-                                </div>
-
-                                <h5 class="card-title"><b>Home Parish Details</b></h5>
-                                <div class="border-top"></div><br>
-                                    
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Home Parish / Church Name</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo "$parish_name /  $church_name";?>" disabled>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Diocese</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $diocese;?>" disabled>
+                                       <?php echo $Diocese;?>
                                     </div>
-                                </div>
-                                
-                                <h5 class="card-title"><b>Update Here [Editable Fields]</b></h5>
+                                    </div>
+                                    <!-------------- Contact Details ------------------>
+                                    <h5 class="card-title"><b>Contact Details</b></h5>
                                     <div class="border-top"></div><br>
                                     
-                                <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address<span class="required">*</span></label>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
-                                             <input type="text" class="form-control" name="Cuadd" value="<?php echo $Cadd;?>">
+                                            <?php echo $Mobile;?>
                                         </div>
-                                </div>
-
-                                <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number<span class="required">*</span></label>
-                                        <div class="col-sm-9">
-                                            <input type="number" class="form-control" name="Mobile" pattern="[1-9]{1}[0-9]{9}" value="<?php echo $Mobile;?>">
-                                        </div>
-                                </div>
-                                <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID<span class="required">*</span></label>
-                                        <div class="col-sm-9">
-                                          <input type="text" class="form-control" name="Email" value="<?php echo $Email;?>">
-                                        </div>
-                                </div>
-                                   
-                                <div class="card-body">
-                                <button type="submit" class="btn btn-success"><a href="baptism_update.php?Id=<?php echo $id;?>" class="text-white">Update Details</a></button>
-                                <button class="btn btn-danger"><a href="edit_baptism.php" class="text-white">Back to Details</a></button>
-                                </div>
                                     </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
+                                        <div class="col-sm-9">
+                                          <?php echo $Email;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                           <?php echo $Padd;?>
+                                        </div>
+                                        </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                             <?php echo $Cadd;?>
+                                        </div>
+                                    </div>
+                                    <!-------------- Baptism Details ------------------>
+                                    <h5 class="card-title"><b>Baptism Details</b></h5>
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $Baptism_id;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
+                                        <div class="col-sm-9">
+                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $GFname;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $domicile_state_Gfather;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $GMname;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                           <?php echo $domicile_state_Gmother;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
+                                        <div class="col-sm-9">
+                                          <?php echo $Bby;?>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="border-top">
+                                <div class="card-body">
+                                    <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
+                                    class="text-white">Generate Certificate</a></button>
+                                    <!--<button type="submit" class="btn btn-danger">Cancel</button>-->
+                                    <button class="btn btn-danger"><a href="search_baptism.php" class="text-white">Back to Search</a></button>
                                 </div>
+                            </div>
+                            
                                 </div>
 								</div>
 							</form>
-						
-						
-						<?php
-						$conn = null;
-						?>
+							<!-- Insert Query Starts -->
+							<?php
 
+// Close the connection
+$conn = null;
+?>
 
 							<!-- Query Ends -->
 					</div>
@@ -428,7 +484,8 @@ if (isset($_SESSION["username"])){
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-           <?php include('../includes/frontend/inc-footer.php')?>
+            <!-- ============================================================== -->
+            <?php include('../includes/frontend/inc-footer.php')?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
@@ -463,7 +520,7 @@ if (isset($_SESSION["username"])){
          ****************************************/
         $('#zero_config').DataTable();
     </script>
-    <!------ Top Button ------>
+<!------ Top Button ------>
 <?php include "buttonupscript.php"; ?>
     <!-- End -->
 
