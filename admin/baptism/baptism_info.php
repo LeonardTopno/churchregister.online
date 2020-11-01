@@ -56,14 +56,13 @@ $sql_eventbaptism = "select * from eventbaptism where user_id = $id";
 $result1 = mysqli_query($con, $sql_eventbaptism);
 $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
     $Baptism_id = $row['baptism_id'];
-	$Diocese=$row['diocese'];
-	$Church=$row['church'];
-	$Minister=$row['clergyman'];
+	$DOBaptism=$row['bapt_date'];
+	$Baptism_Parish_Id=$row['baptism_parish_id'];
 	$GFname=$row['godfather_name'];
 	$GFdom=$row['godfather_domicile_id'];
 	$GMname=$row['godmother_name'];
 	$GMdom=$row['godmother_domicile_id'];
-    $DOBaptism=$row['bapt_date'];
+	$Minister=$row['clergyman'];
     
 // Fetching from states table [For Domcile State]
 $Country_id = 101;  //Default is India 
