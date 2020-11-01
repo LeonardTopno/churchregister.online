@@ -407,40 +407,18 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
                                            <input type="text" class="form-control" value="<?php echo $GMdom;?>" disabled>
                                         </div>
                                     </div>
-                                    <h5 class="card-title"><b>Diocese Info</b></h5>
+                                    <h5 class="card-title"><b>Home Parish Details</b></h5>
                                     <div class="border-top"></div><br>
                                     
+                                
                                 <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Country</label>
-                                    <div class="col-sm-9">
-                                       <input type="text" class="form-control" value="<?php echo $Country;?>" disabled> 
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">State</label>
-                                    <div class="col-sm-9">
-                                       <input type="text" class="form-control" value="<?php echo $State;?>" disabled>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">District</label>
-                                    <div class="col-md-9">
-                                       <input type="text" class="form-control" value="<?php echo $District;?>" disabled> 
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Diocese</label>
+                                    <label class="col-md-3 m-t-15">Home Parish / Church Name</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" value="<?php echo $Diocese;?>" disabled>
                                     </div>
                                 </div>
+                                
                                 <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Church</label>
-                                    <div class="col-md-9">
-                                        <input type="text" class="form-control" value="<?php echo $Church;?>" disabled>
-                                    </div>
-                                </div>
-                                 <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
                                         <div class="col-sm-9">
                                            <input type="text" class="form-control" value="<?php echo $Bby;?>" disabled>
