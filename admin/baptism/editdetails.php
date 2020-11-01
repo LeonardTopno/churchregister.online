@@ -381,7 +381,7 @@ else
                                     </div>
                                 </div>
                                 
-                                <h5 class="card-title"><b>Update Here</b></h5>
+                                <h5 class="card-title"><b>Update Here [Editable Fields]</b></h5>
                                     <div class="border-top"></div><br>
                                     
                                 <div class="form-group row">
