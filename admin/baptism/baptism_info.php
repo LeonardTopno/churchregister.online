@@ -70,6 +70,14 @@ $sql_church = "select * from church where church_id = $HomeparishId";
 $result3 = mysqli_query($conn, $sql_church);
 $row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
     $parish_name = $row['parish'];
-    $church_name =$row['church_name'];
+	$church_name = $row['church_name'];
+	$diocese_id = $row['diocese_id']; //will be used to get diocese_name
+	
+
+// Fetching from diocese table [For Diocese name]
+$sql_diocese= "SELECT * FROM diocese WHERE diocese_id=$diocese_id";
+$result = mysqli_query($conn, $sql_diocese);
+$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+	$diocese=$row['name'];	
 
 ?>
