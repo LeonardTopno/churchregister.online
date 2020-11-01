@@ -11,7 +11,7 @@ $pdf->AddPage();
 //$pdf->Line(Left Margin,Left Top Margin,LINE LENGTH,Right Top Margin );
 
 $next_line=120; //Starts at left top margin and right top margin set to 120
-for( $j=1;$j<=12;$j++){
+for( $j=1;$j<=13;$j++){
     $next_line=$next_line+30;
     $pdf->Line(33,$next_line,570,$next_line);
 }
