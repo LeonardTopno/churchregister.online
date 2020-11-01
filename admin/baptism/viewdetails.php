@@ -155,7 +155,7 @@ if (isset($_SESSION["username"])){
             <!-- ============================================================== -->
             <div class="container-fluid">
 
-                <?php include('bapt-includes/modal.php'); ?>
+                <?php include('bapt-includes/operations-tab.php'); ?>
                 <!---------------------------- Dispaying Information   -----------------------------> 
 					<div class="row">
 					<div class="col-12">

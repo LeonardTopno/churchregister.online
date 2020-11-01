@@ -81,7 +81,7 @@ $id=$_SESSION["username"];
             <!-- Container fluid  -->
             <div class="container-fluid">
                  
-                <?php include('bapt-includes/modal.php'); ?>
+                <?php include('bapt-includes/operations-tab.php'); ?>
                 <!---------------------------- Dispaying Form   -----------------------------> 
                 <div class="row">
                     <div class="col-12">
