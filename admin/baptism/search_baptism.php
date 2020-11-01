@@ -152,7 +152,7 @@ if (isset($_SESSION["username"])){
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Baptism Records and Details</h4>
+                        <h4 class="page-title">Baptism Register</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">

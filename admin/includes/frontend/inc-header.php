@@ -129,7 +129,7 @@
                                                 <div class="d-flex no-block align-items-center p-10">
                                                     <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
                                                     <div class="m-l-10">
-                                                        <h5 class="m-b-0">Pavan kumar</h5> 
+                                                        <h5 class="m-b-0">Leonard Topno</h5> 
                                                         <span class="mail-desc">Just see the my admin!</span> 
                                                     </div>
                                                 </div>
