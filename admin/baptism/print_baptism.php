@@ -122,7 +122,7 @@ $pdf->Cell(30,10,"DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,310, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
+$pdf->Cell(60,370, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
 
 // Father's Occupation
 $pdf->SetXY(30,340);
