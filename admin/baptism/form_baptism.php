@@ -368,7 +368,7 @@ $id=$_SESSION["username"];
                                     <div class="card-body">
                                     <button type="submit" class="btn btn-success">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
-                                    <button type="submit" class="btn btn-danger">Cancel</button>
+                                    <button class="btn btn-danger"><a href="../index.php" class="text-white">Back</a></button>
                                 </div>
                             </div>
                         </div>
@@ -378,9 +378,11 @@ $id=$_SESSION["username"];
 					</div>
 				</div>
 			</div>
+			
+			<?php include('../includes/frontend/inc-footer.php')?>
             </div>
             <!-- End Container fluid  -->
-        <?php include('../includes/frontend/inc-footer.php')?>
+        
         
         </div>
         <!-- End Page wrapper  -->

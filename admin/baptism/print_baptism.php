@@ -11,13 +11,15 @@ $pdf->AddPage();
 //$pdf->Line(Left Margin,Left Top Margin,LINE LENGTH,Right Top Margin );
 
 $next_line=120; //Starts at left top margin and right top margin set to 120
-for( $j=1;$j<=12;$j++){
+for( $j=1;$j<=13;$j++){
     $next_line=$next_line+30;
     $pdf->Line(33,$next_line,570,$next_line);
 }
 
 // Vertical Line
-$pdf->Line(210,480,210,150);
+//$pdf->Line(210,480,210,150);
+$pdf->Line(210,150,210,510);
+//Line(float x1, float y1, float x2, float y2)
 
 // Certificate Header
 $pdf->SetFont('Arial','B',16);
@@ -115,52 +117,61 @@ $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(60,310, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
 
-// Father's Occupation
+// Domicile's name 
 $pdf->SetXY(30,340);
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(30,10,"DOMICILE",0,0,L,false);
+
+$pdf->SetXY(220,160);
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(60,370, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
+
+// Father's Occupation
+$pdf->SetXY(30,370);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"FATHER'S OCCUPATION",0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,370, htmlspecialchars($Foccupation)  .'',0,0,L,false);
+$pdf->Cell(60,430, htmlspecialchars($Foccupation)  .'',0,0,L,false);
 
 
 // Mother's name
-$pdf->SetXY(30,370);
+$pdf->SetXY(30,400);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"MOTHER'S NAME",0,0,L,false); 
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,430, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
+$pdf->Cell(60,490, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
 
 // Male Sponsor and Domicile
-$pdf->SetXY(30,400);
+$pdf->SetXY(30,430);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,490, htmlspecialchars($GFname) . ' / '. htmlspecialchars($GFdom),0,0,L,false);
+$pdf->Cell(60,550, htmlspecialchars($GFname) . ' / '. htmlspecialchars($domicile_state_Gfather),0,0,L,false);
 
 // Female Sponsor
-$pdf->SetXY(30,430);
+$pdf->SetXY(30,460);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,550, htmlspecialchars($GMname) . ' / '. htmlspecialchars($GMdom),0,0,L,false);
+$pdf->Cell(60,610, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
 
 
 // Minister
-$pdf->SetXY(30,460);
+$pdf->SetXY(30,490);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'MINISTER',0,0,L,false); 
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,610, htmlspecialchars($Minister) . '',0,0,L,false);
+$pdf->Cell(60,630, htmlspecialchars($Minister) . '',0,0,L,false);
 
 
 //

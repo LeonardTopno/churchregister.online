@@ -32,7 +32,7 @@ if (isset($_SESSION["username"])){
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-<?php include "upscript.php"; ?>
+<?php include('../includes/frontend/inc-upscript.php');?>
 </head>
 
 <body oncontextmenu="return false;">
@@ -136,8 +136,8 @@ if (isset($_SESSION["username"])){
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item">Baptism</li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="index.php">Baptism</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Search Baptism Record</li>
                                 </ol>
                             </nav>
@@ -202,12 +202,8 @@ if (isset($_SESSION["username"])){
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                
-                <!-- Recent comment and chats -->
-                
-                <!-- PHP code for Table Data -->
-      <?php           
+
+<?php           
 // Establish Connection with Database
 include "connection.php";
 if (mysqli_connect_errno()) {
@@ -229,17 +225,18 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$LName=$row['last_name'];
 	$gender=$row['gender_id'];
 	$DOB=$row['dob'];
-	$DOBaptism=$row['bapt_date'];
 	$Padd=$row['permanent_address'];
 	$Cadd=$row['current_address'];
-	$Fathername=$row['father_name'];
+    $Fathername=$row['father_name'];
+    $Domicile_id=$row['domicile_id'];
 	$Fathersname=$row['father_surname'];
 	$Foccupation=$row['father_occupation'];
 	$Mothername=$row['mother_name'];
 	$Mothersname=$row['mother_surname'];
 	$Moccupation=$row['mother_occupation'];
 	$Mobile=$row['mobile'];
-	$Email=$row['email'];
+    $Email=$row['email'];
+    $HomeparishId = $row['home_parish_id'];
 	
 	
 
@@ -257,11 +254,33 @@ $row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 	$GMdom=$row['godmother_domicile_id'];
     $DOBaptism=$row['bapt_date'];
     
-// Fetching from countries table
-$sql_countries = "SELECT * FROM countries WHERE id = $Country_id";
-$result2 = mysqli_query($con, $sql_countries);
+// Fetching from states table [For Domcile State]
+$Country_id = 101;  //Default is India 
+$sql_countries = "SELECT * FROM states WHERE country_id = $Country_id";
+
+$sql_domicile_state_user = "SELECT * FROM states WHERE country_id = $Country_id and id=$Domicile_id";
+$sql_domicile_state_Gfather = "SELECT * FROM states WHERE country_id = $Country_id and id=$GMdom";
+$sql_domicile_state_Gmother = "SELECT * FROM states WHERE country_id = $Country_id and id=$GFdom";
+
+$result2 = mysqli_query($con, $sql_domicile_state_user);
 $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
-    $Country = $row['name'];
+    $domicile_state_user = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gfather);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gfather = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gmother);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gmother = $row['name'];
+
+
+// Fetching from churches table [For Domcile State]
+$sql_church = "select * from church where church_id = $HomeparishId";
+$result3 = mysqli_query($con, $sql_church);
+$row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
+    $parish_name = $row['parish'];
+    $church_name =$row['church_name'];
 
 ?> 
 					<div class="row">
@@ -270,14 +289,16 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                         <div class="card">
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
-                                    <h4 class="card-title">Baptism Info</h4>
+                                    <!-------------- User Details ------------------>
+                                    <h5 class="card-title"><b>User Details</b></h5>
+                                    <div class="border-top"></div><br>
                                      
                                      <div class="form-group row">
-                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
+                                        <label class="col-sm-3 text-left control-label col-form-label">User ID</label>
                                         <div class="col-sm-9">
-                                            <?php echo $Baptism_id;?>
+                                            <?php echo $id;?>
                                         </div>
-                                        </div>
+                                    </div>
                                     
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
@@ -298,32 +319,21 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                             <?php echo date("d-m-Y",strtotime($DOB));?>                                            
                                         </div>
                                         </div>
-                                        <div class="form-group row">
-                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
-                                        <div class="col-sm-9">
-                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
-                                        </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
-                                        <div class="col-sm-9">
-                                           <?php echo $Padd;?>
-                                        </div>
-                                        </div>
-                                        <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
-                                        <div class="col-sm-9">
-                                             <?php echo $Cadd;?>
-                                        </div>
-                                        </div>
+
                                         <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                                         <div class="col-sm-9">
                                             <?php echo $Fathername;?> &nbsp; <?php echo $Fathersname;?>
                                         </div>
-                                    </div>
-                                    
+                                        </div>
+
+                                        <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Domicile</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $domicile_state_user;?>
+                                        </div>
+                                        </div>
+               
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
                                         <div class="col-sm-9">
@@ -343,63 +353,104 @@ $row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
                                            <?php echo $Moccupation;?>
                                         </div>
                                     </div>
+                                    <!-------------- Home Parish Details ------------------>
+                                    <h5 class="card-title"><b>Home Parish Details</b></h5>
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Home Parish / Church Name</label>
+                                        <div class="col-sm-9">
+                                            <?php echo "$parish_name /  $church_name";?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                    <label class="col-md-3 m-t-15">Diocese</label>
+                                    <div class="col-md-9">
+                                       <?php echo $Diocese;?>
+                                    </div>
+                                    </div>
+                                    <!-------------- Contact Details ------------------>
+                                    <h5 class="card-title"><b>Contact Details</b></h5>
+                                    <div class="border-top"></div><br>
+                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
                                             <?php echo $Mobile;?>
                                         </div>
                                     </div>
+                                    
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
                                         <div class="col-sm-9">
                                           <?php echo $Email;?>
                                         </div>
                                     </div>
+
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                           <?php echo $Padd;?>
+                                        </div>
+                                        </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                             <?php echo $Cadd;?>
+                                        </div>
+                                    </div>
+                                    <!-------------- Baptism Details ------------------>
+                                    <h5 class="card-title"><b>Baptism Details</b></h5>
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID :</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $Baptism_id;?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
+                                        <div class="col-sm-9">
+                                           <?php echo date("d-m-Y",strtotime($DOBaptism));?>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
                                             <?php echo $GFname;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                            <?php echo $GFdom;?>
+                                            <?php echo $domicile_state_Gfather;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
                                         <div class="col-sm-9">
                                             <?php echo $GMname;?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                           <?php echo $GMdom;?>
+                                           <?php echo $domicile_state_Gmother;?>
                                         </div>
                                     </div>
-                                    <h5 class="card-title"><b>Diocese Info</b></h5>
-                                    <div class="border-top"></div><br>
-                                    
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Diocese</label>
-                                    <div class="col-md-9">
-                                       <?php echo $Diocese;?>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 m-t-15">Church</label>
-                                    <div class="col-md-9">
-                                        <?php echo $Church;?>
-                                    </div>
-                                </div>
-                                 <div class="form-group row">
-                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
                                           <?php echo $Bby;?>
                                         </div>
                                     </div>
+                                
                                     <div class="border-top">
                                 <div class="card-body">
                                     <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
@@ -431,14 +482,7 @@ $conn = null;
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            <?php include('../includes/frontend/inc-footer.php')?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
