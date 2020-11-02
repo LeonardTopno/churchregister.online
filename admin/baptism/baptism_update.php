@@ -10,7 +10,7 @@ $id = $_GET['Id'];
 
 // Push Data into table
 // $sql = "UPDATE userinfo SET mobile='$mobile', email='$email' WHERE user_id ='$id'";      
-$sql = "UPDATE userinfo SET current_address='" . $_POST['Cuadd'] . "',mobile='" . $_POST['Mobile'] . "', email='" . $_POST['Email'] . "' WHERE user_id ='$id'";
+$sql = "UPDATE userinfo SET current_address='" . $_POST['Cuadd'] . "',mobile='" . $_POST['Mobile'] . "',email='" . $_POST['Email'] . "' WHERE user_id ='$id'";
 $update=mysqli_query($con,$sql);
 
 if($update)
