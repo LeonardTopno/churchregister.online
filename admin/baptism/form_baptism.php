@@ -1,7 +1,8 @@
 <?php 
 ob_start(); 
-include('../includes/dbConnect.php');
 include('../includes/initiate-session.php');
+include('../includes/dbConnect.php');
+include('../includes/button-upscript.php');
 ?>
 
 <!DOCTYPE html>
@@ -407,7 +408,7 @@ include('../includes/initiate-session.php');
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
     <!------ Top Button ------>
-    <?php include "buttonupscript.php"; ?>
+    <?php #include "buttonupscript.php"; ?>
     <!-- End -->
 
 </body>
