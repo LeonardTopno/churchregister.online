@@ -39,7 +39,7 @@ if (isset($_SESSION["username"])){
 {
     color: red;
 }</style>
-    <?php include "upscript.php"; ?>
+    <?php include('../includes/frontend/inc-upscript.php')?>
     
 </head>
 
