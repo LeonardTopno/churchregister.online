@@ -1,15 +1,7 @@
 <?php 
 ob_start(); 
+include('../includes/initiate-session.php');
 include('../includes/dbConnect.php');
-
-# Session Starts
-session_start();
-if (isset($_SESSION["username"])){
-	$id=$_SESSION["username"];
-}else{
-	header("location:../../index.php");
-}
-$id=$_SESSION["username"];
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +30,7 @@ $id=$_SESSION["username"];
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <?php include "upscript.php"; ?>
+    <?php include('../includes/frontend/inc-upscript.php')?>
 </head>
 
 <body oncontextmenu="return false;">
@@ -63,13 +55,13 @@ $id=$_SESSION["username"];
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Baptism Form</h4>
+                        <h4 class="page-title">Baptism Register</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item">Baptism</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Baptism Form</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Create Baptism Record</li>
                                 </ol>
                             </nav>
                         </div>
@@ -81,9 +73,10 @@ $id=$_SESSION["username"];
             <!-- Container fluid  -->
             <div class="container-fluid">
                  
-                <?php include('bapt-includes/modal.php'); ?>
+                <?php include('bapt-includes/operations-tab.php'); ?>
+                <!---------------------------- Dispaying Form   -----------------------------> 
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-12">
                         <div class="card">
                             <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
                                 <div class="card-body">
@@ -150,7 +143,7 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Priest Name">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Minister's Name here">
                                         </div>
                                     </div>
 
@@ -181,6 +174,27 @@ $id=$_SESSION["username"];
                                     </div>
 
                                     <div class="form-group row">
+                                        <label for="fdomicile" class="col-sm-3 text-left control-label col-form-label">Father's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="domicile" id="domicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="mothername" id="mothername"  value="" placeholder="Mother's Name Here" required>
@@ -202,27 +216,53 @@ $id=$_SESSION["username"];
                                     </div>
                                     
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GFname" id="GFname" value="" placeholder="God Father Name" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Father's Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>
+                                            <select class="select2 form-control custom-select" name="GFdomicile" id="GFdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Name</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="GMname" id="GMname" value="" placeholder="Write Here" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">God Mother's Domicile</label>
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
+                                            <select class="select2 form-control custom-select" name="GMdomicile" id="GMdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -235,21 +275,21 @@ $id=$_SESSION["username"];
                                     <div class="form-group row">
                                     <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control" name="padd" id="padd"  required></textarea>
+                                            <textarea class="form-control" name="padd" id="padd"  placeholder="Write Permanent Address here" required></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
                                         <div class="col-sm-9">
-                                            <textarea class="form-control" name="cadd" id="cadd"  required></textarea>
+                                            <textarea class="form-control" name="cadd" id="cadd"  placeholder="Write Current Address here" required></textarea>
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
+                                            <input type="number" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
                                         </div>
                                     </div>
 
@@ -319,7 +359,7 @@ $id=$_SESSION["username"];
                                     <div class="card-body">
                                     <button type="submit" class="btn btn-success">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
-                                    <button type="submit" class="btn btn-danger">Cancel</button>
+                                    <button class="btn btn-danger"><a href="../index.php" class="text-white">Back</a></button>
                                 </div>
                             </div>
                         </div>
@@ -329,9 +369,11 @@ $id=$_SESSION["username"];
 					</div>
 				</div>
 			</div>
+			
+			<?php include('../includes/frontend/inc-footer.php')?>
             </div>
             <!-- End Container fluid  -->
-        <?php include('../includes/frontend/inc-footer.php')?>
+        
         
         </div>
         <!-- End Page wrapper  -->
@@ -365,7 +407,7 @@ $id=$_SESSION["username"];
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
     <!------ Top Button ------>
-    <?php include "buttonupscript.php"; ?>
+    <?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
 </body>
