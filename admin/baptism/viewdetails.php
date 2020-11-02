@@ -393,7 +393,7 @@ $conn = null;
         $('#zero_config').DataTable();
     </script>
 <!------ Top Button ------>
-<?php include "buttonupscript.php"; ?>
+<?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
 </body>

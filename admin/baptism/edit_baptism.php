@@ -292,7 +292,7 @@ $conn = null;
         $('#zero_config').DataTable({"order": [0,'desc']});
     </script>
     <!------ Top Button ------>
-<?php include "buttonupscript.php"; ?>
+<?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
 </body>

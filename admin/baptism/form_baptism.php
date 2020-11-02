@@ -407,7 +407,6 @@ include('../includes/dbConnect.php');
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
     <!------ Top Button ------>
-    <?php #include "buttonupscript.php"; ?>
     <?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
