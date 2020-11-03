@@ -1,6 +1,14 @@
 <?php 
 include('pdf/fpdf.php'); 
 #include('connection.php');
+
+$conn=mysqli_connect("localhost","develope_root","Migids@123","develope_universe");
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+
+
 include('fetch_baptism_details.php');
 
 // Creates a new PDF
