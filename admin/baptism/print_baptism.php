@@ -1,6 +1,6 @@
 <?php 
 include('pdf/fpdf.php'); 
-include('connection.php');
+#include('connection.php');
 include('fetch_baptism_details.php');
 
 // Creates a new PDF
