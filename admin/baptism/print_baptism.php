@@ -255,7 +255,7 @@ $pdf->SetXY(30,490);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'MINISTER',0,0,L,false); 
 
-$pdf->SetXY(220,160);
+$pdf->SetXY(220,490); // Defines the abscissa and ordinate of current position
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
           // weidth,height 
