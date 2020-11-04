@@ -260,7 +260,7 @@ $pdf->Cell(90,10,'Certified that the above is a true extract from the Register o
 
 
 //
-$pdf->SetXY(600,700);
+$pdf->SetXY(150,700);
 $pdf->Cell(90,10,'Signature & Seal',0,1,R,false);
 
 $pdf->Output();
