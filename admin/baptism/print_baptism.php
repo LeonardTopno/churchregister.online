@@ -263,13 +263,13 @@ $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
           // weidth,height 
 
 //
-$pdf->SetXY(30,520);
+$pdf->SetXY(30,530);
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(90,10,'Certified that the above is a true extract from the Register of Baptism kept at .......................................................',0,0,L,false);
 
 
 //
-$pdf->SetXY(430,700);
+$pdf->SetXY(30,700);
 $pdf->Cell(50,10,'Signature & Seal',0,1,L,false);
 
 $pdf->Output();
