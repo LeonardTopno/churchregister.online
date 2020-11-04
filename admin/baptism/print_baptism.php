@@ -156,7 +156,7 @@ $pdf->Cell(30,10,'REGISTRATION NO.',0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(40,10,($Baptism_id), 0, 0, L, false);
+$pdf->Cell(40,10,$Baptism_id, 0, 0, L, false);
 //$pdf->Cell(40,10,'B' . htmlspecialchars($id) . '',0,0,L,false);
 
 //$Baptism_id
