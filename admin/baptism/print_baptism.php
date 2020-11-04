@@ -1,7 +1,6 @@
-<?php #include "fetch_baptism_details.php"; ?>
 <?php 
 include('pdf/fpdf.php'); 
-#include('connection.php');
+
 
 #include("fetch_baptism_details.php");
 
