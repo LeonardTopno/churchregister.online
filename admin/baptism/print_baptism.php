@@ -201,7 +201,7 @@ $pdf->Cell(30,10,"FATHER'S NAME",0,0,L,false);
 
 $pdf->SetXY(220,310);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,110, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
 
 // Domicile's name 
 $pdf->SetXY(30,340);
