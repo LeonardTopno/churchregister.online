@@ -156,8 +156,10 @@ $pdf->Cell(30,10,'REGISTRATION NO.',0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(40,10,'B' . htmlspecialchars($id) . '',0,0,L,false);
+$pdf->Cell(40,10,($Baptism_id), 0, 0, L, false);
+//$pdf->Cell(40,10,'B' . htmlspecialchars($id) . '',0,0,L,false);
 
+//$Baptism_id
 // Date of Baptism
 $pdf->SetXY(30,190);
 $pdf->SetFont('Arial','',10);
@@ -262,7 +264,7 @@ $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
 
 //
 $pdf->SetXY(30,520);
-$pdf->SetFont('Arial','',10);
+$pdf->SetFont('Arial','',11);
 $pdf->Cell(90,10,'Certified that the above is a true extract from the Register of Baptism kept at ......................................................................',0,0,L,false);
 
 
