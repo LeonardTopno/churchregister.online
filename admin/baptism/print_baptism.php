@@ -4,12 +4,12 @@ include('pdf/fpdf.php');
 
 #include('fetch_baptism_details.php');
 
-include('../includes/dbConnect.php');
+include('includes/dbConnect.php');
 
 // Retrieve data from query string 
 $id=($_GET["Id"]);
 
-
+/*
 // fetching from userinfo table
 $sql="SELECT * FROM userinfo WHERE user_id=$id";
 $result = mysqli_query($conn, $sql);
@@ -85,6 +85,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 // Close the connection
 mysqli_close($conn);
+*/
 
 //=========================================
 
@@ -234,7 +235,7 @@ $pdf->Cell(90,10,'Certified that the above is a true extract from the Register o
 
 // Signature ans Seal
 $pdf->SetXY(500,700);
-$pdf->Cell(30,10,'Signature & Seal',0,1,R,false);
+$pdf->Cell(30,10,'Signature & Seal',0,0,R,false);
 
 $pdf->Output();
 
