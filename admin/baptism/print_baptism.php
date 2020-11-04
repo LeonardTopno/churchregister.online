@@ -2,7 +2,7 @@
 include('pdf/fpdf.php'); 
 #include('connection.php');
 
-#include('fetch_baptism_details.php'); #This was not working.
+#include('fetch_baptism_details.php');
 
 include('../includes/dbConnect.php');
 

@@ -1,19 +1,3 @@
-<?php 
-ob_start(); 
-?>
-<!--  Session Starts   -->
-<?php 
-session_start();
-if (isset($_SESSION["username"]))
-{
-	$logid=$_SESSION["username"];
-}
-else
-{
-	header("location:../../index.php");
-}
-?>
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -26,7 +10,7 @@ else
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Admin_Live Church</title>
+    <title>Admin_Baptism_Live Church</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -39,7 +23,7 @@ else
 <![endif]-->
 </head>
 
-<body oncontextmenu="return false;">
+<body>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -64,7 +48,7 @@ else
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="index.html">
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -214,12 +198,15 @@ else
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5" ></i> Account Setting</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
                                 <div class="dropdown-divider"></div>
                                 <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                                <a class="dropdown-item" href="logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
-                                
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -241,7 +228,7 @@ else
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../index.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
                         <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Charts</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="widgets.html" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Widgets</span></a></li>-->
                         <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tables.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Tables</span></a></li>-->
@@ -276,11 +263,11 @@ else
                                 <li class="sidebar-item"><a href="/admin/marriage/search_marriage.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Burial Register</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Death</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="/admin/burial/form_death.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Burial Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/edit_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Burial Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/form_death.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Death Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/edit_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Death Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-relative-scale">
@@ -290,7 +277,7 @@ else
                                 <li class="sidebar-item"><a href="/admin/communion/search_communion.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search 1st Communion Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/confirmation/search_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Confirmation Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/marriage/search_marriage.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Marriage Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Burial Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Death Record </span></a></li>
                             </ul>
                         </li>
                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-move-resize-variant"></i><span class="hide-menu">Addons </span></a>
@@ -339,8 +326,8 @@ else
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">Home</li>
-                                    
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Baptism</li>
                                 </ol>
                             </nav>
                         </div>
@@ -357,17 +344,16 @@ else
                 <!-- ============================================================== -->
                 <!-- Sales Cards  -->
                 <!-- ============================================================== -->
-                <!-- editor -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Online Registers, Welcome &nbsp<?php echo $logid; ?></h4>
+                                <h4 class="card-title">Online Registers</h4>
                                 <!-- Create the editor container -->
                                 <div class="row">
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="/admin/baptism/index.php">
+                                        <a href="../admin/baptism/index.php">
                                           <div class="card card-hover">
                                            
                                             <div class="box bg-cyan text-center">
@@ -380,7 +366,7 @@ else
                                     </div>
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="/admin/communion/index.php">
+                                        <a href="../admin/communion/index.php">
                                            <div class="card card-hover">
                                             <div class="box bg-success text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
@@ -391,7 +377,7 @@ else
                                     </div>
                                      <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/confirmation/index.php">
+                                       <a href="../admin/confirmation/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-warning text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
@@ -402,7 +388,7 @@ else
                                     </div>
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/marriage/index.php">
+                                       <a href="../admin/marriage/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-danger text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
@@ -413,11 +399,11 @@ else
                                     </div>
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/burial/index.php">
+                                       <a href="../admin/death/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-info text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                                                <h6 class="text-white">Burial</h6>
+                                                <h6 class="text-white">Death</h6>
                                             </div>
                                         </div>
 										</a>
@@ -425,7 +411,7 @@ else
                                     <!-- Column -->
                                     <!-- Column -->
                                     <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/search/index.php">
+                                       <a href="../admin/search/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-danger text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
@@ -451,7 +437,10 @@ else
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
-            <?php include('includes/frontend/inc-footer.php')?>
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->

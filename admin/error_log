@@ -20,3 +20,18 @@
 [01-Nov-2020 11:50:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
 [01-Nov-2020 18:29:07 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
 [01-Nov-2020 18:29:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 05:57:34 UTC] PHP Warning:  include(../includes/frontend/inc-upscript.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/index.php on line 39
+[04-Nov-2020 05:57:34 UTC] PHP Warning:  include(../includes/frontend/inc-upscript.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/index.php on line 39
+[04-Nov-2020 05:57:34 UTC] PHP Warning:  include(): Failed opening '../includes/frontend/inc-upscript.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/index.php on line 39
+[04-Nov-2020 06:25:00 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 06:25:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 06:26:28 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 06:26:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 06:26:35 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 06:26:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 06:26:41 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 06:26:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 07:05:50 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 07:05:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[04-Nov-2020 08:03:12 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[04-Nov-2020 08:03:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29

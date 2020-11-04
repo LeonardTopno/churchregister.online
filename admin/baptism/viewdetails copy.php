@@ -134,7 +134,7 @@ if (isset($_SESSION["username"])){
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Baptism Register</h4>
+                        <h4 class="page-title">Detailed View</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
@@ -154,9 +154,137 @@ if (isset($_SESSION["username"])){
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Baptism Registers</h4>
+                                <!-- Create the editor container -->
+                                <div class="row">
+                                    <!-- Column -->
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                        <a href="form_baptism.php">
+                                          <div class="card card-hover">
+                                           
+                                            <div class="box bg-cyan text-center">
+                                                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
+                                                <h6 class="text-white">Create Baptism Record</h6>
+                                            
+                                            </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                       <a href="edit_baptism.php">
+                                        <div class="card card-hover">
+                                            <div class="box bg-warning text-center">
+                                                <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
+                                                <h6 class="text-white">Edit Baptism Record</h6>
+                                            </div>
+                                        </div>
+										</a>
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                       <a href="search_baptism.php">
+                                        <div class="card card-hover">
+                                            <div class="box bg-info text-center">
+                                                <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
+                                                <h6 class="text-white">View Baptism Record</h6>
+                                            </div>
+                                        </div>
+										</a>
+                                    </div>
+                                    <!-- Column -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <?php include('bapt-includes/operations-tab.php'); ?>
-                <!---------------------------- Dispaying Information   -----------------------------> 
+<?php           
+// Establish Connection with Database
+include "connection.php";
+if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  exit();
+}
+
+// selecting particular user using id 
+$id= ($_GET["Id"]);
+
+// fetching from userinfo table
+$sql="SELECT * from userinfo where user_id=$id";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    
+    
+	$fname = $row['first_name'];
+	$MName = $row['middle_name'];
+	$LName=$row['last_name'];
+	$gender=$row['gender_id'];
+	$DOB=$row['dob'];
+	$Padd=$row['permanent_address'];
+	$Cadd=$row['current_address'];
+    $Fathername=$row['father_name'];
+    $Domicile_id=$row['domicile_id'];
+	$Fathersname=$row['father_surname'];
+	$Foccupation=$row['father_occupation'];
+	$Mothername=$row['mother_name'];
+	$Mothersname=$row['mother_surname'];
+	$Moccupation=$row['mother_occupation'];
+	$Mobile=$row['mobile'];
+    $Email=$row['email'];
+    $HomeparishId = $row['home_parish_id'];
+	
+	
+
+// fetching from eventbaptism table
+$sql_eventbaptism = "select * from eventbaptism where user_id = $id";
+$result1 = mysqli_query($con, $sql_eventbaptism);
+$row = mysqli_fetch_array($result1, MYSQLI_ASSOC);
+    $Baptism_id = $row['baptism_id'];
+	$Diocese=$row['diocese'];
+	$Church=$row['church'];
+	$Bby=$row['clergyman'];
+	$GFname=$row['godfather_name'];
+	$GFdom=$row['godfather_domicile_id'];
+	$GMname=$row['godmother_name'];
+	$GMdom=$row['godmother_domicile_id'];
+    $DOBaptism=$row['bapt_date'];
+    
+// Fetching from states table [For Domcile State]
+$Country_id = 101;  //Default is India 
+$sql_countries = "SELECT * FROM states WHERE country_id = $Country_id";
+
+$sql_domicile_state_user = "SELECT * FROM states WHERE country_id = $Country_id and id=$Domicile_id";
+$sql_domicile_state_Gfather = "SELECT * FROM states WHERE country_id = $Country_id and id=$GMdom";
+$sql_domicile_state_Gmother = "SELECT * FROM states WHERE country_id = $Country_id and id=$GFdom";
+
+$result2 = mysqli_query($con, $sql_domicile_state_user);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_user = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gfather);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gfather = $row['name'];
+
+$result2 = mysqli_query($con, $sql_domicile_state_Gmother);
+$row = mysqli_fetch_array($result2, MYSQLI_ASSOC);
+    $domicile_state_Gmother = $row['name'];
+
+
+// Fetching from churches table [For Domcile State]
+$sql_church = "select * from church where church_id = $HomeparishId";
+$result3 = mysqli_query($con, $sql_church);
+$row = mysqli_fetch_array($result3, MYSQLI_ASSOC);
+    $parish_name = $row['parish'];
+    $church_name =$row['church_name'];
+
+?> 
 					<div class="row">
 					<div class="col-12">
                     
@@ -164,19 +292,11 @@ if (isset($_SESSION["username"])){
                             <form class="form-horizontal" method="post" action="" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <!-------------- User Details ------------------>
-                                    <h5 class="card-title"><b>Baptism Details</b></h5>
-                                    
-                                    
-                                    <button  class="btn btn-success"><a href="print_baptism.php?Id=<?php echo $id; ?>"
-                                    class="text-white">Generate Certificate</a></button>
-                                    <!--<button type="submit" class="btn btn-danger">Cancel</button>-->
-                                    <button class="btn btn-danger"><a href="search_baptism.php" class="text-white">Back to Search</a></button>
-                               
-                                    
+                                    <h5 class="card-title"><b>User Details</b></h5>
                                     <div class="border-top"></div><br>
                                      
                                      <div class="form-group row">
-                                        <label class="col-sm-3 text-left control-label col-form-label">Baptism ID</label>
+                                        <label class="col-sm-3 text-left control-label col-form-label">User ID</label>
                                         <div class="col-sm-9">
                                             <?php echo $id;?>
                                         </div>
@@ -249,7 +369,7 @@ if (isset($_SESSION["username"])){
                                     <div class="form-group row">
                                     <label class="col-md-3 m-t-15">Diocese</label>
                                     <div class="col-md-9">
-                                       <?php echo $diocese;?>
+                                       <?php echo $Diocese;?>
                                     </div>
                                     </div>
                                     <!-------------- Contact Details ------------------>
@@ -330,7 +450,7 @@ if (isset($_SESSION["username"])){
                                     <div class="form-group row">
                                         <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
                                         <div class="col-sm-9">
-                                          <?php echo $Minister;?>
+                                          <?php echo $Bby;?>
                                         </div>
                                     </div>
                                 
@@ -401,7 +521,7 @@ $conn = null;
         $('#zero_config').DataTable();
     </script>
 <!------ Top Button ------>
-<?php include('../includes/button-upscript.php');?>
+<?php include "buttonupscript.php"; ?>
     <!-- End -->
 
 </body>

@@ -6,14 +6,14 @@ ob_start();
 session_start();
 if (isset($_SESSION["username"]))
 {
-	$logid=$_SESSION["username"];
+	$id=$_SESSION["username"];
 }
 else
 {
 	header("location:../../index.php");
 }
+$id=$_SESSION["username"];
 ?>
-
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -26,7 +26,7 @@ else
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Admin_Live Church</title>
+    <title>Baptism Form</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -64,7 +64,7 @@ else
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="index.html">
                         <!-- Logo icon -->
                         <b class="logo-icon p-l-10">
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
@@ -214,12 +214,12 @@ else
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $logid; ?></a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5" ></i> Account Setting</a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> Welcome <?php echo $id; ?></a>
+                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="../logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i><button type="logout" name="logout" class="btn btn-danger">Logout</button></a>
                                 <div class="dropdown-divider"></div>
                                 <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                                <a class="dropdown-item" href="logout.php"><i class="fa fa-power-off m-r-5 m-l-5"></i>Logout</a>
-                                
                             </div>
                         </li>
                         <!-- ============================================================== -->
@@ -241,7 +241,7 @@ else
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
-                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="../index.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Dashboard</span></a></li>
                         <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span class="hide-menu">Charts</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="widgets.html" aria-expanded="false"><i class="mdi mdi-chart-bubble"></i><span class="hide-menu">Widgets</span></a></li>-->
                         <!--<li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="tables.html" aria-expanded="false"><i class="mdi mdi-border-inside"></i><span class="hide-menu">Tables</span></a></li>-->
@@ -276,11 +276,11 @@ else
                                 <li class="sidebar-item"><a href="/admin/marriage/search_marriage.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Burial Register</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Burial</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="/admin/burial/form_death.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Burial Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/edit_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Burial Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/form_death.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Burial Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/edit_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Burial Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-relative-scale">
@@ -290,7 +290,7 @@ else
                                 <li class="sidebar-item"><a href="/admin/communion/search_communion.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search 1st Communion Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/confirmation/search_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Confirmation Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/marriage/search_marriage.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Marriage Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/burial/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Burial Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/death/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Burial Record </span></a></li>
                             </ul>
                         </li>
                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-move-resize-variant"></i><span class="hide-menu">Addons </span></a>
@@ -335,12 +335,13 @@ else
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Baptism Form</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">Home</li>
-                                    
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item">Baptism</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Baptism Form</li>
                                 </ol>
                             </nav>
                         </div>
@@ -357,30 +358,29 @@ else
                 <!-- ============================================================== -->
                 <!-- Sales Cards  -->
                 <!-- ============================================================== -->
-                <!-- editor -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Online Registers, Welcome &nbsp<?php echo $logid; ?></h4>
+                                <h4 class="card-title">Baptism Registers</h4>
                                 <!-- Create the editor container -->
                                 <div class="row">
                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="/admin/baptism/index.php">
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                        <a href="form_baptism.php">
                                           <div class="card card-hover">
                                            
                                             <div class="box bg-cyan text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                                <h6 class="text-white">Baptism</h6>
+                                                <h6 class="text-white">Create Baptism Record</h6>
                                             
                                             </div>
                                             </a>
                                         </div>
                                     </div>
                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="/admin/communion/index.php">
+                                    <!--<div class="col-md-6 col-lg-2 col-xlg-3">
+                                        <a href="../admin/communion/index.php">
                                            <div class="card card-hover">
                                             <div class="box bg-success text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
@@ -388,21 +388,21 @@ else
                                             </div>
                                         </div>
 										</a>
-                                    </div>
+                                    </div>-->
                                      <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/confirmation/index.php">
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                       <a href="edit_baptism.php">
                                         <div class="card card-hover">
                                             <div class="box bg-warning text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                                                <h6 class="text-white">Confirmation</h6>
+                                                <h6 class="text-white">Edit Baptism Record</h6>
                                             </div>
                                         </div>
 										</a>
                                     </div>
                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/marriage/index.php">
+                                    <!--<div class="col-md-6 col-lg-2 col-xlg-3">
+                                       <a href="../admin/marriage/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-danger text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
@@ -410,22 +410,22 @@ else
                                             </div>
                                         </div>
 										</a>
-                                    </div>
+                                    </div>-->
                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/burial/index.php">
+                                    <div class="col-md-6 col-lg-4 col-xlg-3">
+                                       <a href="search_baptism.php">
                                         <div class="card card-hover">
                                             <div class="box bg-info text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                                                <h6 class="text-white">Burial</h6>
+                                                <h6 class="text-white">Search Baptism Record</h6>
                                             </div>
                                         </div>
 										</a>
                                     </div>
                                     <!-- Column -->
                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="/admin/search/index.php">
+                                    <!--<div class="col-md-6 col-lg-2 col-xlg-3">
+                                       <a href="../admin/search/index.php">
                                         <div class="card card-hover">
                                             <div class="box bg-danger text-center">
                                                 <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
@@ -433,7 +433,7 @@ else
                                             </div>
                                         </div>
 										</a>
-                                    </div>
+                                    </div>-->
                                     <!-- Column -->
                                     
                                     <!-- Column -->
@@ -442,8 +442,319 @@ else
                         </div>
                     </div>
                 </div>
+
+
+                
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
+                                <div class="card-body">
+                                    <h4 class="card-title">Baptism Info</h4>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">First Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Last Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="lname" id="lname" value="" placeholder="Last Name Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                    <label class="col-md-3">Gender</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" value="Male" required>
+                                            <label class="custom-control-label" for="customControlValidation1">Male</label>
+                                        </div>
+                                         <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" value="Female" required>
+                                            <label class="custom-control-label" for="customControlValidation2">Female</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control mydatepicker" id="dob" name="dob" max="2020-09-31">
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control mydatepicker" id="dobaptism" name="dobaptism">
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        <div class="form-group row">
+                                    <label class="col-md-3">Upload Photo</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-file">
+                                            <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" >
+                                            <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="padd" id="padd"  required></textarea>
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="cadd" id="cadd"  required></textarea>
+                                        </div>
+                                        </div>
+                                        <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="fathername" id="fathername" value="" placeholder="Father's Name Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Surname</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="fathersname" id="fathersname"  value="" placeholder="Father's Surname Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="foccupation" id="foccupation" value="" placeholder="Occupation">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mothername" id="mothername"  value="" placeholder="Mother's Name Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Surname</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mothersname" id="mothersname"  value="" placeholder="Mother's Surname Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="moccupation" id="moccupation" value="" placeholder="Occupation">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mobile" id="mobile" value="" placeholder="Mobile Number" autocomplete="off" Maxlength="10" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="email" id="email" value="" placeholder="E Mail" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GFname" id="GFname" value="" placeholder="God Father Name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodFather Domicile</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GFdomicile" id="GFdomicile" value="" placeholder="God Father Domicile" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GMname" id="GMname" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">GodMother Domicile</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GMdomicile" id="GMdomicile" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <h5 class="card-title"><b>Diocese Info</b></h5>
+                                    <div class="border-top"></div><br>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="country" id="country" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">State</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="states" id="states" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">District</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="district" id="district" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="diocese" id="diocese" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Church</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="church" id="church" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+    <!--                            <div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">Country</label>-->
+    <!--                                <div class="col-sm-9">-->
+    <!--                                    <select class="select2 form-control custom-select" name="country" style="width: 100%; height:36px;">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="AK">Alaska</option>-->
+    <!--                                            <option value="HI">Hawaii</option>-->
+    <!--                                            <option value="IN">India</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">State</label>-->
+    <!--                                <div class="col-sm-9">-->
+    <!--                                    <select class="select2 form-control custom-select" name="state" style="width: 100%; height:36px;">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>-->
+    <!--<option value="Andhra Pradesh">Andhra Pradesh</option>-->
+    <!--<option value="Arunachal Pradesh">Arunachal Pradesh</option>-->
+    <!--<option value="Assam">Assam</option>-->
+    <!--<option value="Bihar">Bihar</option>-->
+    <!--<option value="Chandigarh">Chandigarh</option>-->
+    <!--<option value="Chhattisgarh">Chhattisgarh</option>-->
+    <!--<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>-->
+    <!--<option value="Daman and Diu">Daman and Diu</option>-->
+    <!--<option value="Delhi">Delhi</option>-->
+    <!--<option value="Goa">Goa</option>-->
+    <!--<option value="Gujarat">Gujarat</option>-->
+    <!--<option value="Haryana">Haryana</option>-->
+    <!--<option value="Himachal Pradesh">Himachal Pradesh</option>-->
+    <!--<option value="Jammu and Kashmir">Jammu and Kashmir</option>-->
+    <!--<option value="Jharkhand">Jharkhand</option>-->
+    <!--<option value="Karnataka">Karnataka</option>-->
+    <!--<option value="Kerala">Kerala</option>-->
+    <!--<option value="Lakshadweep">Lakshadweep</option>-->
+    <!--<option value="Madhya Pradesh">Madhya Pradesh</option>-->
+    <!--<option value="Maharashtra">Maharashtra</option>-->
+    <!--<option value="Manipur">Manipur</option>-->
+    <!--<option value="Meghalaya">Meghalaya</option>-->
+    <!--<option value="Mizoram">Mizoram</option>-->
+    <!--<option value="Nagaland">Nagaland</option>-->
+    <!--<option value="Orissa">Orissa</option>-->
+    <!--<option value="Pondicherry">Pondicherry</option>-->
+    <!--<option value="Punjab">Punjab</option>-->
+    <!--<option value="Rajasthan">Rajasthan</option>-->
+    <!--<option value="Sikkim">Sikkim</option>-->
+    <!--<option value="Tamil Nadu">Tamil Nadu</option>-->
+    <!--<option value="Tripura">Tripura</option>-->
+    <!--<option value="Uttaranchal">Uttaranchal</option>-->
+    <!--<option value="Uttar Pradesh">Uttar Pradesh</option>-->
+    <!--<option value="West Bengal">West Bengal</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">District</label>-->
+    <!--                                <div class="col-md-9">-->
+    <!--                                    <select class="select2 form-control custom-select" style="width: 100%; height:36px;" name="district">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="RNC">Ranchi</option>-->
+    <!--                                            <option value="SBJ">Sahibganj</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">Diocese</label>-->
+    <!--                                <div class="col-md-9">-->
+    <!--                                    <select class="select2 form-control custom-select" name="diocese" style="width: 100%; height:36px;">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="RANCHI">Ranchi Archdiocese</option>-->
+    <!--                                            <option value="KHUNTI">Khunti Diocese</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="form-group row">-->
+    <!--                                <label class="col-md-3 m-t-15">Church</label>-->
+    <!--                                <div class="col-md-9">-->
+    <!--                                    <select class="select2 form-control custom-select" name="church" style="width: 100%; height:36px;">-->
+    <!--                                        <option>-Select-</option>-->
+    <!--                                            <option value="SM">St Maria Cathedral</option>-->
+    <!--                                            <option value="LC">St Luke Church</option>-->
+    <!--                                            <option value="DK">Don Bosco Church Kokar</option>-->
+    <!--                                        </optgroup>-->
+    <!--                                    </select>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Baptized By</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Father/Priest Name">
+                                        </div>
+                                    </div>
+                                    <div class="border-top">
+                                <div class="card-body">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="reset" class="btn btn-primary">Reset</button>
+                                    <button type="submit" class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                                </div>
+                                </div>
+								</div>
+							</form>
+							<!-- Insert Query Starts -->
+							
+
+							<!-- Query Ends -->
+					</div>
+				</div>
+			</div>
+                   
+                            
                 <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
@@ -451,7 +762,10 @@ else
             <!-- ============================================================== -->
             <!-- ============================================================== -->
             <!-- footer -->
-            <?php include('includes/frontend/inc-footer.php')?>
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -483,12 +797,14 @@ else
     <!-- Charts js Files -->
     <script src="../../assets/libs/flot/excanvas.js"></script>
     <script src="../../assets/libs/flot/jquery.flot.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.pie.js"></script>
     <script src="../../assets/libs/flot/jquery.flot.time.js"></script>
     <script src="../../assets/libs/flot/jquery.flot.stack.js"></script>
     <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+
+    <!---->
+    <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
 
 </body>
 

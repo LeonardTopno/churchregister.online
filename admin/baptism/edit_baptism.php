@@ -222,7 +222,7 @@ $msurname =$row['mother_surname'];
   <!-- End of Code -->
                                             <tr>
                                                 <td><?php echo $Id;?></td>
-                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                <td><a href="editdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
                                                 <td><?php echo $Gender;?></td>
                                                 <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
                                                 <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
