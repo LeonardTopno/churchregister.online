@@ -245,7 +245,7 @@ $pdf->SetXY(30,460);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false); 
 
-$pdf->SetXY(220,160);
+$pdf->SetXY(220,460);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(60,610, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
 
