@@ -1,11 +1,11 @@
-<?php include "fetch_baptism_details.php"; ?>
+<?php #include "fetch_baptism_details.php"; ?>
 <?php 
 include('pdf/fpdf.php'); 
 #include('connection.php');
 
-#include('fetch_baptism_details.php');
+include("fetch_baptism_details.php");
 
-#include('includes/dbConnect.php');
+#include('../includes/dbConnect.php');
 
 // Retrieve data from query string 
 $id=($_GET["Id"]);
