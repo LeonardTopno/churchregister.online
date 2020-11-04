@@ -140,126 +140,127 @@ $pdf->Cell(30,10,'Jharkhand',0,0,L,false);
 
 // Baptism info goes down:
 
+// Set common font for all the entries 
+$pdf->SetFont('Arial','',10);
+
 // Registration no
 $pdf->SetXY(30,160);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'REGISTRATION NO.',0,0,L,false); 
 
 $pdf->SetXY(220,160);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(40,10,$Baptism_id, 0, 0, L, false);
-//$pdf->Cell(40,10,'B' . htmlspecialchars($id) . '',0,0,L,false);
 
-//$Baptism_id
 // Date of Baptism
 $pdf->SetXY(30,190);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'DATE OF BAPTISM',0,0,L,false); 
 
 $pdf->SetXY(220,190);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10,($DOBaptism),0,0,L,false);
 
 // Date of Birth
 $pdf->SetXY(30,220);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'DATE OF BIRTH',0,0,L,false); 
 
 $pdf->SetXY(220,220);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($DOB) . '',0,0,L,false);
 
 // Child' Name
 $pdf->SetXY(30,250);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"CHILD'S NAME",0,0,L,false); 
 
 $pdf->SetXY(220,250);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($fname) .' '. htmlspecialchars($MName).' '. htmlspecialchars($LName).'',0,0,L,false);
 
 // GENDER
 $pdf->SetXY(30,280);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'GENDER',0,0,L,false); 
 
 $pdf->SetXY(220,280);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(40,10, htmlspecialchars($gender) . '',0,0,L,false);
 
 // Father's name 
 $pdf->SetXY(30,310);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"FATHER'S NAME",0,0,L,false);
 
 $pdf->SetXY(220,310);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
 
 // Domicile's name 
 $pdf->SetXY(30,340);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,340);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
 
 // Father's Occupation
 $pdf->SetXY(30,370);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"FATHER'S OCCUPATION",0,0,L,false);
 
 $pdf->SetXY(220,370);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Foccupation)  .'',0,0,L,false);
 
 
 // Mother's name
 $pdf->SetXY(30,400);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"MOTHER'S NAME",0,0,L,false); 
 
 $pdf->SetXY(220,400);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
 
 // Male Sponsor and Domicile
 $pdf->SetXY(30,430);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(220,430);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($GFname) . ' / '. htmlspecialchars($domicile_state_Gfather),0,0,L,false);
 
 // Female Sponsor
 $pdf->SetXY(30,460);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false); 
 
 $pdf->SetXY(220,460);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
 
 
 // Minister
 $pdf->SetXY(30,490);
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'MINISTER',0,0,L,false); 
 
 $pdf->SetXY(220,490); // Defines the abscissa and ordinate of current position
-$pdf->SetFont('Arial','',10);
+//$pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
           // weidth,height in mm 60 mm = 6 cm
 
-//
+
 $pdf->SetXY(30,530);
 $pdf->SetFont('Arial','',11);
 $pdf->Cell(90,10,'Certified that the above is a true extract from the Register of Baptism kept at .......................................................',0,0,L,false);
 
 
-//
+// Signature ans Seal
 $pdf->SetXY(500,700);
 $pdf->Cell(30,10,'Signature & Seal',0,1,R,false);
 
