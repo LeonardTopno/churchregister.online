@@ -6,8 +6,9 @@ include('pdf/fpdf.php');
 
 include('../includes/dbConnect.php');
 
-// selecting particular user using id 
+// Retrieve data from query string 
 $id=($_GET["Id"]);
+
 
 // fetching from userinfo table
 $sql="SELECT * FROM userinfo WHERE user_id=$id";
@@ -82,8 +83,8 @@ $result = mysqli_query($conn, $sql_diocese);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$diocese=$row['name'];
 
-
-
+// Close the connection
+mysqli_close($conn);
 
 
 
@@ -256,8 +257,8 @@ $pdf->Cell(30,10,'MINISTER',0,0,L,false);
 
 $pdf->SetXY(220,160);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,630, htmlspecialchars($Minister) . '',0,0,L,false);
-
+$pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
+          // weidth,height 
 
 //
 $pdf->SetXY(30,500);
