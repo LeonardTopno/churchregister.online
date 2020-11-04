@@ -86,8 +86,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 // Close the connection
 mysqli_close($conn);
 
-
-
+//=========================================
 
 // Creates a new PDF
 $pdf = new FPDF('P', 'pt', 'A4');
@@ -124,27 +123,19 @@ $pdf->Cell(10,10,'Parish Address :',0,0,L,false);
 // Full Address from DB
 $pdf->SetXY(30,135);
 $pdf->Cell(30,10,'P.O.:',0,0,L,false);
-//$pdf->SetFont('Arial','',14);
-//$pdf->Cell(40,10,$row->name,0,0,L,false); 
+
 
 $pdf->SetXY(210,135);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'Dist.:',0,0,L,false); 
-//$pdf->SetFont('Arial','',14);
-//$pdf->Cell(40,10,$row->class,0,0,L,false);
 
 $pdf->SetXY(400,135);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'PIN.:',0,0,L,false); 
-//$pdf->SetFont('Arial','',14);
-//$pdf->Cell(40,10,$row->class,0,0,L,false);
 
 $pdf->SetXY(510,135);
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(30,10,'Jharkhand',0,0,L,false); 
-//$pdf->SetFont('Arial','',14);
-//$pdf->Cell(40,10,$row->class,0,0,L,false);
-
 
 
 // Baptism info goes down:
@@ -270,7 +261,7 @@ $pdf->Cell(90,10,'Certified that the above is a true extract from the Register o
 
 //
 $pdf->SetXY(30,700);
-$pdf->Cell(50,10,'Signature & Seal',0,1,L,false);
+$pdf->Cell(50,10,'Signature & Seal',0,1,R,false);
 
 $pdf->Output();
 
