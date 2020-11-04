@@ -5,12 +5,12 @@ include('pdf/fpdf.php');
 
 #include("fetch_baptism_details.php");
 
-#include('../includes/dbConnect.php');
+include('../includes/dbConnect.php');
 
 // Retrieve data from query string 
 $id=($_GET["Id"]);
 
-/*
+
 // fetching from userinfo table
 $sql="SELECT * FROM userinfo WHERE user_id=$id";
 $result = mysqli_query($conn, $sql);
@@ -86,7 +86,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 // Close the connection
 mysqli_close($conn);
-*/
+
 
 //=========================================
 
