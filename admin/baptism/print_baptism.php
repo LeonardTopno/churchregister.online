@@ -251,7 +251,7 @@ $pdf->Cell(30,10,'MINISTER',0,0,L,false);
 $pdf->SetXY(220,490); // Defines the abscissa and ordinate of current position
 $pdf->SetFont('Arial','',10);
 $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
-          // weidth,height 
+          // weidth,height in mm 60 mm = 6 cm
 
 //
 $pdf->SetXY(30,530);
@@ -261,7 +261,7 @@ $pdf->Cell(90,10,'Certified that the above is a true extract from the Register o
 
 //
 $pdf->SetXY(30,700);
-$pdf->Cell(50,10,'Signature & Seal',0,1,R,false);
+$pdf->Cell(90,10,'Signature & Seal',0,1,R,false);
 
 $pdf->Output();
 
