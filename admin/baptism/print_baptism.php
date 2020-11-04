@@ -261,9 +261,9 @@ $pdf->Cell(60,10, htmlspecialchars($Minister) . '',0,0,L,false);
           // weidth,height 
 
 //
-$pdf->SetXY(30,600);
+$pdf->SetXY(30,510);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(30,10,'Certified that the above is a true extract from the Register of Baptism kept at ......................................................................',0,0,L,false);
+$pdf->Cell(90,10,'Certified that the above is a true extract from the Register of Baptism kept at ......................................................................',0,0,L,false);
 
 
 //
