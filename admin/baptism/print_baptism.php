@@ -165,7 +165,7 @@ $pdf->Cell(30,10,'DATE OF BAPTISM',0,0,L,false);
 
 $pdf->SetXY(220,190);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,70,($DOBaptism),0,0,L,false);
+$pdf->Cell(60,10,($DOBaptism),0,0,L,false);
 
 // Date of Birth
 $pdf->SetXY(30,220);
@@ -174,7 +174,7 @@ $pdf->Cell(30,10,'DATE OF BIRTH',0,0,L,false);
 
 $pdf->SetXY(220,220);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,130, htmlspecialchars($DOB) . '',0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($DOB) . '',0,0,L,false);
 
 // Child' Name
 $pdf->SetXY(30,250);
@@ -183,7 +183,7 @@ $pdf->Cell(30,10,"CHILD'S NAME",0,0,L,false);
 
 $pdf->SetXY(220,250);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,190, htmlspecialchars($fname) .' '. htmlspecialchars($MName).' '. htmlspecialchars($LName).'',0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($fname) .' '. htmlspecialchars($MName).' '. htmlspecialchars($LName).'',0,0,L,false);
 
 // GENDER
 $pdf->SetXY(30,280);
@@ -192,7 +192,7 @@ $pdf->Cell(30,10,'GENDER',0,0,L,false);
 
 $pdf->SetXY(220,280);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(40,250, htmlspecialchars($gender) . '',0,0,L,false);
+$pdf->Cell(40,10, htmlspecialchars($gender) . '',0,0,L,false);
 
 // Father's name 
 $pdf->SetXY(30,310);
@@ -201,7 +201,7 @@ $pdf->Cell(30,10,"FATHER'S NAME",0,0,L,false);
 
 $pdf->SetXY(220,310);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,310, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
+$pdf->Cell(60,110, htmlspecialchars($Fathername)  .' '. htmlspecialchars($Fathersname).' ',0,0,L,false);
 
 // Domicile's name 
 $pdf->SetXY(30,340);
@@ -210,7 +210,7 @@ $pdf->Cell(30,10,"DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,340);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,370, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($domicile_state_user)  .' ',0,0,L,false);
 
 // Father's Occupation
 $pdf->SetXY(30,370);
@@ -219,7 +219,7 @@ $pdf->Cell(30,10,"FATHER'S OCCUPATION",0,0,L,false);
 
 $pdf->SetXY(220,370);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,430, htmlspecialchars($Foccupation)  .'',0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($Foccupation)  .'',0,0,L,false);
 
 
 // Mother's name
@@ -229,7 +229,7 @@ $pdf->Cell(30,10,"MOTHER'S NAME",0,0,L,false);
 
 $pdf->SetXY(220,400);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,490, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($Mothername) . ' ' . htmlspecialchars($Mothersname),0,0,L,false);
 
 // Male Sponsor and Domicile
 $pdf->SetXY(30,430);
@@ -238,7 +238,7 @@ $pdf->Cell(30,10,"SPONSOR'S NAME(M) / DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,430);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,550, htmlspecialchars($GFname) . ' / '. htmlspecialchars($domicile_state_Gfather),0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($GFname) . ' / '. htmlspecialchars($domicile_state_Gfather),0,0,L,false);
 
 // Female Sponsor
 $pdf->SetXY(30,460);
@@ -247,7 +247,7 @@ $pdf->Cell(30,10,"SPONSOR'S NAME(F) / DOMICILE",0,0,L,false);
 
 $pdf->SetXY(220,460);
 $pdf->SetFont('Arial','',10);
-$pdf->Cell(60,610, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
+$pdf->Cell(60,10, htmlspecialchars($GMname) . ' / '. htmlspecialchars($domicile_state_Gmother),0,0,L,false);
 
 
 // Minister
