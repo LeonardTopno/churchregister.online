@@ -24,7 +24,6 @@ include('../includes/dbConnect.php');
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
     <title>Admin_Communion_Live Church</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="../../dist/css/style.min.css" rel="stylesheet">
@@ -176,17 +175,6 @@ include('../includes/dbConnect.php');
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <?php include('comn-includes/operations-tab.php'); ?>
-                <!---------------------------- Dispaying Table Data   ----------------------------->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
                 <!---------------------------- Dispaying Form   -----------------------------> 
                 <div class="row">
 	                <div class="col-12">
@@ -548,7 +536,6 @@ include('../includes/dbConnect.php');
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
     <!-- Modal End -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
