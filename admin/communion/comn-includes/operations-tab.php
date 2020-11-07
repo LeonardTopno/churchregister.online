@@ -27,7 +27,7 @@
 					<!--</a> -->
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xlg-3" onclick="loadDoc()">
+					<div class="col-md-6 col-lg-4 col-xlg-3" data-toggle="modal" data-target="#myModal1">
 					<!--<a href="#"> -->
 							<div class="card card-hover">
 								<div class="box bg-cyan text-center">

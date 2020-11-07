@@ -297,3 +297,208 @@
 [05-Nov-2020 12:54:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 418
 [05-Nov-2020 12:54:56 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 476
 [05-Nov-2020 12:54:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 477
+[07-Nov-2020 14:20:49 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:20:49 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:20:49 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:20:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 563
+[07-Nov-2020 14:20:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 565
+[07-Nov-2020 14:22:04 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:04 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:04 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 563
+[07-Nov-2020 14:22:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 565
+[07-Nov-2020 14:22:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:31 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:22:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 563
+[07-Nov-2020 14:22:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 565
+[07-Nov-2020 14:23:15 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:15 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:15 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 563
+[07-Nov-2020 14:23:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 565
+[07-Nov-2020 14:23:44 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:44 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:44 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 559
+[07-Nov-2020 14:23:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 563
+[07-Nov-2020 14:23:44 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 565
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:24:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:25:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:25:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:25:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:26:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 203
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 207
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 209
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 371
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 419
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 444
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 503
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 622
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 626
+[07-Nov-2020 14:26:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 628
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 206
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 208
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 369
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 417
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 442
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 501
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 625
+[07-Nov-2020 14:27:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 627
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 206
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 208
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 369
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 417
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 442
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 501
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 625
+[07-Nov-2020 14:28:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 627
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 206
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 208
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 369
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 417
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 442
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 501
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 625
+[07-Nov-2020 14:29:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 627
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 202
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 206
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 208
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 369
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 370
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 417
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 418
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 442
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 443
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 501
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 502
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 621
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 625
+[07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 627

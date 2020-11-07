@@ -175,6 +175,17 @@ include('../includes/dbConnect.php');
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <?php include('comn-includes/operations-tab.php'); ?>
+                <div class="row">
+	                <div class="col-12">
+		                <div class="card">
+			                <div class="card-body">
+			                    
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			                 
+                
                 <!---------------------------- Dispaying Form   -----------------------------> 
                 <div class="row">
 	                <div class="col-12">
@@ -187,7 +198,7 @@ include('../includes/dbConnect.php');
 
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                    <h4 class="modal-title">New Registration</h4>
+                                    <h4 class="modal-title">Baptism & Communion Form</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
 
