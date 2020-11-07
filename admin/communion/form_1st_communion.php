@@ -33,38 +33,6 @@ include('../includes/dbConnect.php');
 
 
 
-    <script type="text/javascript">
-        function ajaxInsertFunction(){
-        console.log('Hit ajaxInsertFucntion');
-        var firstname = $('#fname').val();
-        var lastname = $("#lname").val();
-        
-        //ajax portion
-        $ajax({
-            url: "insert-backend.php",
-            type: 'POST', //For Security
-            dataType: 'json',
-            data : {
-                'first_name' : firstname,
-                'last_name' : lastname
-            },
-
-            success:function(data, status){
-                console.log('success',data);    
-            },
-            error:function(){
-                alert('Error in inserting')
-            }
-        });
-
-
-        }
-
-    </script>
-
-
-
-
 
 </head>
 
@@ -454,7 +422,41 @@ include('../includes/dbConnect.php');
     <?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
-    
+    <script type="text/javascript">
+        function ajaxInsertFunction(){
+        console.log('Hit ajaxInsertFucntion');
+        var firstname = $('#fname').val();
+        var lastname = $("#lname").val();
+        
+        console.log(firstname);
+        
+        
+        //ajax portion
+        $ajax({
+            url: "insert-backend.php",
+            type: 'POST', //For Security
+            dataType: 'json',
+            data : {
+                'first_name' : firstname,
+                'last_name' : lastname
+            },
+
+            success:function(data, status){
+                console.log('success',data);    
+            },
+            error:function(){
+                alert('Error in inserting')
+            }
+        });
+
+        console.log("Leonard Topno");
+
+        }
+
+    </script>
+
+
+
 
 
 </body>
