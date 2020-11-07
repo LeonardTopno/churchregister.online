@@ -592,9 +592,9 @@ include('../includes/dbConnect.php');
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
     <script type="text/javascript">
     function add1stCommRecord(){
-        var firstname = $('#fname').val();
+        var first_name = $('#fname').val();
 
-        $ajax({
+        $.ajax({
             url: "insert-backend.php",
             type: 'post',
             data : {'firstname' : firstname},
