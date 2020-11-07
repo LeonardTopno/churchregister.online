@@ -593,6 +593,7 @@ include('../includes/dbConnect.php');
     <script type="text/javascript">
     function add1stCommRecord(){
         var first_name = $('#fname').val();
+        console.log(first_name);
 
         $.ajax({
             url: "insert-backend.php",
