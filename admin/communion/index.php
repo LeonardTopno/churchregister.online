@@ -600,7 +600,7 @@ include('../includes/dbConnect.php');
             data : {'firstname' : firstname},
 
             success:function(data, status){
-                  
+                console.log('success',data);    
             }
         });
 
