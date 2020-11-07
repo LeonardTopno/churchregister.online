@@ -443,7 +443,7 @@ include('../includes/dbConnect.php');
 
             success:function(data){
                 console.log(data); 
-                alert(data);   
+                //alert(data);   
             },
 
             error:function(errMsg){
