@@ -365,7 +365,7 @@ include('../includes/dbConnect.php');
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
                                     <div class="card-body">
-                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="button" class="btn btn-success" onclick="ajaxInsertFunction()">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
                                     <button class="btn btn-danger"><a href="../index.php" class="text-white">Back</a></button>
                                 </div>
