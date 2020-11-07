@@ -60,7 +60,7 @@ include('../includes/dbConnect.php');
 
         }
 
-    <script>
+    </script>
 
 
 
