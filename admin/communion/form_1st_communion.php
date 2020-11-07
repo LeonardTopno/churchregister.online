@@ -368,7 +368,7 @@ include('../includes/dbConnect.php');
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
                                     <div class="card-body">
-                                    <button type="button" class="btn btn-success" onclick="ajaxInsertFunction()" id="submit-button-id">Submit</button>
+                                    <button type="button" class="btn btn-success" onclick="ajaxinsertfunction()" id="submit-button-id">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
                                     <button class="btn btn-danger"><a href="../index.php" class="text-white">Back</a></button>
                                 </div>
@@ -423,7 +423,7 @@ include('../includes/dbConnect.php');
     <!-- End -->
 
     <script type="text/javascript">
-        function ajaxInsertFunction(){
+        function ajaxinsertfunction(){
         console.log('Hit ajaxInsertFucntion');
         var firstname = $('#fname').val();
         var lastname = $("#lname").val();
@@ -433,15 +433,15 @@ include('../includes/dbConnect.php');
         
         //ajax portion
         
-        $ajax({
-            url: 'insert-backend.php',
-            type: 'POST', //For Security
+        $.ajax({
+            url: "insert-backend.php",
+            type: "POST", //For Security
             data : {
                 'first_name' : firstname,
                 'last_name' : lastname
             },
 
-            success:function(data, status){
+            success:function(data){
                 console.log('success',data);    
             },
             error:function(){
