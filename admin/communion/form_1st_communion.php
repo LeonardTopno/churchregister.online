@@ -6,7 +6,6 @@ include('../includes/dbConnect.php');
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +30,42 @@ include('../includes/dbConnect.php');
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
     <?php include('../includes/frontend/inc-upscript.php')?>
+
+
+
+    <script type="text/javascript">
+        function ajaxInsertFunction(){
+        console.log('Hit ajaxInsertFucntion');
+        var firstname = $('#fname').val();
+        var lastname = $("#lname").val();
+        
+        //ajax portion
+        $ajax({
+            url: "insert-backend.php",
+            type: 'POST', //For Security
+            dataType: 'json',
+            data : {
+                'first_name' : firstname,
+                'last_name' : lastname
+            },
+
+            success:function(data, status){
+                console.log('success',data);    
+            },
+            error:function(){
+                alert('Error in inserting')
+            }
+        });
+
+
+        }
+
+    <script>
+
+
+
+
+
 </head>
 
 <body oncontextmenu="return false;">
@@ -419,34 +454,9 @@ include('../includes/dbConnect.php');
     <?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
-    <script type="text/javascript">
-        function ajaxInsertFunction(){
-        console.log('Hit ajaxInsertFucntion');
-        var firstname = $('#fname').val();
-        var lastname = $("#lname").val();
-        
-        //ajax portion
-        $ajax({
-            url: "insert-backend.php",
-            type: 'POST', //For Security
-            dataType: 'json',
-            data : {
-                'first_name' : firstname,
-                'last_name' : lastname
-            },
-
-            success:function(data, status){
-                console.log('success',data);    
-            },
-            error:function(){
-                alert('Error in inserting')
-            }
-        });
+    
 
 
-        }
-
-    <script>
 </body>
 
 </html>
