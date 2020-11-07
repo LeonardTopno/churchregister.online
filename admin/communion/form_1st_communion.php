@@ -433,9 +433,8 @@ include('../includes/dbConnect.php');
         
         //ajax portion
         $ajax({
-            url: "insert-backend.php",
+            url: 'insert-backend.php',
             type: 'POST', //For Security
-            dataType: 'json',
             data : {
                 'first_name' : firstname,
                 'last_name' : lastname
