@@ -78,7 +78,8 @@ include('../includes/dbConnect.php');
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
-                            <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
+                            <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
+                            <form class="form-horizontal" method="" action="" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
@@ -99,6 +100,8 @@ include('../includes/dbConnect.php');
                                             <input type="text" class="form-control" name="lname" id="lname" value="" placeholder="Last Name Here" required>
                                         </div>
                                     </div>
+<!---------
+
                                     <div class="form-group row">
                                     <label class="col-md-3">Gender</label>
                                     <div class="col-md-9">
@@ -146,8 +149,10 @@ include('../includes/dbConnect.php');
                                             <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Minister's Name here">
                                         </div>
                                     </div>
-
+---------->
                                     <!--Parents'  Details Section-->
+<!---------------
+                
                                     <h5 class="card-title"><b>Parents' and Sponsors' Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
@@ -265,8 +270,9 @@ include('../includes/dbConnect.php');
                                             </select>
                                         </div>
                                     </div>
-
+------------------------------>
                                     <!--Contact Details Section-->
+                                    <!--
                                     <h5 class="card-title"><b>Contact Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
@@ -299,8 +305,10 @@ include('../includes/dbConnect.php');
                                             <input type="text" class="form-control" name="email" id="email" value="" placeholder="E Mail" autocomplete="off">
                                         </div>
                                     </div>
+                                    -->
 
                                     <!--Home Parish Section Details Section-->
+                                    <!--
                                     <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
@@ -353,7 +361,7 @@ include('../includes/dbConnect.php');
                                             </select>
                                         </div>
                                     </div>
-
+---------------------------------->
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
                                     <div class="card-body">
