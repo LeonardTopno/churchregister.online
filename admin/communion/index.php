@@ -597,7 +597,7 @@ include('../includes/dbConnect.php');
 
         $.ajax({
             url: "insert-backend.php",
-            type: 'post',
+            type: 'POST',
             data : {'firstname' : firstname},
 
             success:function(data, status){
