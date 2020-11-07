@@ -442,10 +442,13 @@ include('../includes/dbConnect.php');
             },
 
             success:function(data){
-                console.log('success',data);    
+                console.log(data); 
+                alert(data);   
             },
-            error:function(){
-                alert('Error in inserting')
+
+            error:function(errMsg){
+                alert('Error in inserting');
+                alert(errMsg);
             }
         });
 
