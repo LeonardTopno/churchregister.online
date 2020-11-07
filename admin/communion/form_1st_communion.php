@@ -79,7 +79,7 @@ include('../includes/dbConnect.php');
                     <div class="col-12">
                         <div class="card">
                             <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
-                            <form class="form-horizontal" method="" action="" enctype="multipart/form-data">
+                            <form class="form-horizontal" method="" action="" id="insertform" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
@@ -365,7 +365,7 @@ include('../includes/dbConnect.php');
                                     <!--Control Buttons Section-->
                                     <div class="border-top">
                                     <div class="card-body">
-                                    <button type="button" class="btn btn-success" onclick="ajaxInsertFunction()">Submit</button>
+                                    <button type="button" class="btn btn-success" onclick="ajaxInsertFunction()" id="submit-button-id">Submit</button>
                                     <button type="reset" class="btn btn-primary">Reset</button>
                                     <button class="btn btn-danger"><a href="../index.php" class="text-white">Back</a></button>
                                 </div>
@@ -418,6 +418,33 @@ include('../includes/dbConnect.php');
     <?php include('../includes/button-upscript.php');?>
     <!-- End -->
 
+    <script type="text/javascript">
+        function ajaxInsertFunction(){
+        var firstname = $('#fname').val();
+        var lastname = $("#lname").val();
+        
+        //ajax portion
+        $ajax({
+            url: "insert-backend.php",
+            type: 'POST', //For Security
+            dataType: 'json',
+            data : {
+                'first_name' : firstname,
+                'last_name' : lastname
+            },
+
+            success:function(data, status){
+                console.log('success',data);    
+            },
+            error:function(){
+                alert('Error in inserting')
+            }
+        });
+
+
+    }
+
+    <script>
 </body>
 
 </html>
