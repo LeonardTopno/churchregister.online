@@ -432,6 +432,7 @@ include('../includes/dbConnect.php');
         
         
         //ajax portion
+        /*
         $ajax({
             url: 'insert-backend.php',
             type: 'POST', //For Security
@@ -451,6 +452,7 @@ include('../includes/dbConnect.php');
         console.log("Leonard Topno");
 
         }
+        */
 
     </script>
 
