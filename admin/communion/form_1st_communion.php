@@ -411,7 +411,7 @@ include('../includes/dbConnect.php');
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
     <!---->
-    <script src="../../asset_code/js/jquery-3.5.1.min.js"></script>
+    <!--<script src="../../asset_code/js/jquery-3.5.1.min.js"></script>-->
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!--<script src="../includes/scripts/dependent-dropdown.js"></script>-->
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
