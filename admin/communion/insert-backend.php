@@ -3,6 +3,8 @@ include('../includes/dbConnect.php');
 
 extract($_POST);
 
+console.log("insert-backend");
+
 
 $first_name=!empty($_POST['firstname'])?$_POST['firstname']:'';
 $last_name="Topno";
