@@ -201,7 +201,8 @@ include('../includes/dbConnect.php');
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                    <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
+                                    <!---- Leo ---->
+                                    <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
@@ -476,7 +477,7 @@ include('../includes/dbConnect.php');
                                             </select>
                                         </div>
                                     </div>
-                                    <!--Parents'  Details Section-->
+                                    <!--First Communion  Details Section-->
                                     <h5 class="card-title"><b>First Communion Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
@@ -506,12 +507,12 @@ include('../includes/dbConnect.php');
                         </div>
                     </div>
 				</div>
-			</form>
+			<!--</form>-->
                                    
 
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success" data-dismiss="modal" onclick="add1stCommRecord()">Submit</button>
                                 <button type="reset" class="btn btn-primary">Reset</button>
                                 <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                                 </div>
@@ -589,6 +590,23 @@ include('../includes/dbConnect.php');
     <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
     <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <script type="text/javascript">
+    function add1stCommRecord(){
+        var firstname = $('#fname').val();
+
+        $ajax({
+            url: "insert-backend.php",
+            type: 'post',
+            data : {'firstname' : firstname},
+
+            success:function(data, status){
+                  
+            }
+        });
+
+
+    }
+    </script>
 
 </body>
 
