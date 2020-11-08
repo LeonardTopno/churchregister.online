@@ -200,7 +200,7 @@ if (isset($_SESSION["username"])){
                                                <!-- PHP code for Table Data -->
                  <?php
 // Establish Connection with Database
-//include "connection.php";
+
 include("../includes/dbConnect.php");
 // Specify the query to execute
 $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' order by user_id DESC";
