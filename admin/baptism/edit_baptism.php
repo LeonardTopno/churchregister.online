@@ -202,7 +202,8 @@ if (isset($_SESSION["username"])){
 // Establish Connection with Database
 include "connection.php";
 // Specify the query to execute
-$sql = "select * from userinfo order by user_id DESC";
+$sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' order by user_id DESC";
+
 // Execute query
 $result = mysqli_query($con,$sql);
 // Loop through each records 
