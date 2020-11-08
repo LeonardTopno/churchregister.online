@@ -746,11 +746,13 @@ mysqli_close($conn);
             data : {'first_name' : first_name},
 
             success:function(data, status){
-                console.log('success',data);    
+                console.log('success',data);  
+                console.log('status', status);
+                $("#1st-communion-form").trigger("reset");  
             }
         });
 
-        $("#1st-communion-form").trigger("reset");
+        
     }
     </script>
     <script>
