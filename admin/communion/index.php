@@ -275,6 +275,7 @@ mysqli_close($conn);
                                     <div class="modal-body">
                                     <!---- Leo ---->
                                     <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
+                                <form class="form-horizontal" id="1st-communion-form" method="" action="" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
@@ -579,7 +580,7 @@ mysqli_close($conn);
                         </div>
                     </div>
 				</div>
-			<!--</form>-->
+			</form>
                                    
 
                                 <!-- Modal footer -->
@@ -749,7 +750,7 @@ mysqli_close($conn);
             }
         });
 
-
+        $("#1st-communion-form").trigger("reset");
     }
     </script>
     <script>
