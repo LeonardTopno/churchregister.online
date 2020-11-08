@@ -502,3 +502,11 @@
 [07-Nov-2020 14:31:41 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/index.php on line 621
 [07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/index.php on line 625
 [07-Nov-2020 14:31:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/index.php on line 627
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 379
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 380
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 427
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 428
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 452
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 453
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 511
+[08-Nov-2020 11:15:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 512

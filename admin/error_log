@@ -45,3 +45,5 @@
 [07-Nov-2020 13:22:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
 [07-Nov-2020 15:49:49 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
 [07-Nov-2020 15:49:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29
+[08-Nov-2020 11:19:21 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/developer/public_html/admin/logout.php on line 28
+[08-Nov-2020 11:19:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/developer/public_html/admin/logout.php:5) in /home/developer/public_html/admin/logout.php on line 29

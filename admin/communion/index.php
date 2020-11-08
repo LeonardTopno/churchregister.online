@@ -22,10 +22,10 @@ include('../includes/dbConnect.php');
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Admin_Communion_Live Church</title>
+    <title>First_Communion_Live Church</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
+    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -179,6 +179,78 @@ include('../includes/dbConnect.php');
 	                <div class="col-12">
 		                <div class="card">
 			                <div class="card-body">
+			                  
+			                  <h5 class="card-title">Click to See Full details</h5>
+                                <div class="table-responsive">
+                                    <table id="zero_config" class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th>Sl. No</th> -->
+                                                <th><b>ID</b></th>
+                                                <th><b>Name</b></th>
+                                                <th><b>Gender</b></th>
+                                                <th><b>DOB</b></th>
+                                                <th><b>Baptism Date</b></th>
+                                                <th><b>Father's Name</b></th>
+                                                <th><b>Mother's Name</b></th>
+                                                <th><b>Select Option</b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+<!-- PHP code for Table Data -->
+<?php
+// Establish Connection with Database
+
+include('../includes/dbConnect.php');
+// Specify the query to execute
+$sql = "select * from userinfo";
+
+// Execute query
+$result = mysqli_query($conn,$sql);
+
+// Loop through each records 
+while($row = mysqli_fetch_array($result)){
+$Id=$row['user_id'];
+$Name=$row['first_name'];
+$Lname =$row['last_name'];
+$Gender=$row['gender_id'];
+$DOB =$row['dob'];
+$fname=$row['father_name'];
+$fsurname =$row['father_surname'];
+$mname=$row['mother_name'];
+$msurname =$row['mother_surname'];
+
+
+// Getting Baptism Date from eventbaptism Table
+$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+$result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+if(mysqli_num_rows($result_sql_eventbaptism)>0){
+    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+    $baptims_date=$row['bapt_date'];
+    mysqli_free_result($result_sql_eventbaptism);
+}
+?>
+
+    <tr>
+        <td><?php echo $Id;?></td>
+        <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
+        <td><?php echo $Gender;?></td>
+        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View</a>&nbsp / <a href="print_baptism.php?Id=<?php echo $Id;?>">Download</a></td>
+    </tr>
+
+<?php
+}
+// Close the connection
+mysqli_close($conn);
+?>      
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
 			                    
 			                </div>
 			            </div>
@@ -563,14 +635,11 @@ include('../includes/dbConnect.php');
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <!-- Modal Display -->
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
-    <script type='text/javascript' src='js/dynamicpage.js'></script>
-    <!-- Modal End -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
     <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
@@ -579,17 +648,10 @@ include('../includes/dbConnect.php');
     <script src="../../dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <!-- <script src="../../dist/js/pages/dashboards/dashboard1.js"></script> -->
-    <!-- Charts js Files -->
-    <script src="../../assets/libs/flot/excanvas.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.pie.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.time.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.stack.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
-    <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <!-- this page js -->
+    <script src="../../assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
+    <script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
+    <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
     <script type="text/javascript">
     function add1stCommRecord(){
         var first_name = $('#fname').val();
@@ -607,6 +669,16 @@ include('../includes/dbConnect.php');
 
 
     }
+    </script>
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+   $('#zero_config').DataTable({
+    "order": [0,'desc']
+        });
+   
+ 
     </script>
 
 </body>
