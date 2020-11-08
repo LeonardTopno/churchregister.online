@@ -584,7 +584,7 @@ mysqli_close($conn);
 
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                <button type="submit" class="btn btn-success" data-dismiss="modal" onclick="add1stCommRecord()">Submit</button>
+                                <button type="submit" class="btn btn-success" onclick="add1stCommRecord()">Submit</button> <!--data-dismiss="modal"-->
                                 <button type="reset" class="btn btn-primary">Reset</button>
                                 <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                                 </div>
