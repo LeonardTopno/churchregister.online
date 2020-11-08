@@ -738,15 +738,25 @@ mysqli_close($conn);
     <script type="text/javascript">
     function add1stCommRecord(){
         var first_name = $('#fname').val();
+        var last_name = $('#lname').val();
         console.log(first_name);
 
         $.ajax({
             url: "insert-backend.php",
             type: 'POST',
-            data : {'first_name' : first_name},
+            data : {
+                    'first_name' : first_name,
+                    'last_name' : last_name
+                    },
 
             success:function(data, status){
-                console.log('success',data);    
+                console.log('success',data);
+                alert(Record Created Successfully);    
+            },
+
+            error:function(errMsg){
+                alert('Error in inserting');
+                alert(errMsg);
             }
         });
 

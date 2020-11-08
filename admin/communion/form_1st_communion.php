@@ -443,7 +443,7 @@ include('../includes/dbConnect.php');
 
             success:function(data){
                 console.log(data); 
-                //alert(data);   
+                alert("Record Created Successfully");   
             },
 
             error:function(errMsg){
