@@ -749,12 +749,12 @@ mysqli_close($conn);
                 console.log('Data Received',data);  
                 console.log('Status:', status);
                 $("#1st-communion-form").trigger("reset");  
-                alert('Successfully Inserted!');
+                console.log('Successfully Inserted! and Form Reset');
             },
 
             error:function(errMsg){
-                alert('Error in inserting');
-                alert(errMsg);
+                console.log('Error in inserting');
+                colsole.log(errMsg);
             }
 
 
