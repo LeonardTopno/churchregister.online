@@ -748,8 +748,7 @@ mysqli_close($conn);
             success:function(data, status){
                 console.log('Data Received',data);  
                 console.log('Status:', status);
-                
-                $('#myModal').animate({'scrollTop':0},800);
+                $("#myModal").animate({'scrollTop':0},800);
                 $("#1st-communion-form").trigger("reset");
                 console.log('Successfully Inserted! and Form Reset');
             },
