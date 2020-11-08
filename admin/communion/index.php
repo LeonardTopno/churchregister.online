@@ -746,10 +746,18 @@ mysqli_close($conn);
             data : {'first_name' : first_name},
 
             success:function(data, status){
-                console.log('success',data);  
-                console.log('status', status);
+                console.log('Data Received',data);  
+                console.log('Status:', status);
                 $("#1st-communion-form").trigger("reset");  
+                alert('Successfully Inserted!');
+            },
+
+            error:function(errMsg){
+                alert('Error in inserting');
+                alert(errMsg);
             }
+
+
         });
 
         
