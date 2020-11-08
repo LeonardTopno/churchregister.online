@@ -8,7 +8,7 @@ include('../includes/dbConnect.php');
 $id=($_GET["Id"]);
 
 // fetching from userinfo table
-$sql="SELECT * FROM userinfo WHERE user_id=$id";
+$sql="SELECT * FROM userinfo WHERE user_id=$id AND created_at_event='baptism' ";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -28,7 +28,8 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$Moccupation=$row['mother_occupation'];
 	$Mobile=$row['mobile'];
     $Email=$row['email'];
-    $HomeparishId = $row['home_parish_id'];
+	$HomeparishId = $row['home_parish_id'];
+	$CreatedAtEvent = $row['created_at_event'];
 		
 
 // fetching from eventbaptism table
