@@ -8,7 +8,7 @@ include('../includes/dbConnect.php');
 $id=($_GET["Id"]);
 
 // fetching from userinfo table
-$sql="SELECT * FROM userinfo WHERE user_id=$id AND created_at_event='baptism' ";
+$sql="SELECT * FROM userinfo WHERE user_id=$id";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 

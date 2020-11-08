@@ -203,7 +203,7 @@ if (isset($_SESSION["username"])){
 
 include('../includes/dbConnect.php');
 // Specify the query to execute
-$sql = "select * from userinfo";
+$sql = "select * from userinfo where created_at_event = 'baptism' ";
 
 // Execute query
 $result = mysqli_query($conn,$sql);
