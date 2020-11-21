@@ -27,15 +27,15 @@
 					<!--</a> -->
 					</div>
 
-					<div class="col-md-6 col-lg-4 col-xlg-3" data-toggle="modal" data-target="#myModal1">
-					<!--<a href="#"> -->
+					<div class="col-md-6 col-lg-4 col-xlg-3">
+					<a href="detailcomm.php">
 							<div class="card card-hover">
 								<div class="box bg-cyan text-center">
 									<h1 class="font-light text-white"><i class="mdi mdi-relative-scale"></i></h1>
 									<h6 class="text-white">Display 1st Communion Record</h6>
 								</div>
 							</div>
-					<!--</a> -->
+					</a>
 					</div>
                     
 				</div>

@@ -614,3 +614,1022 @@
 [08-Nov-2020 14:16:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 453
 [08-Nov-2020 14:16:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 511
 [08-Nov-2020 14:16:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 512
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[08-Nov-2020 20:59:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[08-Nov-2020 20:59:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[08-Nov-2020 21:00:03 UTC] PHP Warning:  Use of undefined constant console - assumed 'console' (this will throw an Error in a future version of PHP) in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[08-Nov-2020 21:00:03 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 06:20:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 06:21:49 UTC] PHP Warning:  include(bapt-includes/operations-tab.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/form_1st_communion.php on line 79
+[09-Nov-2020 06:21:49 UTC] PHP Warning:  include(bapt-includes/operations-tab.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/form_1st_communion.php on line 79
+[09-Nov-2020 06:21:49 UTC] PHP Warning:  include(): Failed opening 'bapt-includes/operations-tab.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/form_1st_communion.php on line 79
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 07:37:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 07:38:12 UTC] PHP Warning:  Use of undefined constant console - assumed 'console' (this will throw an Error in a future version of PHP) in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[09-Nov-2020 07:38:12 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:16:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:17:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:17:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:17:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 380
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 453
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 512
+[09-Nov-2020 08:17:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 08:55:45 UTC] PHP Warning:  Use of undefined constant console - assumed 'console' (this will throw an Error in a future version of PHP) in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[09-Nov-2020 08:55:45 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 382
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 455
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 09:55:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 514
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 382
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 455
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 09:55:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 514
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 381
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 382
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 454
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 455
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 513
+[09-Nov-2020 09:56:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 514
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 382
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 383
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 431
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 455
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 456
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 514
+[09-Nov-2020 10:05:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 515
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 382
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 383
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 431
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 455
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 456
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 514
+[09-Nov-2020 10:33:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 515
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 402
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 403
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 450
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 451
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 534
+[09-Nov-2020 10:53:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 535
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 402
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 403
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 450
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 451
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 534
+[09-Nov-2020 10:54:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 535
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 402
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 403
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 450
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 451
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 534
+[09-Nov-2020 11:00:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 535
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 478
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 503
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 11:06:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 562
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 478
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 503
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 11:06:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 562
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 430
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 478
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 503
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 11:06:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 562
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 426
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 427
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 474
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 499
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 500
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 558
+[09-Nov-2020 11:07:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 559
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 426
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 427
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 474
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 499
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 500
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 558
+[09-Nov-2020 11:09:33 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 559
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 426
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 427
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 474
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 499
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 500
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 558
+[09-Nov-2020 12:15:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 559
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 426
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 427
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 474
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 499
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 500
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 558
+[09-Nov-2020 12:15:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 559
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 385
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 386
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 433
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 434
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 458
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 459
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 517
+[09-Nov-2020 12:45:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 518
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 408
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 409
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 456
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 457
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 481
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 482
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 540
+[09-Nov-2020 12:50:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 541
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 427
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 475
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 500
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 559
+[09-Nov-2020 12:52:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 12:53:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 12:54:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 13:38:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 13:40:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 13:48:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:11:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:17:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:17:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:18:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:19:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:20:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:21:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:21:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:31:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:35:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:35:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:40:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 428
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 429
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 476
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 477
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 501
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 502
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 560
+[09-Nov-2020 14:43:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 561
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[09-Nov-2020 14:44:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[09-Nov-2020 14:49:32 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[10-Nov-2020 09:29:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[10-Nov-2020 09:30:05 UTC] PHP Warning:  Use of undefined constant console - assumed 'console' (this will throw an Error in a future version of PHP) in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[10-Nov-2020 09:30:05 UTC] PHP Warning:  log() expects parameter 1 to be float, string given in /home/developer/public_html/admin/communion/insert-backend.php on line 6
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[11-Nov-2020 17:55:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[11-Nov-2020 17:56:39 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[12-Nov-2020 14:45:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[12-Nov-2020 15:41:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[12-Nov-2020 15:43:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[12-Nov-2020 15:44:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[14-Nov-2020 06:51:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[14-Nov-2020 06:52:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[14-Nov-2020 06:52:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:19:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:19:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:39:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 485
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 486
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 510
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 511
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 569
+[18-Nov-2020 05:47:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 570
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 485
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 486
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 510
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 511
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 569
+[18-Nov-2020 05:47:38 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 570
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:47:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 485
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 486
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 510
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 511
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 569
+[18-Nov-2020 05:47:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 570
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 485
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 486
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 510
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 511
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 569
+[18-Nov-2020 05:48:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 570
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 05:56:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 05:56:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 05:56:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:07:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 06:07:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:07:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 06:16:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 06:17:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 06:18:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:18:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:18:27 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:18:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 06:18:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:20:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 06:20:13 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:01:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 07:01:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:01:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:19:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:19:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 07:19:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:21:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 07:21:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 07:21:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[18-Nov-2020 07:25:57 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 07:26:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[18-Nov-2020 11:17:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[20-Nov-2020 06:23:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:23:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:26:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:26:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:28:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:29:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 388
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 436
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 461
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 520
+[20-Nov-2020 06:29:52 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:36:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:38:51 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:39:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:40:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:40:58 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:42:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:42:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[20-Nov-2020 06:43:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:43:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:44:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:44:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:45:20 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 06:45:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:02:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:04:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:04:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:04:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:05:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:05:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:05:19 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:05:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:05:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:05:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:05:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:05:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:05:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:05:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:07:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:07:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:07:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:07:35 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:07:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:07:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:07:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:08:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:08:00 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:09:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:09:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:11:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:11:18 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:15:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:16:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:16:02 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:18:24 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[20-Nov-2020 07:18:26 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:18:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:19:36 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:19:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:19:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[20-Nov-2020 07:19:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 389
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 390
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 437
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 438
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 462
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 463
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/detailcomm.php on line 521
+[20-Nov-2020 07:19:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/detailcomm.php on line 522
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 437
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 438
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 485
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 486
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 510
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 511
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/index.php on line 569
+[21-Nov-2020 20:35:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/index.php on line 570

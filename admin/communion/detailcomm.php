@@ -22,11 +22,20 @@ include('../includes/dbConnect.php');
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Admin_Communion_Live Church</title>
+    <title>Detail_Communion_Live Church</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
+    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <style>
+        .modal:nth-of-type(even) {
+            z-index: 1052 !important;
+        }
+        .modal-backdrop.show:nth-of-type(even) {
+            z-index: 1051 !important;
+        }
+        
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -76,12 +85,12 @@ include('../includes/dbConnect.php');
                         </i><span class="hide-menu">1st Communion</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/admin/communion/index.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Existing Baptism Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/communion/formcomm.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create Communion Record </span></a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create Communion Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/communion/detailcomm.php" class="sidebar-link"><i class="mdi mdi-relative-scale"></i><span class="hide-menu"> Display Communion Record </span></a></li>
         
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Confirmation</span></a>
+                      <!--  <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Confirmation</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/admin/confirmation/form_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Confirmation Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/confirmation/edit_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Confirmation Record </span></a></li>
@@ -135,7 +144,7 @@ include('../includes/dbConnect.php');
                                 <li class="sidebar-item"><a href="error-405.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 405 </span></a></li>
                                 <li class="sidebar-item"><a href="error-500.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 500 </span></a></li>
                             </ul>
-                        </li>-->
+                        </li>--> 
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -179,18 +188,87 @@ include('../includes/dbConnect.php');
 	                <div class="col-12">
 		                <div class="card">
 			                <div class="card-body">
+			                  
+			                  <h5 class="card-title">Search Communion Record and Click to View Details</h5>
+                              <div class="table-responsive">
+                                                                    <table id="zero_config" class="table table-striped table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <!-- <th>Sl. No</th> -->
+                                                                                <th><b>ID</b></th>
+                                                                                <th><b>Name</b></th>
+                                                                                <th><b>Gender</b></th>
+                                                                                <th><b>DOB</b></th>
+                                                                                <th><b>Baptism Date</b></th>
+                                                                                <th><b>Father's Name</b></th>
+                                                                                <th><b>Mother's Name</b></th>
+                                                                                <th><b>Select Option</b></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <!-- PHP code for Table Data -->
+                                                                        <?php
+                                                                        // Establish Connection with Database
+                                                                        
+                                                                        include('../includes/dbConnect.php');
+                                                                        // Specify the query to execute
+                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+                                                                        
+                                                                        // Execute query
+                                                                        $result = mysqli_query($conn,$sql);
+                                                                        
+                                                                        // Loop through each records 
+                                                                        while($row = mysqli_fetch_array($result)){
+                                                                        $Id=$row['user_id'];
+                                                                        $Name=$row['first_name'];
+                                                                        $Lname =$row['last_name'];
+                                                                        $Gender=$row['gender_id'];
+                                                                        $DOB =$row['dob'];
+                                                                        $fname=$row['father_name'];
+                                                                        $fsurname =$row['father_surname'];
+                                                                        $mname=$row['mother_name'];
+                                                                        $msurname =$row['mother_surname'];
+                                                                        
+                                                                        
+                                                                        // Getting Baptism Date from eventbaptism Table
+                                                                        $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                                                        $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                                                        if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                                                            $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                                                            $baptims_date=$row['bapt_date'];
+                                                                            mysqli_free_result($result_sql_eventbaptism);
+                                                                        }
+                                                                        ?>
+                                                                        
+                                                                            <tr>
+                                                                                <td><?php echo $Id;?></td>
+                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                                                <td><?php echo $Gender;?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                                                            <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td> -->
+                                                                                <td><input type="button" name="view" id="<?php echo $row["id"]; ?>" class="btn btn-primary view_data" value="View"/></td>
+                                                                            </tr>
+                                                                        
+                                                                        <?php
+                                                                        }
+                                                                        // Close the connection
+                                                                        mysqli_close($conn);
+                                                                        ?>      
+                                                          </tbody>
+                                                                                                                
+                                                          </table>
+                                                          </div>  
 			                    
 			                </div>
 			            </div>
 			        </div>
 			    </div>
 			                 
-                
                 <!---------------------------- Dispaying Form   -----------------------------> 
-                <div class="row">
-	                <div class="col-12">
-		                <div class="card">
-			                <div class="card-body">
+                
 			                    <!-- The Modal -->
                                 <div class="modal fade" id="myModal">
                                 <div class="modal-dialog modal-lg">
@@ -204,7 +282,9 @@ include('../includes/dbConnect.php');
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                    <form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">
+                                    <!---- Leo ---->
+                                    <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
+                                <form class="form-horizontal" id="1st-communion-form" method="" action="" enctype="multipart/form-data">
                                 <div class="card-body">
                                     <h4 class="card-title">Baptism Details</h4>
                                     <div class="form-group row">
@@ -479,7 +559,7 @@ include('../includes/dbConnect.php');
                                             </select>
                                         </div>
                                     </div>
-                                    <!--Parents'  Details Section-->
+                                    <!--First Communion  Details Section-->
                                     <h5 class="card-title"><b>First Communion Details</b></h5>
                                                                     
                                     <div class="border-top"></div><br>
@@ -514,18 +594,73 @@ include('../includes/dbConnect.php');
 
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="submit" class="btn btn-success" onclick="add1stCommRecord()">Submit</button> <!--data-dismiss="modal"-->
                                 <button type="reset" class="btn btn-primary">Reset</button>
                                 <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                                 </div>
 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Table Modal -->
+                                  <div class="modal fade" id="myModal1">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                      
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">First Communion Records</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          <!-- Table Structure -->
+                                          
+                                          <div class="row">
+                                	                <div class="col-12">
+                                		                <div class="card">
+                                			                <div class="card-body">
+          
+                                                                <h5 class="card-title">  </h5>
+                                                                
+                                            <!--  Table Structure Ends -->
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                                                                
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                            </div>
+                                                                                
+                                            </div>
+                                            </div>
+                                          </div>
+                            <!-- Modal Over Modal Communion Individual Info -->
+			                <div class="modal" id="myModal2" data-backdrop="static">
+                            	<div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Individual Communion Detail</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    </div>
+                                    <div class="modal-body" id="communion_detail">  
+                                    
+                                    </div>
+                                    
+                                   
+                                    <div class="modal-footer">
+                                      <a href="href="print_baptism.php?Id=<?php echo $id; ?>""  class="btn">Print Details</a>
+                                      <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                                    </div>
+                                  </div>
                                 </div>
-                                </div>
-                                </div>
-			                </div>
-			            </div>
-			        </div>
-			    </div>
+                            </div>
+			<!-- Container Ends Here -->
 			</div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -543,14 +678,11 @@ include('../includes/dbConnect.php');
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <!-- Modal Display -->
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
-    <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
-    <script type='text/javascript' src='js/dynamicpage.js'></script>
-    <!-- Modal End -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
     <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
@@ -559,17 +691,67 @@ include('../includes/dbConnect.php');
     <script src="../../dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <!-- <script src="../../dist/js/pages/dashboards/dashboard1.js"></script> -->
-    <!-- Charts js Files -->
-    <script src="../../assets/libs/flot/excanvas.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.pie.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.time.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.stack.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
-    <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <!-- this page js -->
+    <script src="../../assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
+    <script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
+    <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
+    <script type="text/javascript">
+    function add1stCommRecord(){
+        var first_name = $('#fname').val();
+        console.log(first_name);
+
+        $.ajax({
+            url: "insert-backend.php",
+            type: 'POST',
+            data : {'first_name' : first_name},
+
+            success:function(data, status){
+                console.log('Data Received',data);  
+                console.log('Status:', status);
+                $("#myModal").animate({'scrollTop':0},800);
+                $("#1st-communion-form").trigger("reset");
+                console.log('Successfully Inserted! and Form Reset');
+            },
+
+            error:function(errMsg){
+                console.log('Error in inserting');
+                colsole.log(errMsg);
+            }
+
+
+        });
+
+        
+    }
+    </script>
+    <!-- Script for Individual Data Modal -->
+    <script>  
+         $(document).ready(function(){  
+              $('.view_data').click(function(){  
+                   var id = $(this).attr("id");  
+                   $.ajax({  
+                        url:"getrecord.php",  
+                        method:"post",  
+                        data:{id:id},  
+                        success:function(data){  
+                             $('#communion_detail').html(data);  
+                             $('#myModal2').modal("show");  
+                        }  
+                   });  
+              });  
+         });  
+ </script>
+    <!-- Individual Script End -->
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+   $('#zero_config').DataTable({
+    "order": [0,'desc']
+        });
+   
+ 
+    </script>
 
 </body>
 

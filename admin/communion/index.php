@@ -27,6 +27,15 @@ include('../includes/dbConnect.php');
     <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
     <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <style>
+        .modal:nth-of-type(even) {
+            z-index: 1052 !important;
+        }
+        .modal-backdrop.show:nth-of-type(even) {
+            z-index: 1051 !important;
+        }
+        
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -76,12 +85,12 @@ include('../includes/dbConnect.php');
                         </i><span class="hide-menu">1st Communion</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/admin/communion/index.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Existing Baptism Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/communion/formcomm.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create Communion Record </span></a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create Communion Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/communion/detailcomm.php" class="sidebar-link"><i class="mdi mdi-relative-scale"></i><span class="hide-menu"> Display Communion Record </span></a></li>
         
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Confirmation</span></a>
+                     <!--   <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Confirmation</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="/admin/confirmation/form_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-outline"></i><span class="hide-menu"> Create Confirmation Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/confirmation/edit_confirmation.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Confirmation Record </span></a></li>
@@ -135,7 +144,7 @@ include('../includes/dbConnect.php');
                                 <li class="sidebar-item"><a href="error-405.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 405 </span></a></li>
                                 <li class="sidebar-item"><a href="error-500.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 500 </span></a></li>
                             </ul>
-                        </li>-->
+                        </li> -->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -197,56 +206,58 @@ include('../includes/dbConnect.php');
                                             </tr>
                                         </thead>
                                         <tbody>
-<!-- PHP code for Table Data -->
-<?php
-// Establish Connection with Database
+                                        <!-- PHP code for Table Data -->
+                                    <?php
+                                    // Establish Connection with Database
 
-include('../includes/dbConnect.php');
-// Specify the query to execute
-$sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+                                    include('../includes/dbConnect.php');
+                                    // Specify the query to execute
+                                    $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
 
-// Execute query
-$result = mysqli_query($conn,$sql);
+                                    // Execute query
+                                    $result = mysqli_query($conn,$sql);
 
-// Loop through each records 
-while($row = mysqli_fetch_array($result)){
-$Id=$row['user_id'];
-$Name=$row['first_name'];
-$Lname =$row['last_name'];
-$Gender=$row['gender_id'];
-$DOB =$row['dob'];
-$fname=$row['father_name'];
-$fsurname =$row['father_surname'];
-$mname=$row['mother_name'];
-$msurname =$row['mother_surname'];
+                                    // Loop through each records 
+                                    while($row = mysqli_fetch_array($result)){
+                                    $Id=$row['user_id'];
+                                    $Name=$row['first_name'];
+                                    $Lname =$row['last_name'];
+                                    $Gender=$row['gender_id'];
+                                    $DOB =$row['dob'];
+                                    $fname=$row['father_name'];
+                                    $fsurname =$row['father_surname'];
+                                    $mname=$row['mother_name'];
+                                    $msurname =$row['mother_surname'];
 
 
-// Getting Baptism Date from eventbaptism Table
-$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
-$result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
-if(mysqli_num_rows($result_sql_eventbaptism)>0){
-    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
-    $baptims_date=$row['bapt_date'];
-    mysqli_free_result($result_sql_eventbaptism);
-}
-?>
+                                    // Getting Baptism Date from eventbaptism Table
+                                    $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                    $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                    if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                    $baptims_date=$row['bapt_date'];
+                                    mysqli_free_result($result_sql_eventbaptism);
+                                                                                    }
+                                    ?>
 
-    <tr>
-        <td><?php echo $Id;?></td>
-        <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
-        <td><?php echo $Gender;?></td>
-        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
-        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
-        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
-        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
-        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View</a></td>
-    </tr>
+                                    <tr>
+                                        <td><?php echo $Id;?></td>
+                                        <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                        <td><?php echo $Gender;?></td>
+                                        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#comnform" data-id='".$id."'>Add Detail</button>
+                                        
+                                        <!-- <a href="viewdetails.php?Id=<?php echo $Id;?>">View</a>--></td>
+                                    </tr>
 
-<?php
-}
-// Close the connection
-mysqli_close($conn);
-?>      
+                                        <?php
+                                        }
+                                        // Close the connection
+                                        mysqli_close($conn);
+                                        ?>      
                                         </tbody>
                                         
                                     </table>
@@ -257,7 +268,53 @@ mysqli_close($conn);
 			        </div>
 			    </div>
 			                 
-                
+                                        <!-- Add Only Communion Details Data -->
+                   
+                                <div class="modal" id="comnform">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                
+                                      <!-- Modal Header -->
+                                      <div class="modal-header">
+                                        <h4 class="modal-title">Fill First Communion Details</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      </div>
+                                
+                                      <!-- Modal body -->
+                                      <div class="modal-body">
+                                        <div class="form-group row">
+                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">Communion Date</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control" name="comndate" id="comndate" value=""  required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Communion Church</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="cchurchname" id="cchurchname"  value="" placeholder="Church Name Here.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">School</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="comnschool" id="comnschool" value="" placeholder="School Name Here..." required>
+                                        </div>
+                                    </div>
+                                      </div>
+                                
+                                      <!-- Modal footer -->
+                                      <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success" onclick="">Submit</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                      </div>
+                                
+                                    </div>
+                                  </div>
+                                </div>
+                                           
+                                        <!-- End Communion Details Data -->
                 <!---------------------------- Dispaying Form   -----------------------------> 
                 
 			                    <!-- The Modal -->
@@ -595,112 +652,160 @@ mysqli_close($conn);
                     </div>
                     
                     <!-- The Table Modal -->
-  <div class="modal fade" id="myModal1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">First Communion Records</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Table Structure -->
-          
-          <div class="row">
-	                <div class="col-12">
-		                <div class="card">
-			                <div class="card-body">
-          
-                                <h5 class="card-title">  </h5>
-                                <div class="table-responsive">
-                                    <table id="zero_config" class="table table-striped table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <!-- <th>Sl. No</th> -->
-                                                <th><b>ID</b></th>
-                                                <th><b>Name</b></th>
-                                                <th><b>Gender</b></th>
-                                                <th><b>DOB</b></th>
-                                                <th><b>Baptism Date</b></th>
-                                                <th><b>Father's Name</b></th>
-                                                <th><b>Mother's Name</b></th>
-                                                <th><b>Select Option</b></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-<!-- PHP code for Table Data -->
-<?php
-// Establish Connection with Database
-
-include('../includes/dbConnect.php');
-// Specify the query to execute
-$sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
-
-// Execute query
-$result = mysqli_query($conn,$sql);
-
-// Loop through each records 
-while($row = mysqli_fetch_array($result)){
-$Id=$row['user_id'];
-$Name=$row['first_name'];
-$Lname =$row['last_name'];
-$Gender=$row['gender_id'];
-$DOB =$row['dob'];
-$fname=$row['father_name'];
-$fsurname =$row['father_surname'];
-$mname=$row['mother_name'];
-$msurname =$row['mother_surname'];
-
-
-// Getting Baptism Date from eventbaptism Table
-$sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
-$result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
-if(mysqli_num_rows($result_sql_eventbaptism)>0){
-    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
-    $baptims_date=$row['bapt_date'];
-    mysqli_free_result($result_sql_eventbaptism);
-}
-?>
-
-    <tr>
-        <td><?php echo $Id;?></td>
-        <td><a href="viewdetails.php?Id=<?php echo $Id;?>"><?php echo $Name;?>&nbsp<?php echo $Lname;?></a></td>
-        <td><?php echo $Gender;?></td>
-        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
-        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
-        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
-        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
-        <td><a href="viewdetails.php?Id=<?php echo $Id;?>">View</a>&nbsp / <a href="print_baptism.php?Id=<?php echo $Id;?>">Download</a></td>
-    </tr>
-
-<?php
-}
-// Close the connection
-mysqli_close($conn);
-?>      
-                                        </tbody>
+                                  <div class="modal fade" id="myModal1">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                      
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">First Communion Records</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
                                         
-                                    </table>
-                                </div>
-          <!--  Table Structure Ends -->
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          <!-- Table Structure -->
+                                          
+                                          <div class="row">
+                                	                <div class="col-12">
+                                		                <div class="card">
+                                			                <div class="card-body">
+          
+                                                                <h5 class="card-title">  </h5>
+                                                                <div class="table-responsive">
+                                                                    <table id="zero_config" class="table table-striped table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <!-- <th>Sl. No</th> -->
+                                                                                <th><b>ID</b></th>
+                                                                                <th><b>Name</b></th>
+                                                                                <th><b>Gender</b></th>
+                                                                                <th><b>DOB</b></th>
+                                                                                <th><b>Baptism Date</b></th>
+                                                                                <th><b>Father's Name</b></th>
+                                                                                <th><b>Mother's Name</b></th>
+                                                                                <th><b>Select Option</b></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <!-- PHP code for Table Data -->
+                                                                        <?php
+                                                                        // Establish Connection with Database
+                                                                        
+                                                                        include('../includes/dbConnect.php');
+                                                                        // Specify the query to execute
+                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+                                                                        
+                                                                        // Execute query
+                                                                        $result = mysqli_query($conn,$sql);
+                                                                        
+                                                                        // Loop through each records 
+                                                                        while($row = mysqli_fetch_array($result)){
+                                                                        $Id=$row['user_id'];
+                                                                        $Name=$row['first_name'];
+                                                                        $Lname =$row['last_name'];
+                                                                        $Gender=$row['gender_id'];
+                                                                        $DOB =$row['dob'];
+                                                                        $fname=$row['father_name'];
+                                                                        $fsurname =$row['father_surname'];
+                                                                        $mname=$row['mother_name'];
+                                                                        $msurname =$row['mother_surname'];
+                                                                        
+                                                                        
+                                                                        // Getting Baptism Date from eventbaptism Table
+                                                                        $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                                                        $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                                                        if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                                                            $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                                                            $baptims_date=$row['bapt_date'];
+                                                                            mysqli_free_result($result_sql_eventbaptism);
+                                                                        }
+                                                                        ?>
+                                                                        
+                                                                            <tr>
+                                                                                <td><?php echo $Id;?></td>
+                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                                                <td><?php echo $Gender;?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                                                                <td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-info">View</a></td>
+                                                                            </tr>
+                                                                        
+                                                                        <?php
+                                                                        }
+                                                                        // Close the connection
+                                                                        mysqli_close($conn);
+                                                                        ?>      
+                                                          </tbody>
+                                                                                                                
+                                                          </table>
+                                                          </div>
+                                            <!--  Table Structure Ends -->
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                                                                
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                            </div>
+                                                                                
+                                            </div>
+                                            </div>
+                                          </div>
+                            <!-- Modal Over Modal Communion Individual Info -->
+			                <div class="modal" id="myModal2" data-backdrop="static">
+                            	<div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Individual Communion Detail</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    </div><div class="container"></div>
+                                    <div class="modal-body">
+                                      <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Communion ID</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $id;?>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Communion Date</label>
+                                        <div class="col-sm-9">
+                                            <?php echo date("d-m-Y",strtotime($baptims_date));?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Communion Church</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $cchurch;?> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">School</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $school;?>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="href="print_baptism.php?Id=<?php echo $id; ?>""  class="btn">Print Details</a>
+                                      <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                                    </div>
+                                  </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-			                
+			<!-- Container Ends Here -->
 			</div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
