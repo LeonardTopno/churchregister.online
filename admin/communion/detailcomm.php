@@ -725,6 +725,7 @@ include('../includes/dbConnect.php');
     }
     </script>
     <!-- Script for Individual Data Modal -->
+    
     <script>  
          $(document).ready(function(){  
               $('.view_data').click(function(){  
@@ -740,8 +741,10 @@ include('../includes/dbConnect.php');
                    });  
               });  
          });  
- </script>
+    </script>
     <!-- Individual Script End -->
+
+
     <script>
         /****************************************
          *       Basic Table                   *
