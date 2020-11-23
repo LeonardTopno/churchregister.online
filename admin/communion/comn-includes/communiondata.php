@@ -3,10 +3,10 @@ include('../../includes/dbConnect.php');
 
 $userid = 0;
 if(isset($_POST['userid'])){
-   $userid = mysqli_real_escape_string($con,$_POST['userid']);
+   $userid = mysqli_real_escape_string($conn,$_POST['userid']);
 }
 $sql = "select * from employee where id=".$userid;
-$result = mysqli_query($con,$sql);
+$result = mysqli_query($conn,$sql);
 
 $response = "<table border='0' width='100%'>";
 while( $row = mysqli_fetch_array($result) ){

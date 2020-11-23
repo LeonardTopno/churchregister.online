@@ -84,8 +84,8 @@ include('../includes/dbConnect.php');
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-relative-scale">
                         </i><span class="hide-menu">1st Communion</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="/admin/communion/index.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Existing Baptism Record </span></a></li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create Communion Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/communion/index.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Add Communion Details in Existing Baptism Record </span></a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create New Communion Record </span></a></li>
                                 <li class="sidebar-item"><a href="/admin/communion/detailcomm.php" class="sidebar-link"><i class="mdi mdi-relative-scale"></i><span class="hide-menu"> Display Communion Record </span></a></li>
         
                             </ul>
