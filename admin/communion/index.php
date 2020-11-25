@@ -563,12 +563,12 @@ include('../includes/dbConnect.php');
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
                                         <div class="col-sm-9">
                                         <select class="select2 form-control custom-select" name="country" id="country" style="width: 100%; height:36px;">
-                                            <option selected="" disabled=""> Select Country1 </option>
+                                            <option selected="" disabled=""> Select Country </option>
                                             <?php  
                                                 $contryData="SELECT id, name from countries";
-                                                $result=mysqli_query($conn,$contryData);
+                                                $result=mysqli_query($conn, $contryData);
                                                 if(mysqli_num_rows($result)>0)
-                                                    {echo("Leo");
+                                                    {
                                                         while($arr=mysqli_fetch_assoc($result))
                                                             {
                                                                 ?>
@@ -841,80 +841,7 @@ include('../includes/dbConnect.php');
     <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
     
     
-    <script type="text/javascript">
-    function add1stCommRecord(){
-        
-        var first_name = $('#fname').val();
-        var middle_name = $('#mname').val();
-        var last_name = $('#lname').val();
-        
-        var gender = $('#radio-stacked').val();
-        var date_of_birth = $('#dob').val();
-        var baptism_date = $('#dobaptism').val();
-        var minister_name = $('#bby').val();
-
-        var fathers_name = $('#fathername').val();
-        var fathers_surname = $('#fathersname').val();
-        var fathers_occupation = $('#foccupation').val();
-        var domicile = $('#domicile').val();
-
-        var mothers_name = $('#mothername').val();
-        var mothers_surname = $('#mothersname').val();
-        var mothers_occupation = $('#moccupation').val();
-
-        var first_sponsor_name = $('#GFname').val();
-        var first_sponsor_domicile = $('#GFdomicile').val();
-
-        var second_sponsor_name = $('#GMname').val();
-        var second_sponsor_domicile = $('#GMdomicile').val();
-
-        var permanent_address = $('#padd').val();
-        var current_address = $('#cadd').val();
-
-        var mobile_no = $('#phone-mask').val();
-        var email_id = $('#email').val();
-
-        //var home_parish = $('#parish').val();
-
-        var communion_date = $('#comndate').val();
-        var communion_church = $('#cchurchname').val();
-        var school_name = $('#comnschool').val();
-
-        console.log(first_name);
-
-
-        json_data_to_send = {'first_name' : first_name,
-                            'last_name' : last_name
-                            };
-
-
-
-        $.ajax({
-            url: "insert-backend.php",
-            type: 'POST',
-            //data : {'first_name' : first_name},
-            data: json_data_to_send, 
-
-            success:function(data, status){
-                console.log('Data Received',data);  
-                console.log('Status:', status);
-                alert(status);
-                $("#myModal").animate({'scrollTop':0},800);
-                $("#1st-communion-form").trigger("reset");
-                console.log('Successfully Inserted! and Form Reset');
-            },
-
-            error:function(errMsg){
-                console.log('Error in inserting');
-                colsole.log(errMsg);
-            }
-
-
-        });
-
-        
-    }
-    </script>
+    <script src="comn-includes/scripts/ajax-new-comn-insert.js"></script>
 
     <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
     
