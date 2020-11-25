@@ -7,8 +7,10 @@ console.log("insert-backend");
 
 
 $first_name=!empty($_POST['first_name'])?$_POST['first_name']:'';
-$last_name="Topno";
+$last_name=!empty($_POST['last_name'])?$_POST['last_name']:'';;
+
 $created_at_event="1st_communion";
+
 if(!empty($first_name)){
     $sql = "INSERT INTO userinfo (first_name, last_name, created_at_event) VALUES ('$first_name', '$last_name', '$created_at_event')";
 

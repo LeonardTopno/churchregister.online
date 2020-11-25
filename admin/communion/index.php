@@ -882,10 +882,18 @@ include('../includes/dbConnect.php');
 
         console.log(first_name);
 
+
+        json_data_to_send = {'first_name' : first_name,
+                            'last_name' : last_name
+                            };
+
+
+
         $.ajax({
             url: "insert-backend.php",
             type: 'POST',
-            data : {'first_name' : first_name},
+            //data : {'first_name' : first_name},
+            data: json_data_to_send, 
 
             success:function(data, status){
                 console.log('Data Received',data);  
