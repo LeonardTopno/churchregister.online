@@ -1,6 +1,12 @@
 <?php
 include('../../../includes/dbConnect.php');
 
+if($conn){
+
+    echo("Connection established");
+    
+}
+
 extract($_POST);
 
 console.log("insert-backend");

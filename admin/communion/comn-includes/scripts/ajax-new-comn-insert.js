@@ -46,7 +46,6 @@ function add1stCommRecord(){
 
 
     $.ajax({
-        //url: "insert-backend.php",
         url: "comn-includes/ajax-backend/insert-backend.php",
         type: 'POST',
         //data : {'first_name' : first_name},
