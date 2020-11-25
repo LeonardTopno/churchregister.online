@@ -563,12 +563,12 @@ include('../includes/dbConnect.php');
                                         <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
                                         <div class="col-sm-9">
                                         <select class="select2 form-control custom-select" name="country" id="country" style="width: 100%; height:36px;">
-                                            <option selected="" disabled=""> Select Country </option>
+                                            <option selected="" disabled=""> Select Country1 </option>
                                             <?php  
                                                 $contryData="SELECT id, name from countries";
                                                 $result=mysqli_query($conn,$contryData);
                                                 if(mysqli_num_rows($result)>0)
-                                                    {
+                                                    {echo("Leo");
                                                         while($arr=mysqli_fetch_assoc($result))
                                                             {
                                                                 ?>
