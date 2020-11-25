@@ -9,7 +9,7 @@ if($conn){
 
 extract($_POST);
 
-echo"console.log('insert-backend')";
+echo"insert-backend";
 
 
 $first_name=!empty($_POST['first_name'])?$_POST['first_name']:'';
