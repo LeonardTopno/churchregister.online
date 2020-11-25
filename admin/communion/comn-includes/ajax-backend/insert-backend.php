@@ -1,5 +1,5 @@
 <?php
-include('../includes/dbConnect.php');
+include('../../../includes/dbConnect.php');
 
 extract($_POST);
 
