@@ -916,7 +916,8 @@ include('../includes/dbConnect.php');
     }
     </script>
 
-
+    <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
+    
     <script>
         /****************************************
          *       Basic Table                   *
