@@ -268,7 +268,7 @@ include('../includes/dbConnect.php');
 			        </div>
 			    </div>
 			                 
-                                        <!-- Add Only Communion Details Data -->
+                <!--------------- Add Only Communion Details Data ---------------->
                    
                                 <div class="modal" id="comnform">
                                   <div class="modal-dialog">
