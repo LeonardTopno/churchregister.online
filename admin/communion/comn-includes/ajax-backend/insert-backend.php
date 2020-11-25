@@ -3,7 +3,7 @@ include('../../../includes/dbConnect.php');
 
 if($conn){
 
-    console.log("Connection established");
+    echo"<script>console.log('Connection established')</script>";
     
 }
 
