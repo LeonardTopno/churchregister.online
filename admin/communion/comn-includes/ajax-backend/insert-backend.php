@@ -1,16 +1,13 @@
 <?php
-include('../../includes/dbConnect.php');
+include('../../../includes/dbConnect.php');
 
 if($conn){
-
     echo ("Connection established");
-    
-}else{echo("Connection Not Established");}
+    }else{
+        echo("Connection Not Established");
+}
 
 extract($_POST);
-
-echo ("insert-backend");
-
 
 $first_name=!empty($_POST['first_name'])?$_POST['first_name']:'';
 $last_name=!empty($_POST['last_name'])?$_POST['last_name']:'';;
