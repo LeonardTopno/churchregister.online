@@ -342,7 +342,7 @@ include('../includes/dbConnect.php');
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
+                                        <label for="mname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
                                         <div class="col-sm-9">
                                             <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
                                         </div>
@@ -818,8 +818,7 @@ include('../includes/dbConnect.php');
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
+    
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <!-- Modal Display -->
@@ -840,9 +839,47 @@ include('../includes/dbConnect.php');
     <script src="../../assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
     <script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
     <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
+    
+    
     <script type="text/javascript">
     function add1stCommRecord(){
+        
         var first_name = $('#fname').val();
+        var middle_name = $('#mname').val();
+        var last_name = $('#lname').val();
+        
+        var gender = $('#radio-stacked').val();
+        var date_of_birth = $('#dob').val();
+        var baptism_date = $('#dobaptism').val();
+        var minister_name = $('#bby').val();
+
+        var fathers_name = $('#fathername').val();
+        var fathers_surname = $('#fathersname').val();
+        var fathers_occupation = $('#foccupation').val();
+        var domicile = $('#domicile').val();
+
+        var mothers_name = $('#mothername').val();
+        var mothers_surname = $('#mothersname').val();
+        var mothers_occupation = $('#moccupation').val();
+
+        var first_sponsor_name = $('#GFname').val();
+        var first_sponsor_domicile = $('#GFdomicile').val();
+
+        var second_sponsor_name = $('#GMname').val();
+        var second_sponsor_domicile = $('#GMdomicile').val();
+
+        var permanent_address = $('#padd').val();
+        var current_address = $('#cadd').val();
+
+        var mobile_no = $('#phone-mask').val();
+        var email_id = $('#email').val();
+
+        //var home_parish = $('#parish').val();
+
+        var communion_date = $('#comndate').val();
+        var communion_church = $('#cchurchname').val();
+        var school_name = $('#comnschool').val();
+
         console.log(first_name);
 
         $.ajax({
@@ -853,6 +890,7 @@ include('../includes/dbConnect.php');
             success:function(data, status){
                 console.log('Data Received',data);  
                 console.log('Status:', status);
+                alert(status);
                 $("#myModal").animate({'scrollTop':0},800);
                 $("#1st-communion-form").trigger("reset");
                 console.log('Successfully Inserted! and Form Reset');
@@ -869,6 +907,8 @@ include('../includes/dbConnect.php');
         
     }
     </script>
+
+
     <script>
         /****************************************
          *       Basic Table                   *
