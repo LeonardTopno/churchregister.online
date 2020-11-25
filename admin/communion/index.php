@@ -843,7 +843,7 @@ include('../includes/dbConnect.php');
     
     <script src="comn-includes/scripts/ajax-new-comn-insert.js"></script>
 
-    <script src="../includes/scripts/dependent-dropdown-parish.js"></script>
+    <!--<script src="../includes/scripts/dependent-dropdown-parish.js"></script>-->
     
     <script>
         /****************************************
