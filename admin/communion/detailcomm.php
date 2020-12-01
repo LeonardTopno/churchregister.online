@@ -641,6 +641,11 @@ include('../includes/dbConnect.php');
                                             </div>
                                           </div>
                             <!-- Modal Over Modal Communion Individual Info -->
+
+
+
+
+
 			                <div class="modal" id="myModal2" data-backdrop="static">
                             	<div class="modal-dialog modal-lg">
                                   <div class="modal-content">
@@ -649,30 +654,35 @@ include('../includes/dbConnect.php');
                                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                     </div>
 
-                                    <!--Leo-->
-                                    <div class="modal-body" id="communion_detail"> 
+                                    <!--Leo Modal body-->
+                                    <div class="modal-body" id="communion_detail">
+                                    
+                                    <form class="form-horizontal" id="communion_detail1" method="" action="" enctype="multipart/form-data">    
                                         <div class="card-body">
                                             <h4 class="card-title">Baptism Details</h4>
+                                                
                                                 <div class="form-group row">
                                                     <label for="fname" class="col-sm-3 text-left control-label col-form-label">First Name</label>
                                                     <div class="col-sm-9">
-                                                    <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
+                                                        <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
+                                                    </div>
                                                 </div>
+                                                
+                                                <div class="form-group row">
+                                                    <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
+                                                    </div>
+                                                </div> 
+                                    
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
-                                            <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
-                                            </div>
-                                        </div> 
-                                    
-                                        <!--</div>-->
-                                    
-                                   
+                                    </form>
+                                    <!-- Modal Footer-->
                                     <div class="modal-footer">
                                       <a href="href="print_baptism.php?Id=<?php echo $id; ?>""  class="btn">Print Details</a>
                                       <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
                                     </div>
+
                                   </div>
                                 </div>
                             </div>
