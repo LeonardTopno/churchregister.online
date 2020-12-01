@@ -648,7 +648,23 @@ include('../includes/dbConnect.php');
                                       <h4 class="modal-title">1st Communion Detail</h4>
                                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                     </div>
-                                    <div class="modal-body" id="communion_detail">  
+
+                                    <!--Leo-->
+                                    <div class="modal-body" id="communion_detail"> 
+                                        <div class="card-body">
+                                            <h4 class="card-title">Baptism Details</h4>
+                                                <div class="form-group row">
+                                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">First Name</label>
+                                                    <div class="col-sm-9">
+                                                    <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
+                                                </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
+                                            </div>
+                                        </div> 
                                     
                                     </div>
                                     
@@ -662,20 +678,13 @@ include('../includes/dbConnect.php');
                             </div>
 			<!-- Container Ends Here -->
 			</div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
+            
             <!-- ============================================================== -->
             <?php include('../includes/frontend/inc-footer.php')?>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
+        
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
+    
     <!-- ============================================================== -->
     <!-- Modal Display -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
