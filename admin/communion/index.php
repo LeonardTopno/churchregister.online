@@ -269,7 +269,7 @@ include('../includes/dbConnect.php');
 			    </div>
 
     
-                <!--Including Modal-->
+            <!--Including Modal-->
                 <?php include("modals/add-only-communion-details-to-baptism-record.php");?>
 
 
@@ -718,6 +718,9 @@ include('../includes/dbConnect.php');
                                             </div>
                                             </div>
                                           </div>
+
+
+
                             <!-- Modal Over Modal Communion Individual Info -->
 			                <div class="modal" id="myModal2" data-backdrop="static">
                             	<div class="modal-dialog modal-lg">
@@ -726,6 +729,7 @@ include('../includes/dbConnect.php');
                                       <h4 class="modal-title">Individual Communion Detail</h4>
                                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                     </div><div class="container"></div>
+                                    
                                     <div class="modal-body">
                                       <div class="form-group row">
                                         <label class="col-sm-3 text-left control-label col-form-label">Communion ID</label>
@@ -766,6 +770,11 @@ include('../includes/dbConnect.php');
                                   </div>
                                 </div>
                             </div>
+
+
+
+
+
 			<!-- Container Ends Here -->
 			</div>
             <!-- ============================================================== -->

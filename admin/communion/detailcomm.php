@@ -272,7 +272,7 @@ include('../includes/dbConnect.php');
 
 
 
-
+<?php include("modals/display-user-communion-details.php");?>
 
 
 
