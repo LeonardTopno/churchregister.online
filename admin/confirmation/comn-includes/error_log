@@ -1,0 +1,18 @@
+[05-Nov-2020 12:49:57 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:49:57 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:49:57 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:49:57 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:49:57 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:51:02 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:51:02 UTC] PHP Warning:  include(connection.php): failed to open stream: No such file or directory in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:51:02 UTC] PHP Warning:  include(): Failed opening 'connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 3
+[05-Nov-2020 12:51:02 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:51:02 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:53:03 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:53:03 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:44 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:47 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:47 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:51 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59
+[05-Nov-2020 12:54:51 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/comn-includes/insertform_data.php on line 59

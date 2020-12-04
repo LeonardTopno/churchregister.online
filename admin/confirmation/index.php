@@ -1,3 +1,15 @@
+<?php 
+ob_start();
+#Sessions start
+session_start();
+if (isset($_SESSION["username"])){
+	$logid=$_SESSION["username"];
+}else{
+	header("location:../../index.php");
+} 
+include('../includes/dbConnect.php');
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -10,20 +22,30 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Admin_Baptism_Live Church</title>
+    <title>First_Communion_Live Church</title>
     <!-- Custom CSS -->
-    <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../assets/extra-libs/multicheck/multicheck.css">
+    <link href="../../assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <style>
+        .modal:nth-of-type(even) {
+            z-index: 1052 !important;
+        }
+        .modal-backdrop.show:nth-of-type(even) {
+            z-index: 1051 !important;
+        }
+        
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<?php include('../includes/frontend/inc-upscript.php');?>
 </head>
 
-<body>
+<body oncontextmenu="return false;">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -37,188 +59,7 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar" data-navbarbg="skin5">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
-                <div class="navbar-header" data-logobg="skin5">
-                    <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-                    <!-- ============================================================== -->
-                    <!-- Logo -->
-                    <!-- ============================================================== -->
-                    <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon -->
-                        <b class="logo-icon p-l-10">
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="../../assets/images/logo-icon.png" alt="homepage" class="light-logo" />
-                           
-                        </b>
-                        <!--End Logo icon -->
-                         <!-- Logo text -->
-                        <span class="logo-text">
-                             <!-- dark Logo text -->
-                             <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" />
-                            
-                        </span>
-                        <!-- Logo icon -->
-                        <!-- <b class="logo-icon"> -->
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <!-- <img src="../../assets/images/logo-text.png" alt="homepage" class="light-logo" /> -->
-                            
-                        <!-- </b> -->
-                        <!--End Logo icon -->
-                    </a>
-                    <!-- ============================================================== -->
-                    <!-- End Logo -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Toggle which is visible on mobile only -->
-                    <!-- ============================================================== -->
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more"></i></a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-left mr-auto">
-                        <li class="nav-item d-none d-md-block"><a class="nav-link sidebartoggler waves-effect waves-light" href="javascript:void(0)" data-sidebartype="mini-sidebar"><i class="mdi mdi-menu font-24"></i></a></li>
-                        <!-- ============================================================== -->
-                        <!-- create new -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>
-                             <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>   
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
-                            <form class="app-search position-absolute">
-                                <input type="text" class="form-control" placeholder="Search &amp; enter"> <a class="srh-btn"><i class="ti-close"></i></a>
-                            </form>
-                        </li>
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- Right side toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav float-right">
-                        <!-- ============================================================== -->
-                        <!-- Comment -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-bell font-24"></i>
-                            </a>
-                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- End Comment -->
-                        <!-- ============================================================== -->
-                        <!-- ============================================================== -->
-                        <!-- Messages -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="font-24 mdi mdi-comment-processing"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown" aria-labelledby="2">
-                                <ul class="list-style-none">
-                                    <li>
-                                        <div class="">
-                                             <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-success btn-circle"><i class="ti-calendar"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Event today</h5> 
-                                                        <span class="mail-desc">Just a reminder that event</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-info btn-circle"><i class="ti-settings"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Settings</h5> 
-                                                        <span class="mail-desc">You can customize this template</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-primary btn-circle"><i class="ti-user"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Pavan kumar</h5> 
-                                                        <span class="mail-desc">Just see the my admin!</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- Message -->
-                                            <a href="javascript:void(0)" class="link border-top">
-                                                <div class="d-flex no-block align-items-center p-10">
-                                                    <span class="btn btn-danger btn-circle"><i class="fa fa-link"></i></span>
-                                                    <div class="m-l-10">
-                                                        <h5 class="m-b-0">Luanch Admin</h5> 
-                                                        <span class="mail-desc">Just see the my new admin!</span> 
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../../assets/images/users/1.jpg" alt="user" class="rounded-circle" width="31"></a>
-                            <div class="dropdown-menu dropdown-menu-right user-dd animated">
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-wallet m-r-5 m-l-5"></i> My Balance</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-email m-r-5 m-l-5"></i> Inbox</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="ti-settings m-r-5 m-l-5"></i> Account Setting</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
-                                <div class="dropdown-divider"></div>
-                                <div class="p-l-30 p-10"><a href="javascript:void(0)" class="btn btn-sm btn-success btn-rounded">View Profile</a></div>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
+        <?php include('../includes/frontend/inc-header.php')?>
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
@@ -243,9 +84,10 @@
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-relative-scale">
                         </i><span class="hide-menu">1st Communion</span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item"><a href="/admin/communion/form_communion.php" class="sidebar-link"><i class="mdi mdi-relative-scale"></i><span class="hide-menu"> Create Communion Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/communion/edit_communion.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Edit Communion Record </span></a></li>
-                                <li class="sidebar-item"><a href="/admin/communion/search_communion.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/communion/index.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Add Communion Details in Existing Baptism Record </span></a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Create New Communion Record </span></a></li>
+                                <li class="sidebar-item"><a href="/admin/communion/detailcomm.php" class="sidebar-link"><i class="mdi mdi-relative-scale"></i><span class="hide-menu"> Display Communion Record </span></a></li>
+        
                             </ul>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-receipt"></i><span class="hide-menu">Confirmation</span></a>
@@ -280,7 +122,7 @@
                                 <li class="sidebar-item"><a href="/admin/burial/search_death.php" class="sidebar-link"><i class="mdi mdi-note-plus"></i><span class="hide-menu"> Search Burial Record </span></a></li>
                             </ul>
                         </li>
-                       <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-move-resize-variant"></i><span class="hide-menu">Addons </span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-move-resize-variant"></i><span class="hide-menu">Addons </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="index2.html" class="sidebar-link"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu"> Dashboard-2 </span></a></li>
                                 <li class="sidebar-item"><a href="pages-gallery.html" class="sidebar-link"><i class="mdi mdi-multiplication-box"></i><span class="hide-menu"> Gallery </span></a></li>
@@ -288,7 +130,7 @@
                                 <li class="sidebar-item"><a href="pages-invoice.html" class="sidebar-link"><i class="mdi mdi-bulletin-board"></i><span class="hide-menu"> Invoice </span></a></li>
                                 <li class="sidebar-item"><a href="pages-chat.html" class="sidebar-link"><i class="mdi mdi-message-outline"></i><span class="hide-menu"> Chat Option </span></a></li>
                             </ul>
-                        </li>-->
+                        </li>
                        <!-- <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-account-key"></i><span class="hide-menu">Authentication </span></a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item"><a href="authentication-login.html" class="sidebar-link"><i class="mdi mdi-all-inclusive"></i><span class="hide-menu"> Login </span></a></li>
@@ -302,7 +144,7 @@
                                 <li class="sidebar-item"><a href="error-405.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 405 </span></a></li>
                                 <li class="sidebar-item"><a href="error-500.html" class="sidebar-link"><i class="mdi mdi-alert-octagon"></i><span class="hide-menu"> Error 500 </span></a></li>
                             </ul>
-                        </li>-->
+                        </li> -->
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -322,12 +164,12 @@
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
-                        <h4 class="page-title">Dashboard</h4>
+                        <h4 class="page-title">Confirmation Dashboard</h4>
                         <div class="ml-auto text-right">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Baptism</li>
+                                    <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Confirmation</li>
                                 </ol>
                             </nav>
                         </div>
@@ -341,109 +183,604 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Sales Cards  -->
-                <!-- ============================================================== -->
+                <?php include('comn-includes/operations-tab.php'); ?>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Online Registers</h4>
-                                <!-- Create the editor container -->
-                                <div class="row">
-                                    <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="../admin/baptism/index.php">
-                                          <div class="card card-hover">
-                                           
-                                            <div class="box bg-cyan text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                                                <h6 class="text-white">Baptism</h6>
-                                            
-                                            </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                        <a href="../admin/communion/index.php">
-                                           <div class="card card-hover">
-                                            <div class="box bg-success text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
-                                                <h6 class="text-white">1st Communion</h6>
-                                            </div>
-                                        </div>
-										</a>
-                                    </div>
-                                     <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="../admin/confirmation/index.php">
-                                        <div class="card card-hover">
-                                            <div class="box bg-warning text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                                                <h6 class="text-white">Confirmation</h6>
-                                            </div>
-                                        </div>
-										</a>
-                                    </div>
-                                    <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="../admin/marriage/index.php">
-                                        <div class="card card-hover">
-                                            <div class="box bg-danger text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
-                                                <h6 class="text-white">Marriage</h6>
-                                            </div>
-                                        </div>
-										</a>
-                                    </div>
-                                    <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="../admin/burial/index.php">
-                                        <div class="card card-hover">
-                                            <div class="box bg-info text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                                                <h6 class="text-white">Burial</h6>
-                                            </div>
-                                        </div>
-										</a>
-                                    </div>
-                                    <!-- Column -->
-                                    <!-- Column -->
-                                    <div class="col-md-6 col-lg-2 col-xlg-3">
-                                       <a href="../admin/search/index.php">
-                                        <div class="card card-hover">
-                                            <div class="box bg-danger text-center">
-                                                <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
-                                                <h6 class="text-white">Download /Print</h6>
-                                            </div>
-                                        </div>
-										</a>
-                                    </div>
-                                    <!-- Column -->
-                                    
-                                    <!-- Column -->
+	                <div class="col-12">
+		                <div class="card">
+			                <div class="card-body">
+			                  
+			                  <h5 class="card-title">Search Baptism Record and Click to add Confirmation Detail</h5>
+                                <div class="table-responsive">
+                                    <table id="zero_config" class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <!-- <th>Sl. No</th> -->
+                                                <th><b>ID</b></th>
+                                                <th><b>Name</b></th>
+                                                <th><b>Gender</b></th>
+                                                <th><b>DOB</b></th>
+                                                <th><b>Baptism Date</b></th>
+                                                <th><b>Father's Name</b></th>
+                                                <th><b>Mother's Name</b></th>
+                                                <th><b>Select Option</b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- PHP code for Table Data -->
+                                    <?php
+                                    // Establish Connection with Database
+
+                                    include('../includes/dbConnect.php');
+                                    // Specify the query to execute
+                                    $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+
+                                    // Execute query
+                                    $result = mysqli_query($conn,$sql);
+
+                                    // Loop through each records 
+                                    while($row = mysqli_fetch_array($result)){
+                                    $Id=$row['user_id'];
+                                    $Name=$row['first_name'];
+                                    $Lname =$row['last_name'];
+                                    $Gender=$row['gender_id'];
+                                    $DOB =$row['dob'];
+                                    $fname=$row['father_name'];
+                                    $fsurname =$row['father_surname'];
+                                    $mname=$row['mother_name'];
+                                    $msurname =$row['mother_surname'];
+
+
+                                    // Getting Baptism Date from eventbaptism Table
+                                    $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                    $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                    if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                    $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                    $baptims_date=$row['bapt_date'];
+                                    mysqli_free_result($result_sql_eventbaptism);
+                                                                                    }
+                                    ?>
+
+                                    <tr>
+                                        <td><?php echo $Id;?></td>
+                                        <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                        <td><?php echo $Gender;?></td>
+                                        <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                        <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                        <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                        <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#comnform" data-id='".$id."'>Add Detail</button>
+                                        
+                                        <!-- <a href="viewdetails.php?Id=<?php echo $Id;?>">View</a>--></td>
+                                    </tr>
+
+                                        <?php
+                                        }
+                                        // Close the connection
+                                        mysqli_close($conn);
+                                        ?>      
+                                        </tbody>
+                                        
+                                    </table>
                                 </div>
+			                    
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+
+    
+            <!--Including Modal-->
+                <?php include("modals/add-only-communion-details-to-baptism-record.php");?>
+
+
+
+
+
+                <!---------------------------- Dispaying Form   -----------------------------> 
+                
+			                    <!-- The Modal -->
+                                <div class="modal fade" id="myModal">
+                                <div class="modal-dialog modal-lg">
+                                 <div class="modal-content">
+
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Baptism & Communion Form</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                    <!---- Leo ---->
+                                    <!--<form class="form-horizontal" method="post" action="insertform_data.php" enctype="multipart/form-data">-->
+                                <form class="form-horizontal" id="1st-communion-form" method="" action="" enctype="multipart/form-data">
+                                <div class="card-body">
+                                    <h4 class="card-title">Baptism Details</h4>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">First Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="mname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mname" id="mname" value="" placeholder="Middle Name Here">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Last Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="lname" id="lname" value="" placeholder="Last Name Here" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                    <label class="col-md-3">Gender</label>
+                                    <div class="col-md-9">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" value="Male" required>
+                                            <label class="custom-control-label" for="customControlValidation1">Male</label>
+                                        </div>
+                                         <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" value="Female" required>
+                                            <label class="custom-control-label" for="customControlValidation2">Female</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control mydatepicker" id="dob" name="dob" max="2020-09-31">
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="form-group row">
+                                        <label for="date" class="col-sm-3 text-left control-label col-form-label">Date of Baptism</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control mydatepicker" id="dobaptism" name="dobaptism">
+                                        </div>
+                                    </div>
+ 
+                                    <div class="form-group row">
+                                    <label class="col-md-3">Upload Photo(Optional)</label>
+                                        <div class="col-md-9">
+                                            <div class="custom-file">
+                                                <input type="file" name="file" class="custom-file-input" id="validatedCustomFile" >
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                                <div class="invalid-feedback">Example invalid custom file feedback</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="minister" class="col-sm-3 text-left control-label col-form-label">Clergyman Officiating</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="bby" id="bby" value="" placeholder="Minister's Name here">
+                                        </div>
+                                    </div>
+
+                                    <!--Parents'  Details Section-->
+                                    <h5 class="card-title"><b>Parents' and Sponsors' Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="fathername" id="fathername" value="" placeholder="Father's Name Here" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Surname</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="fathersname" id="fathersname"  value="" placeholder="Father's Surname Here" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Father's Occupation</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="foccupation" id="foccupation" value="" placeholder="Occupation">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="fdomicile" class="col-sm-3 text-left control-label col-form-label">Father's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="domicile" id="domicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mothername" id="mothername"  value="" placeholder="Mother's Name Here" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Surname</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="mothersname" id="mothersname"  value="" placeholder="Mother's Surname Here" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mother's Occupation</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="moccupation" id="moccupation" value="" placeholder="Occupation">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Name(M)</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GFname" id="GFname" value="" placeholder="God Father Name" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">1st Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="GFdomicile" id="GFdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Name(F)</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="GMname" id="GMname" value="" placeholder="Write Here" autocomplete="off" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">2nd Sponsor's Domicile</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="GMdomicile" id="GMdomicile" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Domilcile State </option>
+                                            <?php  
+                                                $stateDomicileData="SELECT id, name from states where country_id=101";
+                                                $result=mysqli_query($conn,$stateDomicileData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!--Contact Details Section-->
+                                    <h5 class="card-title"><b>Contact Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
+
+                                    
+                                    <div class="form-group row">
+                                    <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Permanent Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="padd" id="padd"  placeholder="Write Permanent Address here" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="cono1" class="col-sm-3 text-left control-label col-form-label">Current Address</label>
+                                        <div class="col-sm-9">
+                                            <textarea class="form-control" name="cadd" id="cadd"  placeholder="Write Current Address here" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Mobile Number</label>
+                                        <div class="col-sm-9">
+                                            <input type="number" class="form-control phone-inputmask" name="mobile" id="phone-mask" value="" placeholder="10 Digit Mob. No." autocomplete="off" Maxlength="10">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">E-Mail ID</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="email" id="email" value="" placeholder="E Mail" autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <!--Home Parish Section Details Section-->
+                                    <h5 class="card-title"><b>Home Parish/Diocese Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
+                                    
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Country</label>
+                                        <div class="col-sm-9">
+                                        <select class="select2 form-control custom-select" name="country" id="country" style="width: 100%; height:36px;">
+                                            <option selected="" disabled=""> Select Country </option>
+                                            <?php  
+                                                $contryData="SELECT id, name from countries";
+                                                $result=mysqli_query($conn, $contryData);
+                                                if(mysqli_num_rows($result)>0)
+                                                    {
+                                                        while($arr=mysqli_fetch_assoc($result))
+                                                            {
+                                                                ?>
+
+                                                <option value="<?php echo $arr['id']; ?>"><?php echo $arr['name']; ?></option>
+                                                <?php }} ?>
+                                        </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="province-name" class="col-sm-3 text-left control-label col-form-label">Province</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="province" id="province" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Province</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row">
+                                        <label for="diocese-name" class="col-sm-3 text-left control-label col-form-label">Diocese</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="diocese" id="diocese" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Diocese</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="form-group row">
+                                        <label for="parish" class="col-sm-3 text-left control-label col-form-label">Parish</label>
+                                        <div class="col-sm-9">
+                                            <select class="select2 form-control custom-select" name="parish" id="parish" style="width: 100%; height:36px;">
+                                                <option selected="" disabled="">Select Parish</option>                            
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--First Communion  Details Section-->
+                                    <h5 class="card-title"><b>First Communion Details</b></h5>
+                                                                    
+                                    <div class="border-top"></div><br>
+
+                                    <div class="form-group row">
+                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">Communion Date</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" class="form-control" name="comndate" id="comndate" value=""  required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">Communion Church</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="cchurchname" id="cchurchname"  value="" placeholder="Church Name Here.." required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-left control-label col-form-label">School</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" name="comnschool" id="comnschool" value="" placeholder="School Name Here...">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                        </div>
+                    </div>
+				</div>
+			</form>
+                                   
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="submit" class="btn btn-success" onclick="add1stCommRecord()">Submit</button> <!--data-dismiss="modal"-->
+                                <button type="reset" class="btn btn-primary">Reset</button>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- Recent comment and chats -->
-                <!-- ============================================================== -->
-            </div>
+                    
+                    <!-- The Table Modal -->
+                                  <div class="modal fade" id="myModal1">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                      
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <h4 class="modal-title">Confirmation Record</h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                          <!-- Table Structure -->
+                                          
+                                          <div class="row">
+                                	                <div class="col-12">
+                                		                <div class="card">
+                                			                <div class="card-body">
+          
+                                                                <h5 class="card-title">  </h5>
+                                                                <div class="table-responsive">
+                                                                    <table id="zero_config" class="table table-striped table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <!-- <th>Sl. No</th> -->
+                                                                                <th><b>ID</b></th>
+                                                                                <th><b>Name</b></th>
+                                                                                <th><b>Gender</b></th>
+                                                                                <th><b>DOB</b></th>
+                                                                                <th><b>Baptism Date</b></th>
+                                                                                <th><b>Father's Name</b></th>
+                                                                                <th><b>Mother's Name</b></th>
+                                                                                <th><b>Select Option</b></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <!-- PHP code for Table Data -->
+                                                                        <?php
+                                                                        // Establish Connection with Database
+                                                                        
+                                                                        include('../includes/dbConnect.php');
+                                                                        // Specify the query to execute
+                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+                                                                        
+                                                                        // Execute query
+                                                                        $result = mysqli_query($conn,$sql);
+                                                                        
+                                                                        // Loop through each records 
+                                                                        while($row = mysqli_fetch_array($result)){
+                                                                        $Id=$row['user_id'];
+                                                                        $Name=$row['first_name'];
+                                                                        $Lname =$row['last_name'];
+                                                                        $Gender=$row['gender_id'];
+                                                                        $DOB =$row['dob'];
+                                                                        $fname=$row['father_name'];
+                                                                        $fsurname =$row['father_surname'];
+                                                                        $mname=$row['mother_name'];
+                                                                        $msurname =$row['mother_surname'];
+                                                                        
+                                                                        
+                                                                        // Getting Baptism Date from eventbaptism Table
+                                                                        $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                                                        $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                                                        if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                                                            $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                                                            $baptims_date=$row['bapt_date'];
+                                                                            mysqli_free_result($result_sql_eventbaptism);
+                                                                        }
+                                                                        ?>
+                                                                        
+                                                                            <tr>
+                                                                                <td><?php echo $Id;?></td>
+                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                                                <td><?php echo $Gender;?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                                                                <td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-info">View</a></td>
+                                                                            </tr>
+                                                                        
+                                                                        <?php
+                                                                        }
+                                                                        // Close the connection
+                                                                        mysqli_close($conn);
+                                                                        ?>      
+                                                          </tbody>
+                                                                                                                
+                                                          </table>
+                                                          </div>
+                                            <!--  Table Structure Ends -->
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                                                                
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                            </div>
+                                                                                
+                                            </div>
+                                            </div>
+                                          </div>
+
+
+
+                            <!-- Modal Over Modal Communion Individual Info -->
+			                <div class="modal" id="myModal2" data-backdrop="static">
+                            	<div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4 class="modal-title">Individual Confirmation Detail</h4>
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    </div><div class="container"></div>
+                                    
+                                    <div class="modal-body">
+                                      <div class="form-group row">
+                                        <label class="col-sm-3 text-left control-label col-form-label">Confirmation ID</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $id;?>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Confirmation Date</label>
+                                        <div class="col-sm-9">
+                                            <?php echo date("d-m-Y",strtotime($baptims_date));?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">Confirmation Church</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $cchurch;?> 
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="fname" class="col-sm-3 text-left control-label col-form-label">School</label>
+                                        <div class="col-sm-9">
+                                            <?php echo $school;?>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <a href="href="print_baptism.php?Id=<?php echo $id; ?>""  class="btn">Print Details</a>
+                                      <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+
+
+
+
+			<!-- Container Ends Here -->
+			</div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
             <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer text-center">
-                All Rights Reserved by MIGIDS Softwares LLP. Designed and Developed by <a href="http:/migids.com" target="_blank">MIGIDS Softwares</a>.
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            <?php include('../includes/frontend/inc-footer.php')?>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
@@ -451,14 +788,15 @@
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
+    
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <!-- Modal Display -->
     <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../../assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="../../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
     <script src="../../assets/extra-libs/sparkline/sparkline.js"></script>
     <!--Wave Effects -->
@@ -467,17 +805,26 @@
     <script src="../../dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="../../dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <!-- <script src="../../dist/js/pages/dashboards/dashboard1.js"></script> -->
-    <!-- Charts js Files -->
-    <script src="../../assets/libs/flot/excanvas.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.pie.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.time.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.stack.js"></script>
-    <script src="../../assets/libs/flot/jquery.flot.crosshair.js"></script>
-    <script src="../../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../../dist/js/pages/chart/chart-page-init.js"></script>
+    <!-- this page js -->
+    <script src="../../assets/extra-libs/multicheck/datatable-checkbox-init.js"></script>
+    <script src="../../assets/extra-libs/multicheck/jquery.multicheck.js"></script>
+    <script src="../../assets/extra-libs/DataTables/datatables.min.js"></script>
+    
+    
+    <script src="comn-includes/scripts/ajax-new-comn-insert.js"></script>
+
+    <!--<script src="../includes/scripts/dependent-dropdown-parish.js"></script>-->
+    
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+   $('#zero_config').DataTable({
+    "order": [0,'desc']
+        });
+   
+ 
+    </script>
 
 </body>
 
