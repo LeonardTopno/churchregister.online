@@ -245,9 +245,10 @@ include('../includes/dbConnect.php');
                                                                             </tr>
                                                                         
                                                                         <?php
-                                                                            //}// Close the connection
-                                                                            //mysqli_close($conn);
-                                                                        ?>      
+                                                                           //} // Close the connection
+                                                                           // mysqli_close($conn);
+                                                                        ?>  
+
                                                           
                                                           </tbody>
                                                                                                                 
