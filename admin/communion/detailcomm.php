@@ -196,11 +196,11 @@ include('../includes/dbConnect.php');
                                                                         <tbody>
                                                                         <!-- PHP code for Table Data -->
 
-<?php include('comn-includes/data/fetch_communion_details.php'); ?>
+<?php #include('comn-includes/data/fetch_communion_details.php'); ?>
 
                                                                         <?php
                                                                         // Establish Connection with Database
-/*                                                                        
+                                                                        
                                                                         include('../includes/dbConnect.php');
                                                                         // Specify the query to execute
                                                                         $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
@@ -229,7 +229,7 @@ include('../includes/dbConnect.php');
                                                                             $baptims_date=$row['bapt_date'];
                                                                             mysqli_free_result($result_sql_eventbaptism);
                                                                         }
-*/
+
                                                                         ?>
                                                                         
                                                                             <tr>
@@ -245,8 +245,8 @@ include('../includes/dbConnect.php');
                                                                             </tr>
                                                                         
                                                                         <?php
-                                                                           //} // Close the connection
-                                                                           // mysqli_close($conn);
+                                                                            } // Close the connection
+                                                                            mysqli_close($conn);
                                                                         ?>  
 
                                                           
