@@ -33,8 +33,7 @@ include('../includes/dbConnect.php');
         }
         .modal-backdrop.show:nth-of-type(even) {
             z-index: 1051 !important;
-        }
-        
+        }    
     </style>
     
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -44,23 +43,20 @@ include('../includes/dbConnect.php');
 </head>
 
 <body oncontextmenu="return false;">
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
     <div class="preloader">
         <div class="lds-ripple">
             <div class="lds-pos"></div>
             <div class="lds-pos"></div>
         </div>
     </div>
-    <!-- ============================================================== -->
+
     <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
+
     <div id="main-wrapper">
         <?php include('../includes/frontend/inc-header.php')?>
-        <!-- ============================================================== -->
+
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
+
         <aside class="left-sidebar" data-sidebarbg="skin5">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
@@ -151,14 +147,11 @@ include('../includes/dbConnect.php');
         </aside>
         <!-- ============================================================== -->
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
+
         <!-- Page wrapper  -->
-        <!-- ============================================================== -->
+
         <div class="page-wrapper">
-            <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
              <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-12 d-flex no-block align-items-center">
@@ -174,12 +167,9 @@ include('../includes/dbConnect.php');
                     </div>
                 </div>
             </div>
-            <!-- ============================================================== -->
             <!-- End Bread crumb and right sidebar toggle -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
+            
             <!-- Container fluid  -->
-            <!-- ============================================================== -->
             <div class="container-fluid">
                 <?php include('comn-includes/operations-tab.php'); ?>
                 <div class="row">
@@ -205,9 +195,12 @@ include('../includes/dbConnect.php');
                                                                         </thead>
                                                                         <tbody>
                                                                         <!-- PHP code for Table Data -->
+
+<?php include('comn-includes/data/fetch_communion_details.php'); ?>
+
                                                                         <?php
                                                                         // Establish Connection with Database
-                                                                        
+/*                                                                        
                                                                         include('../includes/dbConnect.php');
                                                                         // Specify the query to execute
                                                                         $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
@@ -236,6 +229,7 @@ include('../includes/dbConnect.php');
                                                                             $baptims_date=$row['bapt_date'];
                                                                             mysqli_free_result($result_sql_eventbaptism);
                                                                         }
+*/
                                                                         ?>
                                                                         
                                                                             <tr>
@@ -251,10 +245,10 @@ include('../includes/dbConnect.php');
                                                                             </tr>
                                                                         
                                                                         <?php
-                                                                        }
-                                                                        // Close the connection
-                                                                        mysqli_close($conn);
+                                                                            //}// Close the connection
+                                                                            //mysqli_close($conn);
                                                                         ?>      
+                                                          
                                                           </tbody>
                                                                                                                 
                                                           </table>
@@ -268,20 +262,9 @@ include('../includes/dbConnect.php');
 <?php include("modals/modal-new-communion-record.php");?>
 
 
-
-
 <?php include("modals/display-user-communion-details.php");?>
 
 
-
-
-
-
-
-
-
-
-                    
                     <!-- The Table Modal -->
                                   <div class="modal fade" id="myModal1">
                                     <div class="modal-dialog modal-lg">
@@ -320,9 +303,6 @@ include('../includes/dbConnect.php');
                                             </div>
                                           </div>
                             <!-- Modal Over Modal Communion Individual Info -->
-
-
-
 
 
 			                <div class="modal" id="myModal2" data-backdrop="static">
@@ -416,7 +396,6 @@ include('../includes/dbConnect.php');
                 colsole.log(errMsg);
             }
 
-
         });
 
         
@@ -442,7 +421,7 @@ include('../includes/dbConnect.php');
     </script>
     <!-- Individual Script End -->
 
-
+  
     <script>
         /****************************************
          *       Basic Table                   *
@@ -450,8 +429,6 @@ include('../includes/dbConnect.php');
    $('#zero_config').DataTable({
     "order": [0,'desc']
         });
-   
- 
     </script>
 
 </body>
