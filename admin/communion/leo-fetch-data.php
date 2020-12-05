@@ -1,3 +1,4 @@
+<!--Still ununsed-->
 <?php
 // Establish Connection with Database
 include('../../../includes/dbConnect.php');
@@ -35,7 +36,6 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 	$CreatedAtEvent = $row['created_at_event'];
 
 		
-
 // fetching from eventbaptism table
 $sql_eventbaptism = "SELECT * FROM eventbaptism WHERE user_id = $id";
 $result1 = mysqli_query($conn, $sql_eventbaptism);

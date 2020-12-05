@@ -50,7 +50,7 @@ include('../includes/dbConnect.php');
         </div>
     </div>
 
-    <!-- Main wrapper - style you can find in pages.scss -->
+<!-- Main wrapper - style you can find in pages.scss -->
 
     <div id="main-wrapper">
         <?php include('../includes/frontend/inc-header.php')?>
@@ -145,7 +145,7 @@ include('../includes/dbConnect.php');
             </div>
             <!-- End Sidebar scroll-->
         </aside>
-        <!-- ============================================================== -->
+
         <!-- End Left Sidebar - style you can find in sidebar.scss  -->
 
         <!-- Page wrapper  -->
@@ -179,82 +179,76 @@ include('../includes/dbConnect.php');
 			                  
 			                  <h5 class="card-title">Search Communion Record and Click to View Details</h5>
                               <div class="table-responsive">
-                                                                    <table id="zero_config" class="table table-striped table-bordered">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <!-- <th>Sl. No</th> -->
-                                                                                <th><b>ID</b></th>
-                                                                                <th><b>Name</b></th>
-                                                                                <th><b>Gender</b></th>
-                                                                                <th><b>DOB</b></th>
-                                                                                <th><b>Baptism Date</b></th>
-                                                                                <th><b>Father's Name</b></th>
-                                                                                <th><b>Mother's Name</b></th>
-                                                                                <th><b>Select Option</b></th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        <!-- PHP code for Table Data -->
+                                    <table id="zero_config" class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <!-- <th>Sl. No</th> -->
+                                                <th><b>ID</b></th>
+                                                <th><b>Name</b></th>
+                                                <th><b>Gender</b></th>
+                                                <th><b>DOB</b></th>
+                                                <th><b>Baptism Date</b></th>
+                                                <th><b>Father's Name</b></th>
+                                                <th><b>Mother's Name</b></th>
+                                                <th><b>Select Option</b></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- PHP code for Table Data -->
+                                            <?php
+                                            // Establish Connection with Database
+                                            
+                                            include('../includes/dbConnect.php');
+                                            // Specify the query to execute
+                                            $sql = "SELECT * FROM userinfo WHERE created_at_event = '1st_communion' ";
+                                            // Execute query
+                                            $result = mysqli_query($conn,$sql);
+                                            // Loop through each records 
+                                            while($row = mysqli_fetch_array($result)){
+                                            $Id=$row['user_id'];
+                                            $Name=$row['first_name'];
+                                            $Lname =$row['last_name'];
+                                            $Gender=$row['gender_id'];
+                                            $DOB =$row['dob'];
+                                            $fname=$row['father_name'];
+                                            $fsurname =$row['father_surname'];
+                                            $mname=$row['mother_name'];
+                                            $msurname =$row['mother_surname'];
+                                            
+                                            
+                                            // Getting Baptism Date from eventbaptism Table
+                                            $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
+                                            $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
+                                            if(mysqli_num_rows($result_sql_eventbaptism)>0){
+                                                $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
+                                                $baptims_date=$row['bapt_date'];
+                                                mysqli_free_result($result_sql_eventbaptism);
+                                            }
 
-<?php #include('comn-includes/data/fetch_communion_details.php'); ?>
+                                            ?>
+                                                                        
+                                            <tr>
+                                                <td><?php echo $Id;?></td>
+                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                <td><?php echo $Gender;?></td>
+                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
+                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
+                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                            <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td> -->
+                                                <td><input type="button" name="view" id="<?php echo $row["id"]; ?>" class="btn btn-primary view_data" value="View"/></td>
+                                            </tr>
+                                                                        
+                                            <?php
+                                                } // Close the connection
+                                                mysqli_close($conn);
+                                            ?>  
+            
+                                        </tbody>                                                                                
+                                </table>
 
-                                                                        <?php
-                                                                        // Establish Connection with Database
-                                                                        
-                                                                        include('../includes/dbConnect.php');
-                                                                        // Specify the query to execute
-                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = '1st_communion' ";
-                                                                        
-                                                                        // Execute query
-                                                                        $result = mysqli_query($conn,$sql);
-                                                                        
-                                                                        // Loop through each records 
-                                                                        while($row = mysqli_fetch_array($result)){
-                                                                        $Id=$row['user_id'];
-                                                                        $Name=$row['first_name'];
-                                                                        $Lname =$row['last_name'];
-                                                                        $Gender=$row['gender_id'];
-                                                                        $DOB =$row['dob'];
-                                                                        $fname=$row['father_name'];
-                                                                        $fsurname =$row['father_surname'];
-                                                                        $mname=$row['mother_name'];
-                                                                        $msurname =$row['mother_surname'];
-                                                                        
-                                                                        
-                                                                        // Getting Baptism Date from eventbaptism Table
-                                                                        $sql_eventbaptism="SELECT bapt_date FROM eventbaptism where user_id=$Id";
-                                                                        $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
-                                                                        if(mysqli_num_rows($result_sql_eventbaptism)>0){
-                                                                            $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
-                                                                            $baptims_date=$row['bapt_date'];
-                                                                            mysqli_free_result($result_sql_eventbaptism);
-                                                                        }
-
-                                                                        ?>
-                                                                        
-                                                                            <tr>
-                                                                                <td><?php echo $Id;?></td>
-                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
-                                                                                <td><?php echo $Gender;?></td>
-                                                                                <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
-                                                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
-                                                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
-                                                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
-                                                                            <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td> -->
-                                                                                <td><input type="button" name="view" id="<?php echo $row["id"]; ?>" class="btn btn-primary view_data" value="View"/></td>
-                                                                            </tr>
-                                                                        
-                                                                        <?php
-                                                                            } // Close the connection
-                                                                            mysqli_close($conn);
-                                                                        ?>  
-
-                                                          
-                                                          </tbody>
-                                                                                                                
-                                                          </table>
-                                                          </div>  
-			                    
+                            </div>  
+			      
 			                </div>
 			            </div>
 			        </div>
@@ -264,7 +258,6 @@ include('../includes/dbConnect.php');
 
 
 <?php include("modals/display-user-communion-details.php");?>
-
 
                     <!-- The Table Modal -->
                                   <div class="modal fade" id="myModal1">
@@ -402,8 +395,9 @@ include('../includes/dbConnect.php');
         
     }
     </script>
-    <!-- Script for Individual Data Modal -->
+
     
+    <!-- Script for Individual Data Modal -->
     <script>  
          $(document).ready(function(){  
               $('.view_data').click(function(){  
@@ -422,13 +416,9 @@ include('../includes/dbConnect.php');
     </script>
     <!-- Individual Script End -->
 
-  
     <script>
-        /****************************************
-         *       Basic Table                   *
-         ****************************************/
-   $('#zero_config').DataTable({
-    "order": [0,'desc']
+        $('#zero_config').DataTable({
+            "order": [0,'desc']
         });
     </script>
 
