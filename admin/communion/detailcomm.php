@@ -203,7 +203,7 @@ include('../includes/dbConnect.php');
                                                                         
                                                                         include('../includes/dbConnect.php');
                                                                         // Specify the query to execute
-                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = 'baptism' ";
+                                                                        $sql = "SELECT * FROM userinfo WHERE created_at_event = '1st_communion' ";
                                                                         
                                                                         // Execute query
                                                                         $result = mysqli_query($conn,$sql);
