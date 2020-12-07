@@ -246,7 +246,7 @@ include('../includes/dbConnect.php');
                                                                         
                                                                         <?php
                                                                             } // Close the connection
-                                                                            //mysqli_close($conn);
+                                                                            mysqli_close($conn);
                                                                         ?>  
 
                                                           
@@ -260,7 +260,7 @@ include('../includes/dbConnect.php');
 			        </div>
 			    </div>
 			                 
-<?php include("modals/modal-new-communion-record.php");?>
+<?php //include("modals/modal-new-communion-record.php");?>
 
 
 <?php include("modals/display-user-communion-details.php");?>
