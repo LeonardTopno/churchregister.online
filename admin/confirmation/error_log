@@ -1935,3 +1935,29 @@
 [04-Dec-2020 08:57:35 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 226
 [04-Dec-2020 08:57:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/confirmation/getrecord.php on line 7
 [04-Dec-2020 08:57:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/confirmation/getrecord.php on line 11
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 109
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 110
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 151
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 152
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 175
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 176
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 225
+[05-Dec-2020 06:51:19 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/index.php on line 398
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/index.php on line 399
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/index.php on line 446
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/index.php on line 447
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/index.php on line 471
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/index.php on line 472
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/index.php on line 530
+[05-Dec-2020 06:53:15 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/index.php on line 531
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 109
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 110
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 151
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 152
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 175
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 176
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 225
+[05-Dec-2020 06:53:30 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/confirmation/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 06:53:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/confirmation/getrecord.php on line 7
+[05-Dec-2020 06:53:33 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/confirmation/getrecord.php on line 11

@@ -1867,3 +1867,43 @@
 [04-Dec-2020 21:27:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 176
 [04-Dec-2020 21:27:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 225
 [04-Dec-2020 21:27:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 109
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 110
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 151
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 152
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 175
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 176
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 225
+[05-Dec-2020 00:24:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 00:25:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:25:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 109
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 110
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 151
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 152
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 175
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 176
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 225
+[05-Dec-2020 00:30:41 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 109
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 110
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 151
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 152
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 175
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 176
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 225
+[05-Dec-2020 00:31:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/developer/public_html/admin/communion/modals/modal-new-communion-record.php on line 226
+[05-Dec-2020 00:32:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:32:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:33:15 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:33:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:33:21 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:33:21 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:33:25 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:33:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:33:44 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:33:44 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 00:46:04 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 00:46:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11
+[05-Dec-2020 01:08:16 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/developer/public_html/admin/communion/getrecord.php on line 7
+[05-Dec-2020 01:08:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/developer/public_html/admin/communion/getrecord.php on line 11

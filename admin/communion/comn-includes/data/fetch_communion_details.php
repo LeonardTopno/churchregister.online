@@ -1,19 +1,13 @@
-<!-- Still ununsed -->
-
+<!--This File to be renamed to get_baptism_info -->
 <?php
 	// Establish Connection with Database
 	
 	#include('../includes/dbConnect.php');
 	include('../../../includes/dbConnect.php');
-
-	# To test connection
-	// if($conn){
-	// 	echo "Connected";
-	// }
-
 	// Specify the query to execute
 	$sql = "SELECT * FROM userinfo WHERE created_at_event = '1st_communion' ";
 	
+	// Execute query
 	$result = mysqli_query($conn,$sql);
 	
 	// Loop through each records 
