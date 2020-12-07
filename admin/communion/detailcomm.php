@@ -211,9 +211,9 @@ include('../includes/dbConnect.php');
                                                                         // Loop through each records 
                                                                         while($row = mysqli_fetch_array($result)){
                                                                         $Id=$row['user_id'];
-                                                                        $Name=$row['first_name'];
-                                                                        $Mname=$row['middle_name'];
-                                                                        $Lname =$row['last_name'];
+                                                                        $FirstName=$row['first_name'];
+                                                                        $Middlename=$row['middle_name'];
+                                                                        $Lastname =$row['last_name'];
                                                                         $Gender=$row['gender_id'];
                                                                         $DOB =$row['dob'];
                                                                         $FathersName=$row['father_name'];
@@ -235,7 +235,7 @@ include('../includes/dbConnect.php');
                                                                         
                                                                             <tr>
                                                                                 <td><?php echo $Id;?></td>
-                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Mname;?>&nbsp<?php echo $Lname;?></td>
+                                                                                <td><?php echo $FirstName;?>&nbsp<?php echo $MiddleName;?>&nbsp<?php echo $LastName;?></td>
                                                                                 <td><?php echo $Gender;?></td>
                                                                                 <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
                                                                                 <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>

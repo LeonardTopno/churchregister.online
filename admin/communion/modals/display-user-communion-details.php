@@ -19,7 +19,7 @@
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
                <div class="col-sm-9">
-                  <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
+                  <?php echo $FirstName;?> &nbsp; <?php echo $MiddleName;?> &nbsp; <?php echo $LastName;?>
                </div>
             </div>
             
