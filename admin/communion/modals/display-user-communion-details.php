@@ -47,7 +47,7 @@
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label">Date of Birth</label>
                <div class="col-sm-9">
-                  <?php echo date("d-m-Y",strtotime($baptims_date));?>
+                  <?php echo date("d-m-Y",strtotime($DOB));?>
                </div>
             </div>
 
