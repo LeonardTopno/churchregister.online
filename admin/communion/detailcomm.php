@@ -212,13 +212,14 @@ include('../includes/dbConnect.php');
                                                                         while($row = mysqli_fetch_array($result)){
                                                                         $Id=$row['user_id'];
                                                                         $Name=$row['first_name'];
+                                                                        $Mname=$row['middle_name'];
                                                                         $Lname =$row['last_name'];
                                                                         $Gender=$row['gender_id'];
                                                                         $DOB =$row['dob'];
-                                                                        $fname=$row['father_name'];
-                                                                        $fsurname =$row['father_surname'];
-                                                                        $mname=$row['mother_name'];
-                                                                        $msurname =$row['mother_surname'];
+                                                                        $FathersName=$row['father_name'];
+                                                                        $FathersSurname =$row['father_surname'];
+                                                                        $MothersName=$row['mother_name'];
+                                                                        $MothersSurname =$row['mother_surname'];
                                                                         
                                                                         
                                                                         // Getting Baptism Date from eventbaptism Table
@@ -234,12 +235,12 @@ include('../includes/dbConnect.php');
                                                                         
                                                                             <tr>
                                                                                 <td><?php echo $Id;?></td>
-                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Lname;?></td>
+                                                                                <td><?php echo $Name;?>&nbsp<?php echo $Mname;?>&nbsp<?php echo $Lname;?></td>
                                                                                 <td><?php echo $Gender;?></td>
                                                                                 <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
                                                                                 <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
-                                                                                <td><?php echo $fname;?>&nbsp<?php echo $fsurname;?></td>
-                                                                                <td><?php echo $mname;?>&nbsp<?php echo $msurname;?></td>
+                                                                                <td><?php echo $FathersName;?>&nbsp<?php echo $FathersSurname;?></td>
+                                                                                <td><?php echo $MothersName;?>&nbsp<?php echo $MothersSurname;?></td>
                                                                             <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td> -->
                                                                                 <td><input type="button" name="view" id="<?php echo $row["id"]; ?>" class="btn btn-primary view_data" value="View"/></td>
                                                                             </tr>
