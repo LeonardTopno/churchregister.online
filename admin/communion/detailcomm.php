@@ -333,6 +333,13 @@ include('../includes/dbConnect.php');
                                                         <input type="text" class="form-control" value="" name="fname" id="fname" placeholder="First Name Here" autofocus required>
                                                     </div>
                                                 </div>
+
+                                                <div class="form-group row">
+                                                    <label for="fname" class="col-sm-3 text-left control-label col-form-label">Name</label>
+                                                    <div class="col-sm-9">
+                                                    <?php echo $FirstName;?> &nbsp; <?php echo $MiddleName;?> &nbsp; <?php echo $LastName;?>
+                                                    </div>
+                                                </div>
                                                 
                                                 <div class="form-group row">
                                                     <label for="lname" class="col-sm-3 text-left control-label col-form-label">Middle Name</label>
