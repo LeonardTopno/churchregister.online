@@ -240,8 +240,14 @@ include('../includes/dbConnect.php');
                                                                                 <td><?php echo date("d-m-Y",strtotime($baptism_date));?></td>
                                                                                 <td><?php echo $FathersName;?>&nbsp<?php echo $FathersSurname;?></td>
                                                                                 <td><?php echo $MothersName;?>&nbsp<?php echo $MothersSurname;?></td>
-                                                                                <td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td>
+                                                                                <td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a> </td>
                                                                                 <!--<td><input type="button" name="view" id="<?php //echo $Id; ?>" class="btn btn-primary view_data" value="View"/></td>-->
+
+
+                                                                                
+
+
+
                                                                             </tr>
                                                                         
                                                                         <?php
@@ -263,7 +269,7 @@ include('../includes/dbConnect.php');
 <?php //include("modals/modal-new-communion-record.php");?>
 
 
-<?php include("modals/display-user-communion-details.php");?>
+<?php //include("modals/display-user-communion-details.php");?>
 
 
                     <!-- The Table Modal -->
