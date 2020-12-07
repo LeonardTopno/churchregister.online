@@ -54,14 +54,14 @@
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label"> Baptism Date</label>
                <div class="col-sm-9">
-                  <?php echo date("d-m-Y",strtotime($baptims_date));?>
+                  <?php echo date("d-m-Y",strtotime($baptism_date));?>
                </div>
             </div>
 
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label">Communion Date</label>
                <div class="col-sm-9">
-                  <?php echo date("d-m-Y",strtotime($baptims_date));?>
+                  <?php echo date("d-m-Y",strtotime($baptism_date));?>
                </div>
             </div>
 

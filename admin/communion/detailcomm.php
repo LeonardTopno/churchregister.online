@@ -194,9 +194,8 @@ include('../includes/dbConnect.php');
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
+                                                                        
                                                                         <!-- PHP code for Table Data -->
-
-<?php #include('comn-includes/data/fetch_communion_details.php'); ?>
 
                                                                         <?php
                                                                         // Establish Connection with Database
@@ -206,7 +205,7 @@ include('../includes/dbConnect.php');
                                                                         $sql = "SELECT * FROM userinfo WHERE created_at_event = '1st_communion' ";
                                                                         
                                                                         // Execute query
-                                                                        $result = mysqli_query($conn,$sql);
+                                                                        $result = mysqli_query($conn, $sql);
                                                                         
                                                                         // Loop through each records 
                                                                         while($row = mysqli_fetch_array($result)){
@@ -227,7 +226,7 @@ include('../includes/dbConnect.php');
                                                                         $result_sql_eventbaptism = mysqli_query($conn, $sql_eventbaptism);
                                                                         if(mysqli_num_rows($result_sql_eventbaptism)>0){
                                                                             $row = mysqli_fetch_array($result_sql_eventbaptism, MYSQLI_ASSOC);
-                                                                            $baptims_date=$row['bapt_date'];
+                                                                            $baptism_date=$row['bapt_date'];
                                                                             mysqli_free_result($result_sql_eventbaptism);
                                                                         }
 
@@ -238,7 +237,7 @@ include('../includes/dbConnect.php');
                                                                                 <td><?php echo $FirstName;?>&nbsp<?php echo $MiddleName;?>&nbsp<?php echo $LastName;?></td>
                                                                                 <td><?php echo $Gender;?></td>
                                                                                 <td><?php echo date("d-m-Y",strtotime($DOB));?></td>
-                                                                                <td><?php echo date("d-m-Y",strtotime($baptims_date));?></td>
+                                                                                <td><?php echo date("d-m-Y",strtotime($baptism_date));?></td>
                                                                                 <td><?php echo $FathersName;?>&nbsp<?php echo $FathersSurname;?></td>
                                                                                 <td><?php echo $MothersName;?>&nbsp<?php echo $MothersSurname;?></td>
                                                                             <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a></td> -->
@@ -247,7 +246,7 @@ include('../includes/dbConnect.php');
                                                                         
                                                                         <?php
                                                                             } // Close the connection
-                                                                            mysqli_close($conn);
+                                                                            //mysqli_close($conn);
                                                                         ?>  
 
                                                           
