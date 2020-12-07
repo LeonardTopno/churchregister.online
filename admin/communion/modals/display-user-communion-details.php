@@ -26,14 +26,14 @@
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label">Father's Name</label>
                <div class="col-sm-9">
-                  <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
+                  <?php echo $FathersName;?> &nbsp; <?php echo $FathersSurname;?>
                </div>
             </div>
             
             <div class="form-group row">
                <label for="fname" class="col-sm-3 text-left control-label col-form-label">Mother's Name</label>
                <div class="col-sm-9">
-                  <?php echo $fname;?> &nbsp; <?php echo $MName;?> &nbsp; <?php echo $LName;?>
+                  <?php echo $MothersName;?> &nbsp; <?php echo $MothersSurname;?>
                </div>
             </div>
             
