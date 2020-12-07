@@ -12,7 +12,7 @@
             <div class="form-group row">
                <label class="col-sm-3 text-left control-label col-form-label">Communion ID</label>
                <div class="col-sm-9">
-                  <?php echo $id;?>
+                  <?php echo $Id;?>
                </div>
             </div>
             
