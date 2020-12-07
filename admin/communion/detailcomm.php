@@ -269,7 +269,7 @@ include('../includes/dbConnect.php');
 <?php //include("modals/modal-new-communion-record.php");?>
 
 
-<?php //include("modals/display-user-communion-details.php");?>
+<?php include("modals/display-user-communion-details.php");?>
 
 
                     <!-- The Table Modal -->
