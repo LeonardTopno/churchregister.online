@@ -339,7 +339,7 @@ include('../includes/dbConnect.php');
                                     </form>
                                     <!-- Modal Footer-->
                                     <div class="modal-footer">
-                                      <a href="href="print_baptism.php?Id=<?php echo $id; ?>""  class="btn">Print Details</a>
+                                      <a href="href="print_baptism.php?Id=<?php echo $Id; ?>""  class="btn">Print Details</a>
                                       <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
                                     </div>
 

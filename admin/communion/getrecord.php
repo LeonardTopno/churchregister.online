@@ -4,7 +4,7 @@
       $output = '';  
       include('../includes/dbConnect.php');  
       $query = "SELECT * FROM event_1st_communion WHERE user_id = '".$_POST["id"]."'";  
-      $result = mysqli_query($connect, $query);  
+      $result = mysqli_query($conn, $query);  
       $output .= '  
       <div class="table-responsive">  
            <table class="table table-bordered">';  
