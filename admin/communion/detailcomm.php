@@ -240,8 +240,8 @@ include('../includes/dbConnect.php');
                                                                                 <td><?php echo date("d-m-Y",strtotime($baptism_date));?></td>
                                                                                 <td><?php echo $FathersName;?>&nbsp<?php echo $FathersSurname;?></td>
                                                                                 <td><?php echo $MothersName;?>&nbsp<?php echo $MothersSurname;?></td>
-                                                                                <td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a> </td>
-                                                                                <!--<td><input type="button" name="view" id="<?php //echo $Id; ?>" class="btn btn-primary view_data" value="View"/></td>-->
+                                                                                <!--<td><a data-toggle="modal" href="#myModal2" data-id='".$id."' class="btn btn-primary"><i class="fas fa-eye"></i>&nbsp View</a> </td>-->
+                                                                                <td><input type="button" name="view" id="<?php //echo $Id; ?>" class="btn btn-primary fa-eye view_data" value="View"/></td>
 
                                                                             </tr>
                                                                         
@@ -410,8 +410,8 @@ include('../includes/dbConnect.php');
         
     }
     </script>
-    <!-- Script for Individual Data Modal -->
     
+    <!-- Script for Individual Data Modal -->
     <script>  
          $(document).ready(function(){  
               $('.view_data').click(function(){  
