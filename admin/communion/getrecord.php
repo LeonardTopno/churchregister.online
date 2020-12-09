@@ -1,9 +1,11 @@
 <?php  
  if(isset($_POST["id"]))  
  {  
+      
       $output = '';  
       include('../includes/dbConnect.php');  
-      $query = "SELECT * FROM event_1st_communion WHERE user_id = '".$_POST["id"]."'";  
+      //$query = "SELECT * FROM event_1st_communion WHERE user_id = '".$_POST["id"]."'";
+      $query = "SELECT * FROM event_1st_communion WHERE user_id = 142";  
       $result = mysqli_query($conn, $query);  
       $output .= '  
       <div class="table-responsive">  
