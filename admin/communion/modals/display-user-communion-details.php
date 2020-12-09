@@ -1,5 +1,5 @@
 <!-- Modal Over Modal Communion Individual Info -->
-<div class="modal" id="myModal2" data-backdrop="static">
+<div class="modal" id="myModal3" data-backdrop="static">
    <div class="modal-dialog modal-lg">
       <div class="modal-content">
          <div class="modal-header">

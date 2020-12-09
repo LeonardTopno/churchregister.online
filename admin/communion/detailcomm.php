@@ -264,7 +264,7 @@ include('../includes/dbConnect.php');
 <?php //include("modals/modal-new-communion-record.php");?>
 
 
-<?php include("modals/display-user-communion-details.php");?>
+<?php //include("modals/display-user-communion-details.php");?>
 
 
                     <!-- The Table Modal -->
@@ -422,7 +422,7 @@ include('../includes/dbConnect.php');
                         data:{id:id},  
                         success:function(data){  
                              $('#communion_detail').html(data);  
-                             $('#myModal2').modal("show");  
+                             $('#myModal3').modal("show");  
                         }  
                    });  
               });  
@@ -432,12 +432,9 @@ include('../includes/dbConnect.php');
 
   
     <script>
-        /****************************************
-         *       Basic Table                   *
-         ****************************************/
-   $('#zero_config').DataTable({
-    "order": [0,'desc']
-        });
+        $('#zero_config').DataTable({
+                            "order": [0,'desc']
+                        });
     </script>
 
 </body>
