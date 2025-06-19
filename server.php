@@ -58,25 +58,76 @@ if (isset($_POST['reg_user'])) {
 
 
 // LOGIN USER
+// if (isset($_POST['login_user'])) {
+//   $username = mysqli_real_escape_string($conn, $_POST['username']);
+//   $password = mysqli_real_escape_string($conn, $_POST['password']);
+
+//   if (count($errors) == 0) {
+//   	$password =MD5($password);
+//   	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+//   	$results = mysqli_query($conn, $query);
+//   	if (mysqli_num_rows($results) == 1) 
+//   	{
+//   	  session_start();
+//   	  $_SESSION['username'] = $username;
+//   	  header('location:admin/index.php');
+//   	}
+//   	else 
+//   	{
+//   		array_push($errors, "Wrong username/password combination");
+//   	}
+//   }
+// }
+
+// if (isset($_POST['login_user'])) {
+//   $username = mysqli_real_escape_string($conn, $_POST['username']);
+//   $password = mysqli_real_escape_string($conn, $_POST['password']);
+
+//   if (empty($username)) { echo "Username is required.<br>"; }
+//   if (empty($password)) { echo "Password is required.<br>"; }
+
+//   if (!empty($username) && !empty($password)) {
+//     $password = md5($password);
+//     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+//     $results = mysqli_query($conn, $query);
+
+//     if (mysqli_num_rows($results) == 1) {
+//       session_start();
+//       $_SESSION['username'] = $username;
+//       header('location:admin/index.php');
+//       exit();
+//     } else {
+//       echo "❌ Incorrect username or password.<br>";
+//     }
+//   }
+// }
+
+
 if (isset($_POST['login_user'])) {
   $username = mysqli_real_escape_string($conn, $_POST['username']);
   $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-  if (count($errors) == 0) {
-  	$password =MD5($password);
-  	$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-  	$results = mysqli_query($conn, $query);
-  	if (mysqli_num_rows($results) == 1) 
-  	{
-  	  session_start();
-  	  $_SESSION['username'] = $username;
-  	  header('location:admin/index.php');
-  	}
-  	else 
-  	{
-  		array_push($errors, "Wrong username/password combination");
-  	}
+  echo "Username entered: $username<br>";
+  echo "Password entered (raw): $password<br>";
+
+  $password = md5($password);
+  echo "Password after MD5: $password<br>";
+
+  $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+  echo "Query: $query<br>";
+
+  $results = mysqli_query($conn, $query);
+  echo "Rows returned: " . mysqli_num_rows($results) . "<br>";
+
+  if (mysqli_num_rows($results) == 1) {
+    session_start();
+    $_SESSION['username'] = $username;
+    header('location:admin/index.php');
+    exit();
+  } else {
+    echo "<b>❌ Incorrect username or password</b>";
   }
 }
+
 
 ?>

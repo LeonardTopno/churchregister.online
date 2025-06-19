@@ -4,6 +4,12 @@ $dbUsername = "develope_root";
 $dbPassword = "Migids@123";
 $dbName = "develope_universe";
 
+
+// $dbHost = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "root1";
+// $dbName = "develope_universe";
+
 //Switching the dbhost when connecting from Macbook
 //$hostname = getenv('HTTP_HOST');
 //echo $hostname;
@@ -23,9 +29,9 @@ if ($conn -> connect_errno) {
 }
 
 //Test connection visually on screen
-/*
-else {
-     echo "Connection successfully established.";
-}
-*/
+
+// else {
+//      echo "Connection successfully established.";
+// }
+
 ?>
