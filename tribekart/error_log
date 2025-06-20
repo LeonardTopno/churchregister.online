@@ -1,3 +1,0 @@
-[01-Nov-2020 15:03:18 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'develope_root'@'localhost' to database 'develope_tribalshop' in /home/developer/public_html/tribekart/connection.php on line 4
-[01-Nov-2020 15:05:35 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'develope_develop'@'localhost' (using password: YES) in /home/developer/public_html/tribekart/connection.php on line 4
-[01-Nov-2020 15:05:57 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'develope_develop'@'localhost' (using password: YES) in /home/developer/public_html/tribekart/connection.php on line 4
