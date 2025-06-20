@@ -1,57 +1,57 @@
 <?php
+require_once '../includes/session.php';
 
+// // Detect if running on localhost or live server
+// $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+// // Set a custom session path only on live server
+// if (!$isLocal) {
+//     ini_set('session.save_path', '/home2/churchregister/tmp');
+// }
 
-// Detect if running on localhost or live server
-$isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
-// Set a custom session path only on live server
-if (!$isLocal) {
-    ini_set('session.save_path', '/home2/churchregister/tmp');
-}
+// $sessionPath = session_save_path();
+// $sessionFile = $sessionPath . "/sess_" . session_id();
 
-$sessionPath = session_save_path();
-$sessionFile = $sessionPath . "/sess_" . session_id();
+// echo "Session Save Path: <code>$sessionPath</code><br>";
+// echo "Session File: <code>$sessionFile</code><br>";
 
-echo "Session Save Path: <code>$sessionPath</code><br>";
-echo "Session File: <code>$sessionFile</code><br>";
+// // echo "<pre>Is app running localaly: {$isLocal}</pre>";
+// // ini_set('session.save_path', '/home2/churchregister/tmp');
 
+// session_start();
+
+// // Get base URL early
+// include_once("../config.php"); // This sets $base_url
+// echo "<pre>Base Host: {$host}</pre>";
+// // Debug: Show base URL on screen
+// echo "<pre>Base URL: {$base_url}</pre>";
+// echo "<pre>Base URL 1: {$base_url_1}</pre>";
 // echo "<pre>Is app running localaly: {$isLocal}</pre>";
-// ini_set('session.save_path', '/home2/churchregister/tmp');
-
-session_start();
-
-// Get base URL early
-include_once("../config.php"); // This sets $base_url
-echo "<pre>Base Host: {$host}</pre>";
-// Debug: Show base URL on screen
-echo "<pre>Base URL: {$base_url}</pre>";
-echo "<pre>Base URL 1: {$base_url_1}</pre>";
-echo "<pre>Is app running localaly: {$isLocal}</pre>";
-if ($isLocal) {
-    $base_url = $base_url_1;
-}
+// if ($isLocal) {
+//     $base_url = $base_url_1;
+// }
 
 
+// // if (!isset($_SESSION['username'])) {
+// //     // header('location: ../login.php');
+    
+// //     exit();
+    
+// //session_start();
+// echo "Logged in as: " . ($_SESSION['username'] ?? 'Not set');
+
+// // $_SESSION['username'] = $username;
+// // Redirect to root index.php if user is not logged in
+// //$_SESSION['username'] = 'Leo';
+// //echo "<script>console.error('Session set manually to Leo.');</script>";
 // if (!isset($_SESSION['username'])) {
-//     // header('location: ../login.php');
-    
-//     exit();
-    
-//session_start();
-echo "Logged in as: " . ($_SESSION['username'] ?? 'Not set');
-
-// $_SESSION['username'] = $username;
-// Redirect to root index.php if user is not logged in
-//$_SESSION['username'] = 'Leo';
-//echo "<script>console.error('Session set manually to Leo.');</script>";
-if (!isset($_SESSION['username'])) {
-    echo "<script>console.error('Session not set.');</script>";
-    header("Location: " . $base_url . "index.php");
-    //exit();
-}
-echo "<script>console.info('Session username set');</script>";
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//     echo "<script>console.error('Session not set.');</script>";
+//     header("Location: " . $base_url . "index.php");
+//     //exit();
+// }
+// echo "<script>console.info('Session username set');</script>";
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 
     
