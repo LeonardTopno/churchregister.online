@@ -1,17 +1,17 @@
 <?php
 
 // For running in localhost
-$dbHost = "localhost";
-$dbUsername = "develope_root";
-$dbPassword = "Migids@123";
-$dbName = "develope_universe";
+// $dbHost = "localhost";
+// $dbUsername = "develope_root";
+// $dbPassword = "Migids@123";
+// $dbName = "develope_universe";
 
 
 // For running in Production
-// $dbHost = "localhost";
-// $dbName = "churchre_develope_universe";
-// $dbUsername = "churchre_appuser";
-// $dbPassword = "Migids120#";
+$dbHost = "localhost";
+$dbName = "churchre_develope_universe";
+$dbUsername = "churchre_appuser";
+$dbPassword = "Migids120#";
 
 
 
