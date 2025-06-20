@@ -18,8 +18,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <title>:: Login - Live-Church ::</title>
     <!-- Custom CSS -->
+    <!--
     <link href="dist/css/style.min.css" rel="stylesheet">
-    <link href="dist/css/style1.min.css" rel="stylesheet">
+    <link href="dist/css/style1.min.css" rel="stylesheet"> -->
+    <link href="https://app.churchregister.in/dist/css/style.min.css" rel="stylesheet">
+    <!--<link href="https://app.churchregister.in/dist/css/style1.css" rel="stylesheet"> -->
+    <!-- <link href="<?= $base_url ?>dist/css/style.min.css" rel="stylesheet"> -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,7 +85,7 @@
                                 <div class="form-group">
                                     <div class="p-t-20">
                                         <button class="btn btn-success float-left" type="submit" name="login_user">Login</button>
-                                        <button class="btn btn-info float-right" id="to-recover" type="button"><i class="fa fa-lock m-r-5"></i> Lost password??</button>
+                                        <button class="btn btn-info float-right" id="to-recover" type="button"><i class="fa fa-lock m-r-5"></i> Lost password?</button>
                                         
                                     </div>
                                 </div>

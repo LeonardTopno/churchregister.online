@@ -1,14 +1,60 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-    header('location: ../login.php');
-    exit();
+
+// Detect if running on localhost or live server
+$isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+
+// Detect if running on localhost or live server
+$isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+// Set a custom session path only on live server
+if (!$isLocal) {
+    ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
-include_once("../config.php"); // Provides $base_url : app.churchregister.in
+
+// echo "<pre>Is app running localaly: {$isLocal}</pre>";
+// ini_set('session.save_path', '/home2/churchregister/tmp');
+
+session_start();
+
+// Get base URL early
+include_once("../config.php"); // This sets $base_url
+echo "<pre>Base Host: {$host}</pre>";
+// Debug: Show base URL on screen
+echo "<pre>Base URL: {$base_url}</pre>";
+echo "<pre>Is app running localaly: {$isLocal}</pre>";
+
+
+// if (!isset($_SESSION['username'])) {
+//     // header('location: ../login.php');
+    
+//     exit();
+    
+//session_start();
+echo "Logged in as: " . ($_SESSION['username'] ?? 'Not set');
+
+// $_SESSION['username'] = $username;
+// Redirect to root index.php if user is not logged in
+//$_SESSION['username'] = 'Leo';
+//echo "<script>console.error('Session set manually to Leo.');</script>";
+if (!isset($_SESSION['username'])) {
+    echo "<script>console.error('Session not set.');</script>";
+    header("Location: " . $base_url . "index.php");
+    //exit();
+}
+echo "<script>console.info('Session username set');</script>";
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+    
+
+
+//include_once("../config.php"); // Provides $base_url : app.churchregister.in
 
 // $base_url will now be something like: /app.churchregister.in/
 // This works from /admin/index.php, /user/dashboard.php, etc.
+
 ?>
 
 <!DOCTYPE html>
@@ -67,10 +113,22 @@ include_once("../config.php"); // Provides $base_url : app.churchregister.in
 
         <!-- Page wrapper -->
         <div class="page-wrapper">
-            <div class="container-fluid">
-                <h2 class="text-center p-5">Welcome to Church Register Admin Panel</h2>
-            </div>
+            <!-- <div class="container-fluid">-->
+                <h2 class="text-center p-5">Welcome to Church Register Management System </h2>
+            <!-- </div>-->
         </div>
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <h3 class="text-left"><a href="baptism/">1. Baptism Register</a></h3>
+            <h3 class="text-left"><a href="communion/">2. Holy Communion Register</a></h3>
+            <h3 class="text-left"><a href="confirmation/">3. Confirmation Register</a></h3>
+            <h3 class="text-left"><a href="bann/">4. Bann Register</a></h3>
+            <h3 class="text-left"><a href="marriage/">5. Marriage Register</a></h3>
+            <h3 class="text-left"><a href="burial/">6. Burial Register</a></h3>
+        </div>
+    </div>
+
 
         <!-- Footer -->
         <footer class="footer text-center">

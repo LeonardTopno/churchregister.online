@@ -1,8 +1,10 @@
 <?php
+ini_set('session.save_path', '/home2/churchregister/tmp');
+// @session_start(); 
+session_start();
 include('admin/includes/dbConnect.php');
 
-@session_start(); 
-session_start();
+
 ob_start();
 
 // initializing variables
@@ -107,27 +109,40 @@ if (isset($_POST['login_user'])) {
   $username = mysqli_real_escape_string($conn, $_POST['username']);
   $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-  echo "Username entered: $username<br>";
-  echo "Password entered (raw): $password<br>";
+    if (empty($username) || empty($password)) {
+        echo "<p style='color:red;'>❌ Username and password are required.</p>";
+        exit();
+    }
+  //echo "Username entered: $username<br>";
+  //echo "Password entered (raw): $password<br>";
+
+    
 
   $password = md5($password);
-  echo "Password after MD5: $password<br>";
+  //echo "Password after MD5: $password<br>";
 
   $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-  echo "Query: $query<br>";
+  
+  //echo "Query: $query<br>";
 
   $results = mysqli_query($conn, $query);
-  echo "Rows returned: " . mysqli_num_rows($results) . "<br>";
+  //echo "Rows returned: " . mysqli_num_rows($results) . "<br>";
 
   if (mysqli_num_rows($results) == 1) {
-    session_start();
+    //ob_clean(); // clean out the previous buffer output
+    //session_start();
     $_SESSION['username'] = $username;
-    header('location:admin/index.php');
+    //ini_set('session.save_path', '/home2/churchregister/tmp');
+    // log_debug("Logged in as $username");
+    //echo "<script>console.log('correct username or password');</script>";
+    //echo "<script>console.log('Logged in as $username');</script>";
+    header('location: admin/index.php');
     exit();
   } else {
+    //echo "<script>console.error('correct username or password');</script>";
     echo "<b>❌ Incorrect username or password</b>";
   }
 }
 
-
+ob_end_flush(); // Send output at the end
 ?>

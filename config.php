@@ -10,23 +10,9 @@
 
 
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$host = $_SERVER['HTTP_HOST']; //app.churchregister.in
-
+$host = $_SERVER['HTTP_HOST'];
 $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
 $projectFolder = $scriptParts[0] ?? '';
 $basePath = $projectFolder ? '/' . $projectFolder : '';
-
-$base_url = rtrim($protocol . $host . $basePath, '/') . '/';
-
-
-// For debugging
-// echo "<pre>Protocol : $protocol</pre>";
-// echo "<pre>Host : $host</pre>";
-// echo "<pre>Script Directory : $scriptDir</pre>";
-// echo "<pre>Base URL : $base_url</pre>";
-
-
-
-?>
-
-
+$base_url_1 = rtrim($protocol . $host . $basePath, '/') . '/';
+$base_url = $protocol . $host . '/';

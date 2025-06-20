@@ -1,10 +1,12 @@
 <?php
+ini_set('session.save_path', '/home2/churchregister/tmp');
 ob_start();
 session_start();
 
 if (isset($_SESSION["username"])) {
     $logid = $_SESSION["username"];
 } else {
+    echo "<script>console.error('Session not set.');</script>";
     header("location:../../index.php");
     exit();
 }
