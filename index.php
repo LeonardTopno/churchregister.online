@@ -95,7 +95,7 @@
                 </div>
                 <div id="recoverform">
                     <div class="text-center">
-                        <span class="text-white">Enter your e-mail address below and we will send you instructions how to recover a password.</span>
+                        <span class="text-white">Enter your e-mail address below and we will send you instructions on how to recover a password.</span>
                     </div>
                     <div class="row m-t-20">
                         <!-- Form -->

@@ -23,17 +23,6 @@ session_set_cookie_params([
 // 4. Start the session
 session_start();
 
-
-// $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-// $host = $_SERVER['HTTP_HOST'];
-// $base_url = $protocol . $host . '/';
-
-// $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
-// $projectFolder = $scriptParts[0] ?? '';
-// $basePath = $projectFolder ? '/' . $projectFolder : '';
-// $base_url_1 = rtrim($protocol . $host . $basePath, '/') . '/';
-
-
 // 5. Build base URL for redirection or assets
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
 $host = $_SERVER['HTTP_HOST'];
@@ -42,10 +31,10 @@ $base_url = $protocol . $host . '/';
 // Optional: fallback for localhost (strip subfolder if any)
 $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
 $projectFolder = $scriptParts[0] ?? '';
-$base_url_1 = $protocol . $host . '/' . $projectFolder . '/';
+$base_url_4_local = $protocol . $host . '/' . $projectFolder . '/';
 
 if ($isLocal) {
-    $base_url = $base_url_1;
+    $base_url = $base_url_4_local;
 }
 
 // 6. Auth guard: redirect to login if session not set
@@ -57,7 +46,11 @@ if (!isset($_SESSION['username'])) {
 }
 
 // Optional: show session status (for dev only)
+/* */
 echo "✅ Logged in as: " . $_SESSION['username'];
 echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
 echo "<pre>Session ID: " . session_id() . "</pre>";
+echo "<pre>Is app running locally: {$isLocal} </pre>";
+echo "<pre>Base URL: " . $base_url . "</pre>";
+
 ?>

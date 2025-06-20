@@ -15,7 +15,7 @@ include('../includes/dbConnect.php');
     <meta name="description" content="">
     <meta name="author" content="Leonard Topno">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon.png">
-    <title>Baptism Form - Add Record</title>
+    <title>Baptism Register</title>
     <!-- Custom CSS -->
     <link href="../../assets/libs/flot/css/float-chart.css" rel="stylesheet">
     <!-- Custom CSS -->
