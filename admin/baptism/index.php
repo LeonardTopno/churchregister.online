@@ -1,6 +1,18 @@
 <?php
-ini_set('session.save_path', '/home2/churchregister/tmp');
+// ini_set('session.save_path', '/home2/churchregister/tmp');
+// ob_start();
+// session_start();
+
+
 ob_start();
+// Detect if running on localhost or live server
+$isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+
+// Set a custom session path only on live server
+if (!$isLocal) {
+    ini_set('session.save_path', '/home2/churchregister/tmp');
+}
+
 session_start();
 
 if (isset($_SESSION["username"])) {
@@ -12,6 +24,9 @@ if (isset($_SESSION["username"])) {
 }
 
 include_once("../../config.php"); // Injects $
+if ($isLocal) {
+    $base_url = $base_url_1;
+}
 
 ?>
 

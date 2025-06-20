@@ -16,7 +16,7 @@
     <meta name="author" content="">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>:: Login - Live-Church ::</title>
+    <title>:: Church Register - Login  ::</title>
     <!-- Custom CSS -->
     <!--
     <link href="dist/css/style.min.css" rel="stylesheet">

@@ -1,7 +1,5 @@
 <?php
 
-// Detect if running on localhost or live server
-$isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
 // Detect if running on localhost or live server
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
@@ -10,6 +8,11 @@ if (!$isLocal) {
     ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
+$sessionPath = session_save_path();
+$sessionFile = $sessionPath . "/sess_" . session_id();
+
+echo "Session Save Path: <code>$sessionPath</code><br>";
+echo "Session File: <code>$sessionFile</code><br>";
 
 // echo "<pre>Is app running localaly: {$isLocal}</pre>";
 // ini_set('session.save_path', '/home2/churchregister/tmp');
@@ -21,7 +24,11 @@ include_once("../config.php"); // This sets $base_url
 echo "<pre>Base Host: {$host}</pre>";
 // Debug: Show base URL on screen
 echo "<pre>Base URL: {$base_url}</pre>";
+echo "<pre>Base URL 1: {$base_url_1}</pre>";
 echo "<pre>Is app running localaly: {$isLocal}</pre>";
+if ($isLocal) {
+    $base_url = $base_url_1;
+}
 
 
 // if (!isset($_SESSION['username'])) {
