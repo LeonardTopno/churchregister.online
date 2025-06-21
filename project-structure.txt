@@ -11,7 +11,7 @@ app.churchregister.in/
 ├── includes/
 │   └── base_url.php          → Handles base URL logic only
 │   └── db_connect.php        → Handles DB connection only
-│   └── env.php               → Stores secrets
-│   └── ession.php           → Handles session + auth + may include base_url
+│   └── .env.php              → Stores secrets (Hidden, conventional, safe)
+│   └── session.php           → Handles session + auth + may include base_url
 ├── CHANGELOG.md
 ├── project-structure.txt
