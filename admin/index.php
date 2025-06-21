@@ -1,5 +1,7 @@
 <?php
-require_once '../includes/session.php';
+require_once '../includes/session.php'; // sesssion + login check + base_url 
+// require_once '../includes/config.php';  // if DB is needed
+
 
 // // Detect if running on localhost or live server
 // $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;

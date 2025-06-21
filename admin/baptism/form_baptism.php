@@ -1,8 +1,10 @@
 <?php 
-ob_start(); 
+// ob_start(); 
 //include('../includes/initiate-session.php');
 // require_once '../../includes/session.php';
-require_once __DIR__ . '/../../includes/session.php';
+// require_once __DIR__ . '/../../includes/session.php'; // No more guessing how many ../ you need.
+// echo realpath(__DIR__ . '/../../includes/session.php');
+require_once realpath(__DIR__ . '/../../includes/session.php'); // Even better: This resolves symbolic links and prevents directory traversal issues.
 include('../includes/dbConnect.php');
 ?>
 
