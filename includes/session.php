@@ -1,18 +1,18 @@
 <?php
-// Enable output buffering to avoid header issues
+// Enable output buffering to safely use header() later
 ob_start();
 
-// 1. Detect if running locally
+// Determine environment
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
-// 2. Set custom session path for production
+// Use a custom session path on production
 if (!$isLocal) {
     ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
-// 3. Configure session cookie settings
+// Configure secure session cookie
 session_set_cookie_params([
-    'lifetime' => 3600, // 1 hour
+    'lifetime' => 3600,
     'path' => '/',
     'domain' => $_SERVER['HTTP_HOST'],
     'secure' => isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on',
@@ -20,37 +20,36 @@ session_set_cookie_params([
     'samesite' => 'Lax'
 ]);
 
-// 4. Start the session
+// Start session
 session_start();
 
-// 5. Build base URL for redirection or assets
+// Dynamically determine base URL
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
 $host = $_SERVER['HTTP_HOST'];
 $base_url = $protocol . $host . '/';
 
-// Optional: fallback for localhost (strip subfolder if any)
-$scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
-$projectFolder = $scriptParts[0] ?? '';
-$base_url_4_local = $protocol . $host . '/' . $projectFolder . '/';
-
+// Optional fix for localhost subfolder
 if ($isLocal) {
-    $base_url = $base_url_4_local;
+    $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
+    $projectFolder = $scriptParts[0] ?? '';
+    $base_url = $protocol . $host . '/' . $projectFolder . '/';
 }
 
-// 6. Auth guard: redirect to login if session not set
+// Redirect to login if session is not set
 if (!isset($_SESSION['username'])) {
-    // For debugging:
-    echo "<script>console.error('Session not set. Redirecting to login.');</script>";
+    // Optional: debug output for failed session
+    error_log("❌ Session not set. Current PHPSESSID: " . ($_COOKIE['PHPSESSID'] ?? 'not set'));
     header("Location: " . $base_url . "index.php");
     exit();
 }
 
+// OPTIONAL: assign username for easy access
+$username = $_SESSION['username'];
+
 // Optional: show session status (for dev only)
 /* */
-echo "✅ Logged in as: " . $_SESSION['username'];
-echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
-echo "<pre>Session ID: " . session_id() . "</pre>";
-echo "<pre>Is app running locally: {$isLocal} </pre>";
-echo "<pre>Base URL: " . $base_url . "</pre>";
-
-?>
+// echo "✅ Logged in as: " . $_SESSION['username'];
+// echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
+// echo "<pre>Session ID: " . session_id() . "</pre>";
+// echo "<pre>Is app running locally: {$isLocal} </pre>";
+// echo "<pre>Base URL: " . $base_url . "</pre>";
