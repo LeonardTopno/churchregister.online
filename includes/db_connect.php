@@ -17,5 +17,10 @@ $dbName = $env['DB_NAME'];
 
 $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 if ($conn->connect_error) {
+    echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
     die("❌ Database connection failed: " . $conn->connect_error);
 }
+
+// echo "Connection Working fine";
+
+  
