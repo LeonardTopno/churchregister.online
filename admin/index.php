@@ -1,5 +1,9 @@
 <?php
+
+require_once '../includes/base_url.php';
 require_once '../includes/session.php'; // sesssion + login check + base_url 
+// require_once realpath(__DIR__ . '../includes/base_url.php');
+// require_once realpath(__DIR__ . '../includes/session.php');
 // require_once '../includes/config.php';  // if DB is needed
 
 
