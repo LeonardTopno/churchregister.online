@@ -7,6 +7,7 @@ $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
 // Use a custom session path on production
 if (!$isLocal) {
+    // ini_set('session.save_path', '/home2/churchregister/tmp');  #TODO: Delete if next line is successful
     ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
@@ -24,16 +25,16 @@ session_set_cookie_params([
 session_start();
 
 // Dynamically determine base URL
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$host = $_SERVER['HTTP_HOST'];
-$base_url = $protocol . $host . '/';
+// $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+// $host = $_SERVER['HTTP_HOST'];
+// $base_url = $protocol . $host . '/';
 
 // Optional fix for localhost subfolder
-if ($isLocal) {
-    $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
-    $projectFolder = $scriptParts[0] ?? '';
-    $base_url = $protocol . $host . '/' . $projectFolder . '/';
-}
+// if ($isLocal) {
+//     $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
+//     $projectFolder = $scriptParts[0] ?? '';
+//     $base_url = $protocol . $host . '/' . $projectFolder . '/';
+// }
 
 // Redirect to login if session is not set
 if (!isset($_SESSION['username'])) {
