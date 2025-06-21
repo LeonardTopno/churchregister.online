@@ -1,4 +1,4 @@
-
+This is the current projct structure
 
 
 app.churchregister.in/
