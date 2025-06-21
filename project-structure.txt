@@ -9,4 +9,9 @@ app.churchregister.in/
 │       └── index.php
 │       └── form_baptism.php
 ├── includes/
-│   └── session.php
+│   └── base_url.php          → Handles base URL logic only
+│   └── db_connect.php        → Handles DB connection only
+│   └── env.php               → Stores secrets
+│   └── ession.php           → Handles session + auth + may include base_url
+├── CHANGELOG.md
+├── project-structure.txt
