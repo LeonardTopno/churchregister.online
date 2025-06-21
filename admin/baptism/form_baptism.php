@@ -1,7 +1,8 @@
 <?php 
 ob_start(); 
 //include('../includes/initiate-session.php');
-require_once '../../includes/session.php';
+// require_once '../../includes/session.php';
+require_once __DIR__ . '/../../includes/session.php';
 include('../includes/dbConnect.php');
 ?>
 
