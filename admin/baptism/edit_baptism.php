@@ -1,5 +1,7 @@
 <?php 
-require_once realpath(__DIR__ . '/../../includes/session.php'); // session.php has ob_start() in it.
+// require_once realpath(__DIR__ . '/../../includes/session.php'); // session.php has ob_start() in it.
+require_once realpath(__DIR__ . '/../../includes/base_url.php');
+require_once realpath(__DIR__ . '/../../includes/session.php'); 
 ?>
 <!--  Session Starts   -->
 <!DOCTYPE html>

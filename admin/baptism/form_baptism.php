@@ -1,6 +1,8 @@
 <?php 
+require_once realpath(__DIR__ . '/../../includes/base_url.php');
 require_once realpath(__DIR__ . '/../../includes/session.php'); // Even better: This resolves symbolic links and prevents directory traversal issues.
-include('../includes/dbConnect.php');
+require_once realpath(__DIR__ . '/../../includes/db_connect.php'); //Global db_connect.php
+// include('../includes/dbConnect.php');
 ?>
 
 <!DOCTYPE html>
