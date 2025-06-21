@@ -1,13 +1,5 @@
 <?php 
-
 require_once realpath(__DIR__ . '/../../includes/session.php'); // session.php has ob_start() in it.
-// ob_start(); 
-// session_start();
-// if (isset($_SESSION["username"])){
-// 	$logid=$_SESSION["username"];
-// }else{
-// 	header("location:../../index.php");
-// }
 ?>
 <!--  Session Starts   -->
 <!DOCTYPE html>
