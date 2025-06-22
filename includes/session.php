@@ -6,9 +6,19 @@ ob_start();
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
 // 3. Use a custom session path on production
+// if (!$isLocal) {
+//     // ini_set('session.save_path', '/home2/churchregister/tmp');  #TODO: Delete if next line is successful
+//     ini_set('session.save_path', '/home2/churchregister/tmp');
+// }
+
 if (!$isLocal) {
-    // ini_set('session.save_path', '/home2/churchregister/tmp');  #TODO: Delete if next line is successful
-    ini_set('session.save_path', '/home2/churchregister/tmp');
+    // Load environment configuration
+    $env_path = realpath(__DIR__ . '/.env.php');
+    if (!$env_path) {
+        die("❌ .env.php not found.");
+    }
+    $env = require $env_path;
+    ini_set('session.save_path', $env['SESSION_PATH']);
 }
 
 // 4. Configure secure session cookie
