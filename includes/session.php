@@ -24,25 +24,24 @@ session_set_cookie_params([
 // Start session
 session_start();
 
-// Dynamically determine base URL
-// $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-// $host = $_SERVER['HTTP_HOST'];
-// $base_url = $protocol . $host . '/';
-
-// Optional fix for localhost subfolder
-// if ($isLocal) {
-//     $scriptParts = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
-//     $projectFolder = $scriptParts[0] ?? '';
-//     $base_url = $protocol . $host . '/' . $projectFolder . '/';
-// }
 
 // Redirect to login if session is not set
-if (!isset($_SESSION['username'])) {
-    // Optional: debug output for failed session
-    error_log("❌ Session not set. Current PHPSESSID: " . ($_COOKIE['PHPSESSID'] ?? 'not set'));
-    header("Location: " . $base_url . "index.php");
+// if (!isset($_SESSION['username'])) {
+//     // Optional: debug output for failed session
+//     error_log("❌ Session not set. Current PHPSESSID: " . ($_COOKIE['PHPSESSID'] ?? 'not set'));
+//     header("Location: " . $base_url . "index.php");
+//     exit();
+// }
+
+// Allow unauthenticated access only to index.php (login page)
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
+//echo "<pre>Current Page: " . $currentPage . "</pre>";
+if (!isset($_SESSION['username']) && $currentPage !== 'index.php') {
+    header("Location: /index.php");
     exit();
 }
+
+
 
 // OPTIONAL: assign username for easy access
 $username = $_SESSION['username'];
