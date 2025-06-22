@@ -1,17 +1,17 @@
 <?php
-// Enable output buffering to safely use header() later
+// 1. Enable output buffering to safely use header() later
 ob_start();
 
-// Determine environment
+// 2. Determine environment
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
-// Use a custom session path on production
+// 3. Use a custom session path on production
 if (!$isLocal) {
     // ini_set('session.save_path', '/home2/churchregister/tmp');  #TODO: Delete if next line is successful
     ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
-// Configure secure session cookie
+// 4. Configure secure session cookie
 session_set_cookie_params([
     'lifetime' => 3600,
     'path' => '/',
@@ -21,11 +21,11 @@ session_set_cookie_params([
     'samesite' => 'Lax'
 ]);
 
-// Start session
+// 5. Start session
 session_start();
 
 
-// Redirect to login if session is not set
+// 6. Redirect to login if session is not set
 // if (!isset($_SESSION['username'])) {
 //     // Optional: debug output for failed session
 //     error_log("❌ Session not set. Current PHPSESSID: " . ($_COOKIE['PHPSESSID'] ?? 'not set'));
@@ -33,7 +33,7 @@ session_start();
 //     exit();
 // }
 
-// Allow unauthenticated access only to index.php (login page)
+// 6. Allow unauthenticated access only to index.php (login page)
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 //echo "<pre>Current Page: " . $currentPage . "</pre>";
 if (!isset($_SESSION['username']) && $currentPage !== 'index.php') {

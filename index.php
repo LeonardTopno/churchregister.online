@@ -1,14 +1,9 @@
 <?php
-
+require_once realpath(__DIR__ . '/includes/base_url.php');
 require_once realpath(__DIR__ . '/includes/session.php');
 
 include('server.php');
 
-// Optional auto-redirect if already logged in
-// if (isset($_SESSION['user_id'])) {
-//     header("Location: dashboard.php");
-//     exit;
-// }
 ?>
 
 
