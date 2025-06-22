@@ -1,5 +1,21 @@
-<?php session_start(); ?>
-<?php include('server.php') ?>
+<?php
+session_start();
+
+// Prevent caching
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
+include('server.php');
+
+// Optional auto-redirect if already logged in
+// if (isset($_SESSION['user_id'])) {
+//     header("Location: dashboard.php");
+//     exit;
+// }
+?>
+
+
 <!DOCTYPE html>
 <html dir="ltr">
 
