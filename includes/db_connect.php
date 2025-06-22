@@ -24,7 +24,7 @@ $conn = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 // Check connection
 if ($conn->connect_error) {
     
-    echo "Database connection failed: " . $conn->connect_error;
+    // echo "Database connection failed: " . $conn->connect_error;
     die("❌ Database connection failed: " . $conn->connect_error);
 }
 
