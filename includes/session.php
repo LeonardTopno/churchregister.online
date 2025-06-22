@@ -50,7 +50,7 @@ if (!isset($_SESSION['username']) && $currentPage !== 'index.php') {
 
 
 // OPTIONAL: assign username for easy access
-$username = $_SESSION['username'];
+// $username = $_SESSION['username'];
 
 // Optional: show session status (for dev only)
 /* */

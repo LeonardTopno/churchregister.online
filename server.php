@@ -1,7 +1,7 @@
 <?php
-ini_set('session.save_path', '/home2/churchregister/tmp');
+// ini_set('session.save_path', '/home2/churchregister/tmp');
 // @session_start(); 
-session_start();
+// session_start();
 include('admin/includes/dbConnect.php');
 
 
