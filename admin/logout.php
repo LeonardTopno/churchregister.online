@@ -1,4 +1,7 @@
-<?php session_start(); 
+<?php 
+//session_start(); 
+require_once '../includes/base_url.php';
+require_once '../includes/session.php'; 
 //Page Redirect after 3 secondds
 header( "refresh:3;url=../../index.php" );
 ?>
