@@ -7,7 +7,7 @@ $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
 // 3. Use a custom session path on production
 if (!$isLocal) {
-    // Load environment configuration
+    // i. Load environment configuration
     $env_path = realpath(__DIR__ . '/.env.php');
     if (!$env_path) {
         die("❌ .env.php not found.");
