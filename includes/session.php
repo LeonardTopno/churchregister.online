@@ -30,27 +30,26 @@ session_set_cookie_params([
 session_start();
 
 // 5. Base URL logic
-$protocol     = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
-$host         = $_SERVER['HTTP_HOST'];
-$scriptParts  = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
-$projectRoot  = $scriptParts[0] ?? '';
-$base_url     = $protocol . $host . '/';
-$base_url_local = $protocol . $host . '/' . $projectRoot . '/';
+require_once __DIR__ . '/base_url.php';
 
-if ($isLocal) {
-    $base_url = $base_url_local;
-}
+// 8. Define allowed public page(s)
+$loginPath = parse_url($base_url . "index.php", PHP_URL_PATH);
+$publicPages = [
+    $loginPath,
+    rtrim($loginPath, '/') . '/', // also allow base if accessed without filename
+];
 
 // 6. Public pages allowed without login
 $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$publicPages = [
-    '/' . $projectRoot . '/',
-    '/' . $projectRoot . '/index.php',
-    '/index.php' // fallback if needed
-];
+// $publicPages = [
+//     '/' . $projectRoot . '/',
+//     '/' . $projectRoot . '/index.php',
+//     '/index.php' // fallback if needed
+// ];
 
-// 7. Protect all non-public routes unless manually skipped
-if (empty($skipSessionCheck) && !isset($_SESSION['username']) && !in_array($currentPath, $publicPages)) {
+// 7. Protect all non-public routes unless manually skipped 
+//empty($skipSessionCheck) && 
+if (!isset($_SESSION['username']) && !in_array($currentPath, $publicPages)) {
     header("Location: " . $base_url . "index.php");
     exit();
 }
@@ -62,7 +61,7 @@ if (empty($skipSessionCheck) && !isset($_SESSION['username']) && !in_array($curr
     echo "<pre>Session ID: " . session_id() . "</pre>";
     echo "<pre>Is app running locally: {$isLocal}</pre>";
     echo "<pre>Base URL: {$base_url}</pre>";
-    echo "<pre>Project Root: {$projectRoot}</pre>";
+    //echo "<pre>Project Root: {$projectRoot}</pre>";
     echo "<pre>Current Path: {$currentPath}</pre>";
     echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
 //}
