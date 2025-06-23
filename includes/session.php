@@ -30,7 +30,7 @@ session_set_cookie_params([
 session_start();
 
 // 5. Base URL logic
-require_once __DIR__ . '/base_url.php';
+require_once __DIR__ . '/base_url.php'; // This gives base URL
 
 // 8. Define allowed public page(s)
 $loginPath = parse_url($base_url . "index.php", PHP_URL_PATH);
@@ -56,12 +56,11 @@ if (!isset($_SESSION['username']) && !in_array($currentPath, $publicPages)) {
 
 // 8. (Optional) Debug output
 //if ($isLocal) {
-    echo "✅ Logged in as: " . ($_SESSION['username'] ?? 'Not logged in');
-    echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
-    echo "<pre>Session ID: " . session_id() . "</pre>";
-    echo "<pre>Is app running locally: {$isLocal}</pre>";
-    echo "<pre>Base URL: {$base_url}</pre>";
-    //echo "<pre>Project Root: {$projectRoot}</pre>";
-    echo "<pre>Current Path: {$currentPath}</pre>";
-    echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
+    // echo "✅ Logged in as: " . ($_SESSION['username'] ?? 'Not logged in');
+    // echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
+    // echo "<pre>Session ID: " . session_id() . "</pre>";
+    // echo "<pre>Is app running locally: {$isLocal}</pre>";
+    // echo "<pre>Base URL: {$base_url}</pre>";
+    // echo "<pre>Current Path: {$currentPath}</pre>";
+    // echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
 //}
