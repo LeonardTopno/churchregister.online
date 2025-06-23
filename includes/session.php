@@ -1,61 +1,68 @@
 <?php
-// 1. Enable output buffering to safely use header() later
 ob_start();
 
-// 2. Determine environment
+// 1. Environment detection
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
-// 3. Use a custom session path on production
-
+// 2. Session path for production
 if (!$isLocal) {
-    // i. Load environment configuration
-    $env_path = realpath(__DIR__ . '/.env.php');
-    if (!$env_path) {
-        die("❌ .env.php not found.");
-    }
-    $env = require $env_path;
-    ini_set('session.save_path', $env['SESSION_PATH']); #TODO: This should happen only if the default session.save_path is broken 
+    ini_set('session.save_path', '/home2/churchregister/tmp');
 }
 
-// 4. Configure secure session cookie
+$domain = $_SERVER['HTTP_HOST'];
+// Remove port if present (e.g., localhost:8888 becomes localhost)
+if (strpos($domain, ':') !== false) {
+    $domain = explode(':', $domain)[0];
+}
+
+
+// 3. Session cookie config
 session_set_cookie_params([
     'lifetime' => 3600,
     'path' => '/',
-    'domain' => $_SERVER['HTTP_HOST'],
+    'domain' => $domain, // ✅ clean domain
     'secure' => isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on',
     'httponly' => true,
     'samesite' => 'Lax'
 ]);
 
-// 5. Start session
+// 4. Start session
 session_start();
 
+// 5. Base URL logic
+$protocol     = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https://" : "http://";
+$host         = $_SERVER['HTTP_HOST'];
+$scriptParts  = explode('/', trim($_SERVER['SCRIPT_NAME'], '/'));
+$projectRoot  = $scriptParts[0] ?? '';
+$base_url     = $protocol . $host . '/';
+$base_url_local = $protocol . $host . '/' . $projectRoot . '/';
 
-// 6. Redirect to login if session is not set
-// if (!isset($_SESSION['username'])) {
-//     // Optional: debug output for failed session
-//     error_log("❌ Session not set. Current PHPSESSID: " . ($_COOKIE['PHPSESSID'] ?? 'not set'));
-//     header("Location: " . $base_url . "index.php");
-//     exit();
-// }
+if ($isLocal) {
+    $base_url = $base_url_local;
+}
 
-// 6. Allow unauthenticated access only to index.php (login page)
-$currentPage = basename($_SERVER['SCRIPT_NAME']);
-//echo "<pre>Current Page: " . $currentPage . "</pre>";
-if (!isset($_SESSION['username']) && $currentPage !== 'index.php') {
-    header("Location: /index.php");
+// 6. Public pages allowed without login
+$currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$publicPages = [
+    '/' . $projectRoot . '/',
+    '/' . $projectRoot . '/index.php',
+    '/index.php' // fallback if needed
+];
+
+// 7. Protect all non-public routes unless manually skipped
+if (empty($skipSessionCheck) && !isset($_SESSION['username']) && !in_array($currentPath, $publicPages)) {
+    header("Location: " . $base_url . "index.php");
     exit();
 }
 
-
-
-// OPTIONAL: assign username for easy access
-// $username = $_SESSION['username'];
-
-// Optional: show session status (for dev only)
-/* */
-// echo "✅ Logged in as: " . $_SESSION['username'];
-// echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
-// echo "<pre>Session ID: " . session_id() . "</pre>";
-// echo "<pre>Is app running locally: {$isLocal} </pre>";
-// echo "<pre>Base URL: " . $base_url . "</pre>";
+// 8. (Optional) Debug output
+if ($isLocal) {
+    // echo "✅ Logged in as: " . ($_SESSION['username'] ?? 'Not logged in');
+    // echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
+    // echo "<pre>Session ID: " . session_id() . "</pre>";
+    // echo "<pre>Is app running locally: {$isLocal}</pre>";
+    // echo "<pre>Base URL: {$base_url}</pre>";
+    // echo "<pre>Project Root: {$projectRoot}</pre>";
+    // echo "<pre>Current Path: {$currentPath}</pre>";
+    // echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
+}

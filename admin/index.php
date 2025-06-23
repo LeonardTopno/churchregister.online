@@ -139,6 +139,7 @@ require_once '../includes/session.php'; // sesssion + login check + base_url
             <h3 class="text-left"><a href="bann/">4. Bann Register</a></h3>
             <h3 class="text-left"><a href="marriage/">5. Marriage Register</a></h3>
             <h3 class="text-left"><a href="burial/">6. Burial Register</a></h3>
+            <h3><a href="<?= $base_url ?>logout.php">7. Logout</a></h3>
         </div>
     </div>
 
@@ -164,6 +165,15 @@ require_once '../includes/session.php'; // sesssion + login check + base_url
     <script src="<?= $base_url ?>assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
     <script src="<?= $base_url ?>dist/js/pages/chart/chart-page-init.js"></script>
     <script src="<?= $base_url ?>dist/js/custom.js"></script>
+
+    <script>
+  // Auto-hide Bootstrap alert after 4 seconds
+  setTimeout(() => {
+    const alertBox = document.querySelector('.alert');
+    if (alertBox) alertBox.style.display = 'none';
+    }, 4000);
+    </script>
+
 </body>
 
 </html>
