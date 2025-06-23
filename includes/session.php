@@ -56,13 +56,13 @@ if (empty($skipSessionCheck) && !isset($_SESSION['username']) && !in_array($curr
 }
 
 // 8. (Optional) Debug output
-if ($isLocal) {
-    // echo "✅ Logged in as: " . ($_SESSION['username'] ?? 'Not logged in');
-    // echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
-    // echo "<pre>Session ID: " . session_id() . "</pre>";
-    // echo "<pre>Is app running locally: {$isLocal}</pre>";
-    // echo "<pre>Base URL: {$base_url}</pre>";
-    // echo "<pre>Project Root: {$projectRoot}</pre>";
-    // echo "<pre>Current Path: {$currentPath}</pre>";
-    // echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
-}
+//if ($isLocal) {
+    echo "✅ Logged in as: " . ($_SESSION['username'] ?? 'Not logged in');
+    echo "<pre>Session Save Path: " . session_save_path() . "</pre>";
+    echo "<pre>Session ID: " . session_id() . "</pre>";
+    echo "<pre>Is app running locally: {$isLocal}</pre>";
+    echo "<pre>Base URL: {$base_url}</pre>";
+    echo "<pre>Project Root: {$projectRoot}</pre>";
+    echo "<pre>Current Path: {$currentPath}</pre>";
+    echo "<pre>Public Pages: " . print_r($publicPages, true) . "</pre>";
+//}
